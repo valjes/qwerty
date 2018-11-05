@@ -1,0 +1,10 @@
+files:
+  - source: '*.md'
+    ignore:
+      - 111.md
+    translation: /translation/%file_name%-%two_letters_code%.%file_extension%
+    languages_mapping:
+      two_letters_code:
+        zh-TW: chtr
+  - source: '*.xml'
+    translation: /translation/%file_name%-%two_letters_code%.%file_extension%
