@@ -1,21 +1,21 @@
-# Checkout layout
+# 結帳佈局
 
-## Usage
+## 用法
 
-Simply copy the files into your project, or one of the [example applications](https://github.com/mui-org/material-ui/tree/master/examples), and import and use the `Checkout` component.
+只需將文件複製到項目或 [示例應用程序](https://github.com/mui-org/material-ui/tree/master/examples)，然後導入並使用 `Checkout` 組件。
 
-You can customise the Stepper logic and steps to suit your specific checkout workflow and data requirements.
+您可以自定義步進邏輯和步驟，以滿足您特定的結帳工作流程和數據要求。
 
-## Files
+## 檔
 
-| File             | Purpose                                                                               |
-| ---------------- | ------------------------------------------------------------------------------------- |
-| `Checkout.js`    | Main file with Stepper logic.                                                         |
-| `AddressForm.js` | Capture the shipping address. Repeat this step to capture the Billing address.        |
-| `PaymentForm.js` | Capture the payment details. You may have to embed your payment provider's form here. |
-| `ReviewForm.js`  | Final step to confirm the details provided before purchase.                           |
+| 文件               | 目的                             |
+| ---------------- | ------------------------------ |
+| `Checkout.js`    | 帶有步進邏輯的主文件。                    |
+| `AddressForm.js` | 捕獲送貨地址。 重複此步驟以捕獲帳單地址。          |
+| `PaymentForm.js` | 捕獲付款詳細信息。 您可能需要在此處嵌入您的付款提供商表單。 |
+| `ReviewForm.js`  | 最後一步確認購買前提供的詳細信息。              |
 
-## Dependencies
+## 依賴
 
-- `@material-ui/core`
-- `@material-ui/icons`
+- `@材料的UI /芯`
+- `@材料-UI /圖標`
