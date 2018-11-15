@@ -1,18 +1,18 @@
-# Sign-in layout
+# 登錄佈局
 
-## Usage
+## 用法
 
-Simply copy the files into your project, or one of the [example applications](https://github.com/mui-org/material-ui/tree/master/examples), and import and use the `SignIn` component.
+只需將文件複製到項目或 [示例應用程序](https://github.com/mui-org/material-ui/tree/master/examples)，然後導入並使用 `SignIn` 組件。
 
-You can customise the layout to add some pizazz in keeping with your corporate theme.
+您可以自定義佈局以添加一些符合您公司主題的pizazz。
 
-## Files
+## 檔
 
-| File        | Purpose                                                                                                                   |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------- |
-| `SignIn.js` | A simple sign-in layout in a single file. Duplicate and customise it to make your registration and password change forms. |
+| 文件          | 目的                                  |
+| ----------- | ----------------------------------- |
+| `SignIn.js` | 單個文件中的簡單登錄佈局。 複製並自定義它以使您的註冊和密碼更改表單。 |
 
-## Dependencies
+## 依賴
 
-- `@material-ui/core`
-- `@material-ui/icons`
+- `@材料的UI /芯`
+- `@材料-UI /圖標`
