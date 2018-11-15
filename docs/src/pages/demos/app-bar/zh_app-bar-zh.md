@@ -1,43 +1,43 @@
 ---
-title: App Bar React component
-components: AppBar, Toolbar, Menu
+title: App Bar React組件
+components: AppBar，工具欄，菜單
 ---
 # App Bar
 
-<p class="description">The App Bar displays information and actions relating to the current screen.</p>
+<p class="description">應用欄顯示與當前屏幕相關的信息和操作。</p>
 
-The [top App Bar](https://material.io/design/components/app-bars-top.html) provides content and actions related to the current screen. It’s used for branding, screen titles, navigation, and actions.
+[頂級App Bar](https://material.io/design/components/app-bars-top.html) 提供與當前屏幕相關的內容和操作。 它用於品牌，屏幕標題，導航和操作。
 
-It can transform into a contextual action bar or used as a navbar.
+它可以轉換為上下文操作欄或用作導航欄。
 
-## Simple App Bar
+## 簡單的應用欄
 
-{{"demo": "pages/demos/app-bar/SimpleAppBar.js"}}
+{{“demo”：“pages / demos / app-bar / SimpleAppBar.js”}}
 
-## App Bar with buttons
+## 帶按鈕的應用欄
 
-{{"demo": "pages/demos/app-bar/ButtonAppBar.js"}}
+{{“demo”：“pages / demos / app-bar / ButtonAppBar.js”}}
 
-## App Bar with menu
+## 應用欄帶菜單
 
-{{"demo": "pages/demos/app-bar/MenuAppBar.js"}}
+{{“demo”：“pages / demos / app-bar / MenuAppBar.js”}}
 
-## App Bar with search field
+## 應用欄與搜索字段
 
-A side searchbar.
+側搜索欄。
 
-{{"demo": "pages/demos/app-bar/SearchAppBar.js"}}
+{{“demo”：“pages / demos / app-bar / SearchAppBar.js”}}
 
-## App Bar with a primary search field
+## 帶有主要搜索字段的App Bar
 
-A primary searchbar.
+主搜索欄。
 
-{{"demo": "pages/demos/app-bar/PrimarySearchAppBar.js"}}
+{{“demo”：“pages / demos / app-bar / PrimarySearchAppBar.js”}}
 
-## Dense (desktop only)
+## 密集（僅限桌面）
 
-{{"demo": "pages/demos/app-bar/DenseAppBar.js"}}
+{{“demo”：“pages / demos / app-bar / DenseAppBar.js”}}
 
-## Bottom App Bar
+## 底部應用欄
 
-{{"demo": "pages/demos/app-bar/BottomAppBar.js", "iframe": true}}
+{{“demo”：“pages / demos / app-bar / BottomAppBar.js”，“iframe”：true}}
