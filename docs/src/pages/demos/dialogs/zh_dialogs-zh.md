@@ -1,74 +1,74 @@
 ---
-title: Dialog React component
-components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, Slide
+title: Dialog React組件
+components: Dialog，DialogTitle，DialogContent，DialogContentText，DialogActions，Slide
 ---
-# Dialogs
+# 對話框
 
-<p class="description">Dialogs inform users about a task and can contain critical information, require decisions, or involve multiple tasks.</p>
+<p class="description">對話框通知用戶任務，可以包含關鍵信息，需要決策或涉及多個任務。</p>
 
-A [Dialog](https://material.io/design/components/dialogs.html) is a type of [modal](/utils/modal/) window that appears in front of app content to provide critical information or ask for a decision. Dialogs disable all app functionality when they appear, and remain on screen until confirmed, dismissed, or a required action has been taken.
+A [對話框](https://material.io/design/components/dialogs.html) 是一種 [模態](/utils/modal/) 窗口，出現在應用程序內容的前面，以提供關鍵信息或要求做出決定。 對話框在出現時禁用所有應用功能，並保留在屏幕上，直到確認，解除或執行必要的操作為止。
 
-Dialogs are purposefully interruptive, so they should be used sparingly.
+對話是故意中斷的，所以應該謹慎使用它們。
 
-## Simple Dialogs
+## 簡單的對話框
 
-Simple dialogs can provide additional details or actions about a list item. For example, they can display avatars, icons, clarifying subtext, or orthogonal actions (such as adding an account).
+簡單對話框可以提供有關列表項的其他詳細信息或操作。 例如，他們可以顯示頭像，圖標，澄清子文本或正交動作（例如添加帳戶）。
 
-Touch mechanics: - Choosing an option immediately commits the option and closes the menu - Touching outside of the dialog, or pressing Back, cancels the action and closes the dialog
+觸摸機制： - 選擇一個選項立即提交選項並關閉菜單 - 觸摸對話框外部，或按返回，取消操作並關閉對話框
 
-{{"demo": "pages/demos/dialogs/SimpleDialog.js"}}
+{{“demo”：“pages / demos / dialogs / SimpleDialog.js”}}
 
-## Alerts
+## 警報
 
-Alerts are urgent interruptions, requiring acknowledgement, that inform the user about a situation.
+警報是緊急中斷，需要確認，通知用戶情況。
 
-Most alerts don't need titles. They summarize a decision in a sentence or two by either: - Asking a question (e.g. "Delete this conversation?") - Making a statement related to the action buttons
+大多數警報不需要標題。 他們通過以下兩種方式總結了一兩句話的決定： - 提出問題（例如“刪除此對話？”） - 製作與動作按鈕相關的陳述
 
-Use title bar alerts only for high-risk situations, such as the potential loss of connectivity. Users should be able to understand the choices based on the title and button text alone.
+僅在高風險情況下使用標題欄警報，例如可能丟失連接。 用戶應該能夠僅根據標題和按鈕文本來理解選擇。
 
-If a title is required:
+如果需要標題：
 
-- Use a clear question or statement with an explanation in the content area, such as "Erase USB storage?".
-- Avoid apologies, ambiguity, or questions, such as “Warning!” or “Are you sure?”
+- 在內容區域中使用明確的問題或陳述以及解釋，例如“擦除USB存儲？”。
+- 避免道歉，歧義或問題，例如“警告！”或“你確定嗎？”
 
-{{"demo": "pages/demos/dialogs/AlertDialog.js"}}
+{{“demo”：“pages / demos / dialogs / AlertDialog.js”}}
 
-You can also swap out the transition, the next example uses `Slide`.
+您也可以換出轉換，下一個示例使用 `幻燈片`。
 
-{{"demo": "pages/demos/dialogs/AlertDialogSlide.js"}}
+{{“demo”：“pages / demos / dialogs / AlertDialogSlide.js”}}
 
-## Confirmation dialogs
+## 確認對話框
 
-Confirmation dialogs require users to explicitly confirm their choice before an option is committed. For example, users can listen to multiple ringtones but only make a final selection upon touching “OK.”
+確認對話框要求用戶在提交選項之前明確確認其選擇。 例如，用戶可以收聽多個鈴聲，但只有在觸摸“確定”時才進行最終選擇。
 
-Touching “Cancel” in a confirmation dialog, or pressing Back, cancels the action, discards any changes, and closes the dialog.
+在確認對話框中觸摸“取消”或按“返回”，取消操作，放棄所有更改，然後關閉對話框。
 
-{{"demo": "pages/demos/dialogs/ConfirmationDialog.js"}}
+{{“demo”：“pages / demos / dialogs / ConfirmationDialog.js”}}
 
-## Full-screen dialogs
+## 全屏對話框
 
-{{"demo": "pages/demos/dialogs/FullScreenDialog.js"}}
+{{“demo”：“pages / demos / dialogs / FullScreenDialog.js”}}
 
-## Form dialogs
+## 表單對話框
 
-Form dialogs allow users to fill out form fields within a dialog. For example, if your site prompts for potential subscribers to fill in their email address, they can fill out the email field and touch 'Submit'
+表單對話框允許用戶填寫對話框中的表單域。 例如，如果您的網站提示潛在訂閱者填寫他們的電子郵件地址，他們可以填寫電子郵件字段並觸摸“提交”
 
-{{"demo": "pages/demos/dialogs/FormDialog.js"}}
+{{“demo”：“pages / demos / dialogs / FormDialog.js”}}
 
-## Responsive full-screen
+## 響應全屏
 
-You may make a `Dialog` responsively full screen the dialog using `withMobileDialog`. By default, `withMobileDialog()(Dialog)` responsively full screens *at or below* the `sm` [screen size](/layout/basics/). You can choose your own breakpoint for example `xs` by passing the `breakpoint` argument: `withMobileDialog({breakpoint: 'xs'})(Dialog)`.
+您可以使用 `withMobileDialog`在 `對話框` 響應全屏顯示對話框。 默認情況下， `withMobileDialog（）（Dialog）` 響應全屏 *或低於* `sm` [屏幕尺寸](/layout/basics/)。 您可以通過傳遞 `斷點` 參數來選擇自己的斷點，例如 `xs` ： `withMobileDialog（{breakpoint: 'xs'}）（Dialog）`。
 
-{{"demo": "pages/demos/dialogs/ResponsiveDialog.js"}}
+{{“demo”：“pages / demos / dialogs / ResponsiveDialog.js”}}
 
-## Accessibility
+## 無障礙
 
-Be sure to add `aria-labelledby="id..."`, referencing the modal title, to the `Dialog`. Additionally, you may give a description of your modal dialog with the `aria-describedby="id..."` property on the `Dialog`.
+請務必將 `aria-labelledby =“id ...”`（引用模態標題）添加到 `對話框`。 此外，您可以在 `對話框`上使用 `aria-describedby =“id ...”` 屬性給出模態對話框的描述。
 
-## Scrolling long content
+## 滾動長內容
 
-When dialogs become too long for the user’s viewport or device, they scroll. - `scroll=paper` the content of the dialog scrolls within the paper element. - `scroll=body` the content of the dialog scrolls within the body element.
+當對話框對於用戶的視口或設備變得太長時，它們會滾動。 - `滾動=紙張` 對話框的內容在紙張元素內滾動。 - `scroll = body` 對話框的內容在body元素內滾動。
 
-Try the demo below to see what we mean:
+試試下面的演示來看看我們的意思：
 
-{{"demo": "pages/demos/dialogs/ScrollDialog.js"}}
+{{“demo”：“pages / demos / dialogs / ScrollDialog.js”}}
