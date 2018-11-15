@@ -1,18 +1,18 @@
-# Pricing layout
+# 定價佈局
 
-## Usage
+## 用法
 
-Simply copy the files into your project, or one of the [example applications](https://github.com/mui-org/material-ui/tree/master/examples), and import and use the `Pricing` component.
+只需將文件複製到項目或 [示例應用程序](https://github.com/mui-org/material-ui/tree/master/examples)，然後導入並使用 `Pricing` 組件。
 
-You can customise the layout to add some pizazz in keeping with your corporate theme.
+您可以自定義佈局以添加一些符合您公司主題的pizazz。
 
-## Files
+## 檔
 
-| File         | Purpose                                   |
-| ------------ | ----------------------------------------- |
-| `Pricing.js` | A simple pricing layout in a single file. |
+| 文件           | 目的            |
+| ------------ | ------------- |
+| `Pricing.js` | 單個文件中的簡單定價佈局。 |
 
-## Dependencies
+## 依賴
 
-- `@material-ui/core`
-- `@material-ui/icons`
+- `@材料的UI /芯`
+- `@材料-UI /圖標`
