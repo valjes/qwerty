@@ -1,43 +1,43 @@
 ---
-title: App Bar React component
-components: AppBar, Toolbar, Menu
+title: Компонент реагирования на панель приложения
+components: AppBar, панель инструментов, меню
 ---
-# App Bar
+# Панель приложений
 
-<p class="description">The App Bar displays information and actions relating to the current screen.</p>
+<p class="description">Панель приложений отображает информацию и действия, относящиеся к текущему экрану.</p>
 
-The [top App Bar](https://material.io/design/components/app-bars-top.html) provides content and actions related to the current screen. It’s used for branding, screen titles, navigation, and actions.
+[топ App Bar](https://material.io/design/components/app-bars-top.html) обеспечивает содержание и действия , относящиеся к текущему экрану. Он используется для брендинга, названий экранов, навигации и действий.
 
-It can transform into a contextual action bar or used as a navbar.
+Он может трансформироваться в контекстную панель действий или использоваться в качестве навигационной панели.
 
-## Simple App Bar
+## Простая панель приложений
 
-{{"demo": "pages/demos/app-bar/SimpleAppBar.js"}}
+{{"demo": "pages / demos / app-bar / SimpleAppBar.js"}}
 
-## App Bar with buttons
+## Панель приложений с кнопками
 
-{{"demo": "pages/demos/app-bar/ButtonAppBar.js"}}
+{{"demo": "pages / demos / app-bar / ButtonAppBar.js"}}
 
-## App Bar with menu
+## Панель приложений с меню
 
-{{"demo": "pages/demos/app-bar/MenuAppBar.js"}}
+{{"demo": "pages / demos / app-bar / MenuAppBar.js"}}
 
-## App Bar with search field
+## Панель приложений с полем поиска
 
-A side searchbar.
+Боковая панель поиска.
 
-{{"demo": "pages/demos/app-bar/SearchAppBar.js"}}
+{{"demo": "pages / demos / app-bar / SearchAppBar.js"}}
 
-## App Bar with a primary search field
+## Панель приложений с основным полем поиска
 
-A primary searchbar.
+Основная поисковая панель.
 
-{{"demo": "pages/demos/app-bar/PrimarySearchAppBar.js"}}
+{{"demo": "pages / demos / app-bar / PrimarySearchAppBar.js"}}
 
-## Dense (desktop only)
+## Плотный (только для настольных компьютеров)
 
-{{"demo": "pages/demos/app-bar/DenseAppBar.js"}}
+{{"demo": "pages / demos / app-bar / DenseAppBar.js"}}
 
-## Bottom App Bar
+## Нижняя панель приложений
 
-{{"demo": "pages/demos/app-bar/BottomAppBar.js", "iframe": true}}
+{{"demo": "pages / demos / app-bar / BottomAppBar.js", "iframe": true}}
