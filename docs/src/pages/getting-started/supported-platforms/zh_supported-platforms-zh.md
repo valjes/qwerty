@@ -1,17 +1,17 @@
-# Supported Platforms
+# 支持的平台
 
-<p class="description">Learn about the platforms, from modern to old, that are supported by Material-UI.</p>
+<p class="description">了解Material-UI支持的從現代到舊的平台。</p>
 
-## Browser
+## 瀏覽器
 
-Material-UI supports the latest, stable releases of all major browsers and platforms. We also support Internet Explorer 11. You don't need to provide any JavaScript polyfill as we manage unsupported browser features internally and in isolation.
+Material-UI支持所有主流瀏覽器和平台的最新穩定版本。 我們還支持Internet Explorer 11。 您不需要提供任何JavaScript polyfill，因為我們在內部和單獨管理不受支持的瀏覽器功能。
 
-| IE | Edge  | Firefox | Chrome | Safari | Googlebot |
-|:-- |:----- |:------- |:------ |:------ |:--------- |
-| 11 | >= 14 | >= 52   | >= 49  | >= 10  | ✅         |
+| IE | 邊緣     | 火狐     | 鉻      | 蘋果瀏覽器  | Googlebot的 |
+|:-- |:------ |:------ |:------ |:------ |:---------- |
+| 11 | > = 14 | > = 52 | > = 49 | > = 10 | ✅          |
 
-Because Googlebot uses a web rendering service (WRS) to index the page content, it's critical that Material-UI supports it. [WRS is based on Chrome 41](https://developers.google.com/search/docs/guides/rendering). You can expect Material-UI's components to render without major issues.
+由於Googlebot使用Web呈現服務（WRS）來索引頁面內容，因此Material-UI支持它至關重要。 [WRS基於Chrome 41](https://developers.google.com/search/docs/guides/rendering)。 您可以期望Material-UI的組件在沒有重大問題的情況下呈現。
 
-## Server
+## 服務器
 
-Because Material-UI supports server side rendering, we need to support the latest, stable releases of [Node.js](https://github.com/nodejs/node). We try to support the [last active LTS version](https://github.com/nodejs/Release#lts-schedule1). Right now, we support **node v6.x** and newer versions.
+因為Material-UI支持服務器端渲染，所以我們需要支持 [Node.js](https://github.com/nodejs/node)的最新穩定版本。 我們試圖支持 [最後一個活動LTS版本](https://github.com/nodejs/Release#lts-schedule1)。 現在，我們支持 **節點v6.x** 和更新版本。
