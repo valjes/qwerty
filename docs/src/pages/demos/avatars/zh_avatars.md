@@ -1,25 +1,25 @@
 ---
-title: Avatar React component
-components: Avatar
+title: Avatar React組件
+components: 阿凡達
 ---
-# Avatars
+# 頭像
 
-<p class="description">Avatars are found throughout material design with uses in everything from tables to dialog menus.</p>
+<p class="description">在整個材料設計中都可以找到化身，從表格到對話框菜單等各種用途。</p>
 
-## Image avatars
+## 圖像頭像
 
-Image avatars can be created by passing standard `img` props `src` or `srcSet` into the component.
+可以通過將標準 `img` props `src` 或 `srcSet` 傳遞到組件中來創建圖像頭像。
 
-{{"demo": "pages/demos/avatars/ImageAvatars.js"}}
+{{“demo”：“pages / demos / avatars / ImageAvatars.js”}}
 
-## Icon avatars
+## 圖標頭像
 
-Icon avatars are created by passing an icon as `children`.
+通過將圖標作為 `孩子`傳遞來創建圖標頭像。
 
-{{"demo": "pages/demos/avatars/IconAvatars.js"}}
+{{“demo”：“pages / demos / avatars / IconAvatars.js”}}
 
-## Letter avatars
+## 信頭像
 
-Avatars containing simple characters can be created by passing your string as `children`.
+可以通過將字符串作為 `子元素`傳遞來創建包含簡單字符的頭像。
 
-{{"demo": "pages/demos/avatars/LetterAvatars.js"}}
+{{“demo”：“pages / demos / avatars / LetterAvatars.js”}}
