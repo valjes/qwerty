@@ -1,22 +1,22 @@
-# Dashboard layout
+# Раскладка панели управления
 
-## Usage
+## использование
 
-Simply copy the files into your project, or one of the [example applications](https://github.com/mui-org/material-ui/tree/master/examples), and import and use the `Dashboard` component.
+Просто скопируйте файлы в свой проект или один из [примерных приложений](https://github.com/mui-org/material-ui/tree/master/examples)и импортируйте и используйте компонент `Dashboard`.
 
-You can customise the sections, layout and charts to suit your specific business requirements.
+Вы можете настроить разделы, макет и диаграммы в соответствии с вашими конкретными бизнес-требованиями.
 
-## Files
+## файлы
 
-| File                 | Purpose                                                                             |
-| -------------------- | ----------------------------------------------------------------------------------- |
-| `Dashboard.js`       | Main file. Customise the layout by adding grid components and changing breakpoints. |
-| `listItems.js`       | The list items for the Drawer.                                                      |
-| `SimpleLineChart.js` | The main chart component. Use as a basis for additional charts.                     |
-| `SimpleTable.js`     | Use as is, customise, or replace with some other functionality.                     |
+| файл                 | Цель                                                                                  |
+| -------------------- | ------------------------------------------------------------------------------------- |
+| `Dashboard.js`       | Основной файл. Настройте макет, добавив компоненты сетки и изменив точки останова.    |
+| `listItems.js`       | Элементы списка для ящика.                                                            |
+| `SimpleLineChart.js` | Основной компонент диаграммы. Используйте в качестве основы дополнительные диаграммы. |
+| `SimpleTable.js`     | Используйте как есть, настраивайте или заменяйте некоторые другие функции.            |
 
-## Dependencies
+## зависимости
 
-- `@material-ui/core`
-- `@material-ui/icons`
+- `@ Материал-щ / ядро`
+- `@ материал-UI / иконки`
 - `recharts`
