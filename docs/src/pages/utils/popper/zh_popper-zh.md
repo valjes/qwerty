@@ -1,44 +1,44 @@
 ---
-title: Popper React component
-components: Popper
+title: Popper React組件
+components: 波普爾
 ---
-# Popper
+# 波普爾
 
-<p class="description">A Popper can be used to display some content on top of another. It's an alternative to react-popper.</p>
+<p class="description">Popper可用於在另一個上面顯示一些內容。 它是react-popper的替代品。</p>
 
-Things to know when using the `Popper` component:
+使用 `Popper` 組件時需要了解的事項：
 
-- Poppers rely on the 3rd party library [Popper.js](https://github.com/FezVrasta/popper.js) for positioning.
-- The children is [`Portal`](/utils/portal/) to the body of the document to avoid rendering problems. You can disable this behavior with `disablePortal`.
-- The scroll and click away aren't blocked like with the [`Popover`](/utils/popover/) component. The placement of the popper updates with the available area in the viewport.
-- The `anchorEl` is passed as the reference object to create a new `Popper.js` instance.
+- Poppers依靠第三方庫 [Popper.js](https://github.com/FezVrasta/popper.js) 進行定位。
+- 孩子們是文件正文的 [`Portal`](/utils/portal/) ，以避免出現問題。 您可以使用 `disablePortal`禁用此行為。
+- 滾動和單擊距離不會像 [`Popover`](/utils/popover/) 組件一樣被阻止。 popper的位置隨視口中的可用區域更新。
+- 將 `anchorEl` 作為引用對像傳遞以創建新的 `Popper.js` 實例。
 
-## Simple Popper
+## 簡單波普爾
 
-{{"demo": "pages/utils/popper/SimplePopper.js" }}
+{{“demo”：“pages / utils / popper / SimplePopper.js”}}
 
-## Scroll playground
+## 滾動遊樂場
 
-{{"demo": "pages/utils/popper/ScrollPlayground.js"}}
+{{“demo”：“pages / utils / popper / ScrollPlayground.js”}}
 
-## Positioned Popper
+## 定位波普爾
 
-{{"demo": "pages/utils/popper/PositionedPopper.js"}}
+{{“demo”：“pages / utils / popper / PositionedPopper.js”}}
 
-## Without transition Popper
+## 沒有過渡波普爾
 
-{{"demo": "pages/utils/popper/NoTransitionPopper.js"}}
+{{“demo”：“pages / utils / popper / NoTransitionPopper.js”}}
 
-## Faked reference object
+## 偽造的參考物體
 
-The `anchorEl` property can be a reference to a fake DOM element. You just need to create an object shaped like the [`ReferenceObject`](https://github.com/FezVrasta/popper.js/blob/0642ce0ddeffe3c7c033a412d4d60ce7ec8193c3/packages/popper/index.d.ts#L118-L123).
+`anchorEl` 屬性可以是對偽DOM元素的引用。 您只需要創建一個形狀類似於 [`ReferenceObject`](https://github.com/FezVrasta/popper.js/blob/0642ce0ddeffe3c7c033a412d4d60ce7ec8193c3/packages/popper/index.d.ts#L118-L123)。
 
-Highlight part of the text to see the popper:
+突出顯示部分文本以查看popper：
 
-{{"demo": "pages/utils/popper/FakedReferencePopper.js"}}
+{{“demo”：“pages / utils / popper / FakedReferencePopper.js”}}
 
-## Render Props
+## 渲染道具
 
-It is a [render props](https://reactjs.org/docs/render-props.html) demo that keeps track of the local state for a single popper.
+它是一個 [渲染道具](https://reactjs.org/docs/render-props.html) 演示，可以跟踪單個popper的本地狀態。
 
-{{"demo": "pages/utils/popper/RenderPropsPopper.js"}}
+{{“demo”：“pages / utils / popper / RenderPropsPopper.js”}}
