@@ -1,81 +1,81 @@
 ---
-title: Drawer React component
-components: Drawer, SwipeableDrawer
+title: 抽屜反應組件
+components: 抽屜，SwipeableDrawer
 ---
-# Drawer
+# 抽屜
 
-<p class="description">Navigation drawers provide access to destinations in your app. Side sheets are surfaces containing supplementary content that are anchored to the left or right edge of the screen.</p>
+<p class="description">導航抽屜可以訪問您應用中的目的地。側板是包含附加內容的表面，其固定在屏幕的左邊緣或右邊緣。</p>
 
-[Navigation drawers](https://material.io/design/components/navigation-drawer.html) provide access to destinations and app functionality, such as switching accounts. They can either be permanently on-screen or controlled by a navigation menu icon.
+[導航抽屜](https://material.io/design/components/navigation-drawer.html) 提供對目的地和應用功能的訪問，例如切換帳戶。 它們可以永久在屏幕上，也可以通過導航菜單圖標進行控制。
 
-[Side sheets](https://material.io/design/components/sheets-side.html) are supplementary surfaces primarily used on tablet and desktop.
+[側板](https://material.io/design/components/sheets-side.html) 是主要用於平板電腦和台式機的輔助表面。
 
-## Temporary drawer
+## 臨時抽屜
 
-Temporary navigation drawers can toggle open or closed. Closed by default, the drawer opens temporarily above all other content until a section is selected.
+臨時導航抽屜可以打開或關閉。 默認情況下關閉，抽屜暫時打開所有其他內容，直到選擇一個部分。
 
-The Drawer can be cancelled by clicking the overlay or pressing the Esc key. It closes when an item is selected, handled by controlling the `open` prop.
+單擊疊加或按Esc鍵可取消抽屜。 它在選擇一個項目時關閉，通過控制 `打開` 道具來處理。
 
-{{"demo": "pages/demos/drawers/TemporaryDrawer.js"}}
+{{“demo”：“pages / demos / drawers / TemporaryDrawer.js”}}
 
-## Swipeable Temporary drawer
+## 可滑動的臨時抽屜
 
-You can make the drawer swipeable with the `SwipeableDrawer` component.
+您可以使用 `SwipeableDrawer` 組件使抽屜可以滑動。
 
-This component comes with a 2 kB gzipped payload overhead. Some low-end mobile devices won't be able to follow the fingers at 60 FPS. You can use the `disableBackdropTransition` property to help.
+該組件帶有2 kB gzip負載開銷。 一些低端移動設備無法以60 FPS的速度跟隨手指。 您可以使用 `disableBackdropTransition` 屬性來提供幫助。
 
-{{"demo": "pages/demos/drawers/SwipeableTemporaryDrawer.js"}}
+{{“demo”：“pages / demos / drawers / SwipeableTemporaryDrawer.js”}}
 
-We are using the following set of properties on this documentation website for optimal usability of the component: - iOS is hosted on high-end devices. We can enable the backdrop transition without dropping frames. The performance will be good enough. - iOS has a "swipe to go back" feature that mess with the discovery feature. We have to disable it.
+我們在此文檔網站上使用以下屬性集以獲得組件的最佳可用性： - iOS託管在高端設備上。 我們可以在不丟幀的情況下啟用背景轉換。 表現將足夠好。 - iOS具有“輕掃回去”功能，使用發現功能混亂 。 我們必須禁用它。
 
 ```jsx
-const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
+const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent）;
 
 <SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} />
 ```
 
-## Responsive drawer
+## 響應抽屜
 
-The `Hidden` responsive helper component allows showing different types of drawer depending on the screen width. A `temporary` drawer is shown for small screens while a `permanent` drawer is shown for wider screens.
+`隱藏` 響應輔助組件允許根據屏幕寬度顯示不同類型的抽屜。 顯示 `臨時` 抽屜用於小屏幕，而 `永久` 抽屜顯示用於較寬屏幕。
 
-{{"demo": "pages/demos/drawers/ResponsiveDrawer.js", "iframe": true}}
+{{“demo”：“pages / demos / drawers / ResponsiveDrawer.js”，“iframe”：true}}
 
-## Permanent drawer
+## 永久抽屜
 
-Permanent navigation drawers are always visible and pinned to the left edge, at the same elevation as the content or background. They cannot be closed.
+永久導航抽屜始終可見並固定在左邊緣，與內容或背景位於同一高度。 他們無法關閉。
 
-Permanent navigation drawers are the **recommended default for desktop**.
+永久導航抽屜是 **桌面默認推薦**。
 
-### Full-height navigation
+### 全高導航
 
-Apps focused on information consumption that use a left-to-right hierarchy.
+應用程序專注於使用從左到右層次結構的信息消費。
 
-{{"demo": "pages/demos/drawers/PermanentDrawerLeft.js", "iframe": true}}
+{{“demo”：“pages / demos / drawers / PermanentDrawerLeft.js”，“iframe”：true}}
 
-{{"demo": "pages/demos/drawers/PermanentDrawerRight.js", "iframe": true}}
+{{“demo”：“pages / demos / drawers / PermanentDrawerRight.js”，“iframe”：true}}
 
-### Clipped under the app bar
+### 剪輯在應用欄下
 
-Apps focused on productivity that require balance across the screen.
+應用專注於生產力，需要在整個屏幕上保持平衡。
 
-{{"demo": "pages/demos/drawers/ClippedDrawer.js", "iframe": true}}
+{{“demo”：“pages / demos / drawers / ClippedDrawer.js”，“iframe”：true}}
 
-## Persistent drawer
+## 持久的抽屜
 
-Persistent navigation drawers can toggle open or closed. The drawer sits on the same surface elevation as the content. It is closed by default and opens by selecting the menu icon, and stays open until closed by the user. The state of the drawer is remembered from action to action and session to session.
+持久導航抽屜可以打開或關閉。 抽屜與內容位於同一表面高度上。 它默認關閉，通過選擇菜單圖標打開，並保持打開狀態直到用戶關閉。 從操作到操作和會話到會話記住抽屜的狀態。
 
-When the drawer is outside of the page grid and opens, the drawer forces other content to change size and adapt to the smaller viewport.
+當抽屜位於頁面網格之外並打開時，抽屜會強制其他內容更改大小並適應較小的視口。
 
-Persistent navigation drawers are acceptable for all sizes larger than mobile. They are not recommended for apps with multiple levels of hierarchy that require using an up arrow for navigation.
+對於比移動設備更大的尺寸，可以使用持久性導航抽屜。 對於具有多級層次結構且需要使用向上箭頭進行導航的應用，建議不要使用它們。
 
-{{"demo": "pages/demos/drawers/PersistentDrawerLeft.js", "iframe": true}}
+{{“demo”：“pages / demos / drawers / PersistentDrawerLeft.js”，“iframe”：true}}
 
-{{"demo": "pages/demos/drawers/PersistentDrawerRight.js", "iframe": true}}
+{{“demo”：“pages / demos / drawers / PersistentDrawerRight.js”，“iframe”：true}}
 
-## Mini variant drawer
+## 迷你變體抽屜
 
-In this variation, the persistent navigation drawer changes its width. Its resting state is as a mini-drawer at the same elevation as the content, clipped by the app bar. When expanded, it appears as the standard persistent navigation drawer.
+在此變體中，持久性導航抽屜會更改其寬度。 它的靜止狀態是一個迷你抽屜，與內容相同，由應用欄夾住。 展開後，它將顯示為標準持久性導航抽屜。
 
-The mini variant is recommended for apps sections that need quick selection access alongside content.
+對於需要快速選擇訪問內容的應用部分，建議使用mini變體。
 
-{{"demo": "pages/demos/drawers/MiniDrawer.js", "iframe": true}}
+{{“demo”：“pages / demos / drawers / MiniDrawer.js”，“iframe”：true}}
