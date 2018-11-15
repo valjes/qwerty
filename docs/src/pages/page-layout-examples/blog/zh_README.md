@@ -1,21 +1,21 @@
-# Blog layout
+# 博客佈局
 
-## Usage
+## 用法
 
-Simply copy the files into your project, or one of the [example applications](https://github.com/mui-org/material-ui/tree/master/examples), and import and use the `Dashboard` component.
+只需將文件複製到項目或 [示例應用程序](https://github.com/mui-org/material-ui/tree/master/examples)，然後導入並使用 `Dashboard` 組件。
 
-You can easily customise the layout to suit your design, and substitute an alternative markdown renderer.
+您可以輕鬆自定義佈局以適合您的設計，並替換替代的降價渲染器。
 
-## Files
+## 檔
 
-| File             | Purpose                                                                                                                                   |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| `Blog.js`        | Main file. Customise the layout by adding grid components and changing breakpoints.                                                       |
-| `Markdown.js`    | Markdown renderer. It enhances react-markdown output to use the Typography |component. You can customise it or substitute an alternative. |
-| `blog-post.x.md` | Sample blog posts to demonstrate the renderer.                                                                                            |
+| 文件               | 目的                                                        |
+| ---------------- | --------------------------------------------------------- |
+| `Blog.js`        | 主文件。 通過添加網格組件和更改斷點來自定義佈局。                                 |
+| `Markdown.js`    | Markdown渲染器。 它增強了反應降價輸出以使用Typography |組件。 您可以自定義它或替換替代方案。 |
+| `blog-post.x.md` | 示例博客文章以演示渲染器。                                             |
 
-## Dependencies
+## 依賴
 
-- `@material-ui/core`
-- `@material-ui/icons`
-- `react-markdown`
+- `@材料的UI /芯`
+- `@材料-UI /圖標`
+- `反應-降價`
