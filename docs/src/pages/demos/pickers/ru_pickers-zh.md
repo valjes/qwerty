@@ -1,34 +1,34 @@
 ---
-title: Date Picker, Time Picker React component
-components: TextField
+title: Выбор даты, компонент времени для выбора времени
+components: Текстовое поле
 ---
-# Pickers
+# сборщики
 
-<p class="description">Pickers provide a simple way to select a single value from a pre-determined set.</p>
+<p class="description">Pickers предоставляют простой способ выбрать одно значение из заранее определенного набора.</p>
 
-- On mobile, pickers are best suited for display in confirmation dialog.
-- For inline display, such as on a form, consider using compact controls such as segmented dropdown buttons.
+- На мобильном устройстве сборщики лучше всего подходят для отображения в диалоговом окне подтверждения.
+- Для встроенного отображения, например, в форме, рассмотрите возможность использования компактных элементов управления, таких как сегментированные кнопки выпадающего списка.
 
-#### Notice
+#### уведомление
 
-We are currently falling back to **native input controls**. If you are interested in implementing or have implemented a rich Material Design Picker with an awesome UX, please, let us know on [#4787](https://github.com/mui-org/material-ui/issues/4787) and [#4796](https://github.com/mui-org/material-ui/issues/4796)! We could add a link to or a demo of your project in the documentation. Here are some components that are **promising**: - [material-ui-pickers](https://github.com/dmtrKovalenko/material-ui-pickers): date pickers and time pickers. - [material-ui-time-picker](https://github.com/TeamWertarbyte/material-ui-time-picker): time pickers. - [material-ui-next-pickers](https://github.com/chingyawhao/material-ui-next-pickers): date pickers and time pickers.
+В настоящее время мы возвращаемся к **встроенным элементам управления**. Если вы заинтересованы в реализации или внедрили богатый подборку материалов с удивительным UX, пожалуйста, сообщите нам об [# 4787](https://github.com/mui-org/material-ui/issues/4787) и [# 4796](https://github.com/mui-org/material-ui/issues/4796)! Мы могли бы добавить ссылку или демонстрацию вашего проекта в документации. Вот некоторые компоненты, **обещающие**: - [материала-UI-сборщики](https://github.com/dmtrKovalenko/material-ui-pickers): даты и время сборщиков сборщик. - [материал-ui-time-picker](https://github.com/TeamWertarbyte/material-ui-time-picker): сборщики времени. - [material-ui-next-pickers](https://github.com/chingyawhao/material-ui-next-pickers): сборщики выбора времени и сборщики времени.
 
-⚠️ Native input controls support by browsers [isn't perfect](https://caniuse.com/#feat=input-datetime).
+⚠️ Поддержка встроенного управления вводами браузерами [не идеальна](https://caniuse.com/#feat=input-datetime).
 
-## Date pickers
+## Выбор даты
 
-A native date picker example with `type="date"`, it can be used as a calendar too:
+Например, пример выбора даты с `type = "date"`, он также может использоваться как календарь:
 
-{{"demo": "pages/demos/pickers/DatePickers.js"}}
+{{"demo": "pages / demos / pickers / DatePickers.js"}}
 
-## Time pickers
+## Выбор времени
 
-A native time picker example with `type="time"`:
+Пример выбора собственного времени с `type = "time"`:
 
-{{"demo": "pages/demos/pickers/TimePickers.js"}}
+{{"demo": "pages / demos / pickers / TimePickers.js"}}
 
-## Date & Time pickers
+## Дата & Выбор времени
 
-A native date & time picker example with `type="datetime-local"`:
+Пример исходной даты & выбор времени с `тип = "datetime-local"`:
 
-{{"demo": "pages/demos/pickers/DateAndTimePickers.js"}}
+{{"demo": "pages / demos / pickers / DateAndTimePickers.js"}}
