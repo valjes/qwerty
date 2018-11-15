@@ -1,21 +1,21 @@
 ---
-title: Bottom Navigation React component
-components: BottomNavigation, BottomNavigationAction
+title: 底部導航反應組件
+components: BottomNavigation，BottomNavigationAction
 ---
-# Bottom Navigation
+# 底部導航
 
-<p class="description">Bottom navigation bars allow movement between primary destinations in an app.</p>
+<p class="description">底部導航欄允許在應用程序中的主要目的地之間移動。</p>
 
-[Bottom navigation](https://material.io/design/components/bottom-navigation.html) bars display three to five destinations at the bottom of a screen. Each destination is represented by an icon and an optional text label. When a bottom navigation icon is tapped, the user is taken to the top-level navigation destination associated with that icon.
+[底部導航](https://material.io/design/components/bottom-navigation.html) 條顯示屏幕底部的三到五個目的地。 每個目標都由一個圖標和一個可選的文本標籤表示。 點擊底部導航圖標時，用戶將進入與該圖標關聯的頂級導航目標。
 
-## Bottom Navigation
+## 底部導航
 
-When there are only **three** actions, display both icons and text labels at all times.
+當只有 **3個** 動作時，始終顯示圖標和文本標籤。
 
-{{"demo": "pages/demos/bottom-navigation/SimpleBottomNavigation.js"}}
+{{“demo”：“pages / demos / bottom-navigation / SimpleBottomNavigation.js”}}
 
-## Bottom Navigation with no label
+## 沒有標籤的底部導航
 
-If there are **four** or **five** actions, display inactive views as icons only.
+如果有 **4** 或 **個5個** 操作，則僅將非活動視圖顯示為圖標。
 
-{{"demo": "pages/demos/bottom-navigation/LabelBottomNavigation.js"}}
+{{“demo”：“pages / demos / bottom-navigation / LabelBottomNavigation.js”}}
