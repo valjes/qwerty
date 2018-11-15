@@ -1,11 +1,11 @@
-# Team
+# 球隊
 
-<p class="description">An overview of the founding team and core contributors to Material-UI.</p>
+<p class="description">Material-UI的創始團隊和核心貢獻者概述。</p>
 
-Material-UI is maintained by a small group of invaluable core contributors, with the massive support and involvement of our community. The development of the project and its ecosystem is guided by an international team, some of whom have chosen to be featured below.
+Material-UI由一小群寶貴的核心貢獻者維護，得到了社區的大力支持和參與。 該項目及其生態系統的開發由一個國際團隊指導，其中一些人選擇在下面進行介紹。
 
-{{"demo": "pages/discover-more/team/Team.js", "hideHeader": true}}
+{{“demo”：“pages / discover-more / team / Team.js”，“hideHeader”：true}}
 
-Get involved with Material-UI development by [opening an issue](https://github.com/mui-org/material-ui/issues/new) or submitting a pull request. Read our [contributing guidelines](https://github.com/mui-org/material-ui/blob/master/CONTRIBUTING.md) for information on how we develop.
+通過 [打開問題](https://github.com/mui-org/material-ui/issues/new) 或提交拉取請求來參與Material-UI開發。 閱讀我們的 [貢獻指南](https://github.com/mui-org/material-ui/blob/master/CONTRIBUTING.md) ，了解我們如何發展。
 
-[Join the Material-UI Community!](/discover-more/community/)
+[加入Material-UI社區！](/discover-more/community/)
