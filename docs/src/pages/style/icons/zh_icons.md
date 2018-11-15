@@ -1,114 +1,114 @@
 ---
-components: Icon, SvgIcon
+components: 圖標，SvgIcon
 ---
-# Icons
+# 圖標
 
-<p class="description">Guidance and suggestions for using icons with Material-UI.</p>
+<p class="description">使用Material-UI使用圖標的指導和建議。</p>
 
-A [system icon](https://material.io/design/iconography/system-icons.html) or UI icon, symbolizes a command, file, device, or directory. System icons are also used to represent common actions like trash, print, and save, and are commonly found in app bars, toolbars, buttons, and lists. Google has provided a set of [Material icons](https://material.io/tools/icons/?style=baseline) that follow these guidelines.
+[系統圖標](https://material.io/design/iconography/system-icons.html) 或UI圖標， 表示命令，文件，設備或目錄。 系統圖標還用於表示常見操作，如垃圾，打印和保存， ，通常可在應用欄，工具欄，按鈕和列表中找到。 Google提供了一組符合這些指南的 [素材圖標](https://material.io/tools/icons/?style=baseline)。
 
-Material-UI provides two components to render system icons: `SvgIcon` for rendering SVG paths, and `Icon` for rendering font icons.
+Material-UI提供兩個組件來渲染系統圖標： `SvgIcon` 用於渲染SVG路徑， `Icon` 用於渲染字體圖標。
 
-## SVG Icons
+## SVG圖標
 
-The `SvgIcon` component takes an SVG `path` element as its child and converts it to a React component that displays the path, and allows the icon to be styled and respond to mouse events. SVG elements should be scaled for a 24x24px viewport.
+`SvgIcon` 組件將SVG `路徑` 元素作為其子元素並將其轉換為顯示路徑 的React組件，並允許對圖標進行樣式化並響應鼠標事件。 SVG元素應縮放為24x24px視口。
 
-The resulting icon can be used as is, or included as a child for other Material-UI components that use icons. By default, an Icon will inherit the current text color. Optionally, you can set the icon color using one of the theme color properties: `primary`, `secondary`, `action`, `error` & `disabled`.
+生成的圖標可以按原樣使用， 或作為子項包含在使用圖標的其他Material-UI組件中。 默認情況下，Icon將繼承當前文本顏色。 可選地，可以設置使用的主題顏色屬性中的一個圖標顏色： `初級`， `二次`， `的動作`， `錯誤` & `禁用`。
 
-{{"demo": "pages/style/icons/SvgIcons.js"}}
+{{“demo”：“pages / style / icons / SvgIcons.js”}}
 
-### SVG Material icons
+### SVG材料圖標
 
-It's interesting to have the building blocks needed to implement custom icons, but what about presets? We provide a separate npm package, [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons), that includes the 1,000+ official [Material icons](https://material.io/tools/icons/?style=baseline) converted to `SvgIcon` components.
+擁有實現自定義圖標所需的構建塊很有意思，但預設呢？ 我們提供了一個單獨的NPM包， [@材料-UI /圖標](https://www.npmjs.com/package/@material-ui/icons)， ，其包括1,000+官方 [材料圖標](https://material.io/tools/icons/?style=baseline) 轉換為 `SvgIcon` 的組件。
 
 <a href="https://material.io/tools/icons/?icon=3d_rotation&style=baseline">
-  <img src="/static/images/icons/icons.png" alt="Official material icons" style="width: 566px" />
+  <img src="/static/images/icons/icons.png" alt="官方材料圖標" style="width: 566px" />
 </a>
 
-#### Usage
+#### 用法
 
-You can use [material.io/tools/icons](https://material.io/tools/icons/?style=baseline) to find a specific icon. When importing an icon, keep in mind that the names of the icons are `PascalCase`, for instance: - [`delete`](https://material.io/tools/icons/?icon=delete&style=baseline) is exposed as `@material-ui/icons/Delete` - [`delete forever`](https://material.io/tools/icons/?icon=delete_forever&style=baseline) is exposed as `@material-ui/icons/DeleteForever`
+您可以使用 [material.io/tools/icons](https://material.io/tools/icons/?style=baseline) 查找特定圖標。 導入圖標時，請記住圖標的名稱為 `PascalCase`，例如： - [`刪除`](https://material.io/tools/icons/?icon=delete&style=baseline) 為 `@ material-ui / icons /刪除` - [`永久刪除`](https://material.io/tools/icons/?icon=delete_forever&style=baseline) 暴露為 `@ material-ui / icons / DeleteForever`
 
-For *"themed"* icons, append the theme name to the icon name. For instance with the - The Outlined [`delete`](https://material.io/tools/icons/?icon=delete&style=outline) icon is exposed as `@material-ui/icons/DeleteOutlined` - The Rounded [`delete`](https://material.io/tools/icons/?icon=delete&style=rounded) icon is exposed as `@material-ui/icons/DeleteRounded` - The Two Tone [`delete`](https://material.io/tools/icons/?icon=delete&style=twotone) icon is exposed as `@material-ui/icons/DeleteTwoTone` - The Sharp [`delete`](https://material.io/tools/icons/?icon=delete&style=sharp) icon is exposed as `@material-ui/icons/DeleteSharp`
+對於 *“主題”* 圖標，將主題名稱附加到圖標名稱。 例如， - The Outlined [`刪除`](https://material.io/tools/icons/?icon=delete&style=outline) 圖標顯示為 `@ material -ui / icons / DeleteOutlined` - Rounded [`刪除`](https://material.io/tools/icons/?icon=delete&style=rounded) 圖標顯示為 `@ material-ui / icons / DeleteRounded` - The Two Tone [`刪除`](https://material.io/tools/icons/?icon=delete&style=twotone) 圖標顯示為 `@ material -ui / icons / DeleteTwoTone` - Sharp [`刪除`](https://material.io/tools/icons/?icon=delete&style=sharp) 圖標顯示為 `@ material-ui / icons / DeleteSharp`
 
-There are three exceptions to this rule: - [`3d_rotation`](https://material.io/tools/icons/?icon=3d_rotation&style=baseline) is exposed as `@material-ui/icons/ThreeDRotation` - [`4k`](https://material.io/tools/icons/?icon=4k&style=baseline) is exposed as `@material-ui/icons/FourK` - [`360`](https://material.io/tools/icons/?icon=360&style=baseline) is exposed as `@material-ui/icons/ThreeSixty`
+這個規則有三個例外： - [`3d_rotation`](https://material.io/tools/icons/?icon=3d_rotation&style=baseline) 暴露為 `@ material-ui / icons / ThreeDRotation` - [`4k`](https://material.io/tools/icons/?icon=4k&style=baseline) 暴露為 `@ material-ui / icons / FourK` - [`360`](https://material.io/tools/icons/?icon=360&style=baseline) 曝光為 `@ material-ui / icons / ThreeSixty`
 
-{{"demo": "pages/style/icons/SvgMaterialIcons.js"}}
+{{“demo”：“pages / style / icons / SvgMaterialIcons.js”}}
 
-#### Imports
+#### 進口
 
-- If your environment doesn't support tree-shaking, the **recommended** way to import the icons is the following:
-
-```jsx
-import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
-import ThreeDRotation from '@material-ui/icons/ThreeDRotation';
-```
-
-- If your environment support tree-shaking you can also import the icons this way:
+- 如果您的環境不支持樹搖動，在 **推薦** 導入的圖標方法如下：
 
 ```jsx
-import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
+從'@ material-ui / icons / AccessAlarm'導入AccessAlarmIcon;
+從'@ material-ui / icons / ThreeDRotation'導入ThreeDRotation;
 ```
 
-Note: Importing named exports in this way will result in the code for *every icon* being included in your project, so is not recommended unless you configure [tree-shaking](https://webpack.js.org/guides/tree-shaking/). It may also impact Hot Module Reload performance.
+- 如果您的環境支持樹搖動，您也可以通過以下方式導入圖標：
 
-### More SVG icons
+```jsx
+從'@ material-ui / icons'導入 { AccessAlarm, ThreeDRotation };
+```
 
-Looking for even more SVG icons? There are a lot of projects out there, but [https://materialdesignicons.com](https://materialdesignicons.com/) provides over 2,000 official and community provided icons. [mdi-material-ui](https://github.com/TeamWertarbyte/mdi-material-ui) packages these icons as Material-UI SvgIcons in much the same way as [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons) does for the official icons.
+注意：以這種方式導入命名導出將導致項目中包含每個圖標</em> *代碼，因此除非您配置 [樹抖動](https://webpack.js.org/guides/tree-shaking/)否則不建議這樣做。 它還可能影響熱模塊重新加載性能。</p> 
 
-## Font Icons
+### 更多SVG圖標
 
-The `Icon` component will display an icon from any icon font that supports ligatures. As a prerequisite, you must include one, such as the [Material icon font](http://google.github.io/material-design-icons/#icon-font-for-the-web) in your project, for instance, via Google Web Fonts:
+正在尋找更多SVG圖標？ 有很多項目， 但是 [https://materialdesignicons.com](https://materialdesignicons.com/) 提供了超過2,000個官方和社區提供的圖標。 [mdi-material-ui](https://github.com/TeamWertarbyte/mdi-material-ui) 這些圖標打包為Material-UI SvgIcons，其方式與 [@ material-ui / icons](https://www.npmjs.com/package/@material-ui/icons) 對官方圖標的處理方式大致相同。
+
+## 字體圖標
+
+`Icon` 組件將顯示支持連字的任何圖標字體的圖標。 作為先決條件，您必須在項目中包含一個，例如，通過Google Web Fonts包含 [Material icon字體](http://google.github.io/material-design-icons/#icon-font-for-the-web)：
 
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 ```
 
-`Icon` will set the correct class name for the Material icon font. For other fonts, you must supply the class name using the Icon component's `className` property.
+`圖標` 將為“材質”圖標字體設置正確的類名。 對於其他字體，您必須使用Icon組件的 `className` 屬性提供 類名。
 
-To use an icon simply wrap the icon name (font ligature) with the `Icon` component, for example:
+要使用圖標，只需將圖標名稱（字體連字）與 `圖標` 組件包裹起來，例如 ：
 
 ```jsx
-<Icon>star</Icon>
+<Icon>星</Icon>
 ```
 
-By default, an Icon will inherit the current text color. Optionally, you can set the icon color using one of the theme color properties: `primary`, `secondary`, `action`, `error` & `disabled`.
+默認情況下，Icon將繼承當前文本顏色。 可選地，可以設置使用的主題顏色屬性中的一個圖標顏色： `初級`， `二次`， `的動作`， `錯誤` & `禁用`。
 
-### Font Material icons
+### 字體材料圖標
 
-{{"demo": "pages/style/icons/Icons.js"}}
+{{“demo”：“pages / style / icons / Icons.js”}}
 
-### Font Awesome
+### 字體真棒
 
-[Font Awesome](https://fontawesome.com/icons) can be used with the `Icon` component as follow:
+[Font Awesome](https://fontawesome.com/icons) 可與 `Icon` 組件一起使用，如下所示：
 
-{{"demo": "pages/style/icons/FontAwesome.js", "hideEditButton": true}}
+{{“demo”：“pages / style / icons / FontAwesome.js”，“hideEditButton”：true}}
 
-## Font vs SVG. Which approach to use?
+## 字體vs SVG。 使用哪種方法？
 
-Both approaches work fine, however, there are some subtle differences, especially in terms of performance and rendering quality. Whenever possible SVG is preferred as it allows code splitting, supports more icons, renders faster and better.
+兩種方法都可以正常工作，但是，存在一些細微差別，特別是在性能和​​渲染質量方面。 只要有可能，SVG是首選，因為它允許代碼分割，支持更多圖標，渲染速度更快更好。
 
-For more details, you can check out [why GitHub migrated](https://blog.github.com/2016-02-22-delivering-octicons-with-svg/) from font icons to SVG icons.
+有關更多詳細信息，您可以查看 [為什麼GitHub將](https://blog.github.com/2016-02-22-delivering-octicons-with-svg/) 從字體圖標遷移到SVG圖標。
 
-## Accessibility
+## 無障礙
 
-Icons can convey all sorts of meaningful information, so it’s important that they reach the largest amount of people possible. There are two use cases you’ll want to consider: - **Decorative Icons** are only being used for visual or branding reinforcement. If they were removed from the page, users would still understand and be able to use your page. - **Semantic Icons** are ones that you’re using to convey meaning, rather than just pure decoration. This includes icons without text next to them used as interactive controls — buttons, form elements, toggles, etc.
+圖標可以傳達各種有意義的信息，因此重要的是它們可以覆蓋盡可能多的人。 您需要考慮兩個用例： - **裝飾圖標** 僅用於視覺或品牌強化。 如果將它們從頁面中刪除，用戶仍然可以理解並能夠使用您的頁面。 - **語義圖標** 是您用來傳達意義的，而不僅僅是純粹的裝飾。 這包括它們旁邊沒有文本的圖標用作交互式控件 - 按鈕，表單元素，切換等。
 
-### Decorative SVG Icons
+### 裝飾SVG圖標
 
-If your icons are purely decorative, you’re already done! We add the `aria-hidden=true` attribute so that your icons are properly accessible (invisible).
+如果您的圖標純粹是裝飾性的，那麼您已經完成了！ 我們添加 `aria-hidden = true` 屬性，以便您的圖標可以正確訪問（不可見）。
 
-### Semantic SVG Icons
+### 語義SVG圖標
 
-If your icon has semantic meaning, all you need to do is throw in a `titleAccess="meaning"` property. We add the `role="img"` attribute and the `<title>` element so that your icons are properly accessible.
+如果您的圖標具有語義含義，那麼您需要做的就是輸入 `titleAccess =“含義”` 屬性。 我們添加 `role =“img”` 屬性和 `<title>` 元素，以便您的圖標可以正常訪問。
 
-In the case of focusable interactive elements, like when used with an icon button, you can use the `aria-label` property:
+對於可聚焦的交互式元素，例如與圖標按鈕一起使用時，您可以使用 `aria-label` 屬性：
 
 ```jsx
-import IconButton from '@material-ui/core/IconButton';
-import SvgIcon from '@material-ui/core/SvgIcon';
+從'@ material-ui / core / IconButton'導入IconButton;
+從'@ material-ui / core / SvgIcon'導入SvgIcon;
 
-// ...
+// ......
 
 <IconButton aria-label="Delete">
   <SvgIcon>
@@ -117,24 +117,24 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 </IconButton>
 ```
 
-### Decorative Font Icons
+### 裝飾字體圖標
 
-If your icons are purely decorative, you’re already done! We add the `aria-hidden=true` attribute so that your icons are properly accessible (invisible).
+如果您的圖標純粹是裝飾性的，那麼您已經完成了！ 我們添加 `aria-hidden = true` 屬性，以便您的圖標可以正確訪問（不可見）。
 
-### Semantic Font Icons
+### 語義字體圖標
 
-If your icons have semantic meaning, you need to provide a text alternative only visible to assisitive technologies.
+如果您的圖標具有語義含義，則需要提供僅對輔助技術可見的文本替代方法。
 
 ```jsx
-import Icon from '@material-ui/core/Icon';
-import Typography from '@material-ui/core/Typography';
+從'@ material-ui / core / Icon'導入圖標;
+從'@ material-ui / core / Typography'導入排版;
 
-// ...
+// ......
 
 <Icon>add_circle</Icon>
-<Typography variant="srOnly">Create a user</Typography>
+<Typography variant="srOnly">創建用戶</Typography>
 ```
 
-### Reference
+### 參考
 
 - https://developer.paciellogroup.com/blog/2013/12/using-aria-enhance-svg-accessibility/
