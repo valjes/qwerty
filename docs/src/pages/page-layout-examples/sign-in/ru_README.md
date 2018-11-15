@@ -1,18 +1,18 @@
-# Sign-in layout
+# Схема входа
 
-## Usage
+## использование
 
-Simply copy the files into your project, or one of the [example applications](https://github.com/mui-org/material-ui/tree/master/examples), and import and use the `SignIn` component.
+Просто скопируйте файлы в свой проект или один из [примерных приложений](https://github.com/mui-org/material-ui/tree/master/examples)и импортируйте и используйте компонент `SignIn`.
 
-You can customise the layout to add some pizazz in keeping with your corporate theme.
+Вы можете настроить макет, чтобы добавить некоторый pizazz в соответствии с вашей корпоративной темой.
 
-## Files
+## файлы
 
-| File        | Purpose                                                                                                                   |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------- |
-| `SignIn.js` | A simple sign-in layout in a single file. Duplicate and customise it to make your registration and password change forms. |
+| файл        | Цель                                                                                                    |
+| ----------- | ------------------------------------------------------------------------------------------------------- |
+| `SignIn.js` | Простой макет входа в один файл. Дублируйте и настройте его, чтобы изменить формы регистрации и пароля. |
 
-## Dependencies
+## зависимости
 
-- `@material-ui/core`
-- `@material-ui/icons`
+- `@ Материал-щ / ядро`
+- `@ материал-UI / иконки`
