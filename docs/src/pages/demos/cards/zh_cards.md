@@ -1,41 +1,41 @@
 ---
-title: Card React component
-components: Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Collapse, Paper
+title: 卡片反應組件
+components: 卡，CardActionArea，CardActions，CardContent，CardHeader，CardMedia，Collapse，Paper
 ---
-# Cards
+# 牌
 
-<p class="description">Cards contain content and actions about a single subject.</p>
+<p class="description">卡片包含有關單個主題的內容和操作。</p>
 
-[Cards](https://material.io/design/components/cards.html) are surfaces that display content and actions on a single topic.
+[卡](https://material.io/design/components/cards.html) 是顯示單個主題的內容和操作的表面。
 
-They should be easy to scan for relevant and actionable information. Elements, like text and images, should be placed on them in a way that clearly indicates hierarchy.
+他們應該易於掃描相關和可操作的信息。 文本和圖像等元素應以明確指示層次結構的方式放置在它們上面。
 
-## Simple Card
+## 簡單卡
 
-Although cards can support multiple actions, UI controls, and an overflow menu, use restraint and remember that cards are entry points to more complex and detailed information.
+雖然卡可以支持多個操作，UI控件和溢出菜單，但請使用約束並記住卡是更複雜和詳細信息的入口點。
 
-{{"demo": "pages/demos/cards/SimpleCard.js"}}
+{{“demo”：“pages / demos / cards / SimpleCard.js”}}
 
-## Media
+## 媒體
 
-Example of a card using an image to reinforce the content.
+使用圖像來加強內容的卡的示例。
 
-{{"demo": "pages/demos/cards/MediaCard.js"}}
+{{“demo”：“pages / demos / cards / MediaCard.js”}}
 
-By default, we use the combination of a `<div>` element and a *background image* to display the media. It can be problematic in some situations. For instance, you might want to display a video or a responsive image. Use the `component` property for these use cases:
+默認情況下，我們使用 `<div>` 元素和 *背景圖像* 來顯示媒體。 在某些情況下可能會出現問題。 例如，您可能希望顯示視頻或響應圖像。 對這些用例使用 `組件` 屬性：
 
-{{"demo": "pages/demos/cards/ImgMediaCard.js"}}
+{{“demo”：“pages / demos / cards / ImgMediaCard.js”}}
 
-## UI Controls
+## UI控件
 
-Supplemental actions within the card are explicitly called out using icons, text, and UI controls, typically placed at the bottom of the card.
+使用圖標，文本和UI控件明確地調出卡內的補充操作，通常放置在卡的底部。
 
-Here's an example of a media control card.
+這是媒體控制卡的一個例子。
 
-{{"demo": "pages/demos/cards/MediaControlCard.js"}}
+{{“demo”：“pages / demos / cards / MediaControlCard.js”}}
 
-## Complex Interaction
+## 複雜的互動
 
-On desktop, card content can expand.
+在桌面上，卡內容可以擴展。
 
-{{"demo": "pages/demos/cards/RecipeReviewCard.js"}}
+{{“demo”：“pages / demos / cards / RecipeReviewCard.js”}}
