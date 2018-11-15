@@ -1,107 +1,107 @@
-# Supported Components
+# 支持的組件
 
-<p class="description">The following is a list of Material Design components & features. Those currently supported by Material-UI are highlighted ✓.</p>
+<p class="description">以下是Material Design組件和功能的列表。 當前由Material-UI支持的那些突出顯示✓。</p>
 
-While we strive to follow the guidelines where practical (applying common sense where guidelines contradict - a more common occurrence than one might expect), we do not expect to support every component, or every feature of every component, but rather to provide the building blocks to allow developers to create compelling user interfaces and experiences.
+雖然我們努力遵循實際的指導原則（在指導原則相互矛盾的情況下應用 常識 - 比 可能期望的更常見），但我們不希望支持每個組件，或每個組件的每 特徵，而是提供構建塊 允許開發人員創建引人注目的用戶界面和體驗。
 
-If you wish to add support for a component or feature not highlighted here, please search for the relevant [GitHub Issue](https://github.com/mui-org/material-ui/issues), or create a new one to discuss the approach before submitting a pull request.
+如果您希望在此處添加對未突出顯示 的組件或功能的支持，請在提交拉取請求之前搜索相關的 [GitHub問題](https://github.com/mui-org/material-ui/issues)，或創建新的 以討論該方法。
 
-- App bars 
-  - **[Top](https://material.io/design/components/app-bars-top.html) ✓**
-  - [Bottom](https://material.io/design/components/app-bars-bottom.html)
-- **[Bottom navigation](https://material.io/design/components/bottom-navigation.html) ✓**
-- **[Buttons](https://material.io/design/components/buttons.html) ✓** 
-  - **[Text & contained buttons (formerly flat & raised)](https://material.io/design/components/buttons.html) ✓**
-  - [Toggle buttons](https://material.io/design/components/buttons.html#buttons-toggle-buttons)
-  - **[Icon toggle buttons](https://material.io/design/components/buttons.html#toggle-button) ✓** (Custom Checkbox)
-- **[Buttons: Floating Action Button](https://material.io/design/components/buttons-floating-action-button.html) ✓** 
-  - Transitions: 
-    - **[Speed dial](https://material.io/design/components/buttons-floating-action-button.html#types-of-transitions) ~** ([Lab](/lab/about/))
-    - [Menu](https://material.io/design/components/buttons-floating-action-button.html#types-of-transitions)
-    - [Morph](https://material.io/design/components/buttons-floating-action-button.html#types-of-transitions)
-    - [Full screen](https://material.io/design/components/buttons-floating-action-button.html#types-of-transitions)
-  - [Extended FAB](https://material.io/design/components/buttons-floating-action-button.html#extended-fab) 
-    - Speed dial
-- **[Cards](https://material.io/design/components/cards.html) ✓**
-- **[Chips](https://material.io/design/components/chips.html) ✓** 
-  - **[Input](https://material.io/design/components/chips.html#input-chips) ✓**
-  - [Choice](https://material.io/design/components/chips.html#choice-chips)
-  - [Filter](https://material.io/design/components/chips.html#filter-chips)
-  - [Action](https://material.io/design/components/chips.html#action-chips)
-- **[Data tables](https://material.io/design/components/data-tables.html) ✓** 
-  - **Sortable ✓**
-  - **Selectable ✓**
-  - **Pagination ✓**
-- **[Dialogs](https://material.io/design/components/dialogs.html) ✓** 
-  - **[Alert dialog](https://material.io/design/components/dialogs.html#alert-dialog) ✓**
-  - **[Simple dialogs](https://material.io/design/components/dialogs.html#simple-dialog) ✓** (Can be constructed with Dialog and List.)
-  - **[Confirmation dialogs](https://material.io/design/components/dialogs.html#confirmation-dialog) ✓**
-  - **[Full screen dialogs](https://material.io/design/components/dialogs.html#full-screen-dialog) ✓**
-- **[Dividers](https://material.io/design/components/dividers.html) ✓** 
-  - **[Full bleed](https://material.io/design/components/dividers.html#types) ✓**
-  - **[Inset](https://material.io/design/components/dividers.html#types) ✓**
-  - [Middle](https://material.io/design/components/dividers.html#types)
-  - [Subheader](https://material.io/design/components/dividers.html#types)
-- **[Expansion Panels](https://material.io/archive/guidelines/components/expansion-panels.html) ✓** (*Legacy Material v1*)
-- **[Image lists](https://material.io/design/components/image-lists.html) ✓** (AKA Grid Lists)
-- **[Lists](https://material.io/design/components/lists.html) ✓** 
-  - [Types:](https://material.io/design/components/lists.html#types) 
-    - **Single line ✓**
-    - **Two line ✓**
-    - Three line
-  - **Avatar ✓**
-  - **Icon ✓**
-  - Thumbnail
-  - **Controls ✓** 
-    - **Checkbox ✓**
-    - **Expand/collapse ✓** (AKA Nested)
-    - **Switch ✓**
-    - Reorder
-- **[Menus](https://material.io/design/components/menus.html) ✓** 
-  - **[Dropdown menu](https://material.io/design/components/menus.html#dropdown-menu) ✓** (Can be constructed) 
-    - [Cascade](https://material.io/design/components/menus.html#dropdown-menu)
-  - [Exposed dropdown menus](https://material.io/design/components/menus.html#exposed-dropdown-menu) 
-    - **Text field dropdown menu ✓** (Select)
-    - Editable dropdown menu
-  - **Contextual ✓**
-- **[Progress indicators](https://material.io/design/components/progress-indicators.html) ✓** 
-  - **[Linear](https://material.io/design/components/progress-indicators.html#linear-progress-indicators) ✓**
-  - **[Circular](https://material.io/design/components/progress-indicators.html#circular-progress-indicators) ✓**
-  - **[Loading](https://material.io/archive/guidelines/components/progress-activity.html) ✓** (*Legacy Material v1*)
-- **[Selection controls](https://material.io/design/components/selection-controls.html) ✓** 
-  - **[Checkbox](https://material.io/design/components/selection-controls.html#checkboxes) ✓**
-  - **[Radio button](https://material.io/design/components/selection-controls.html#radio-buttons) ✓**
-  - **[Switch](https://material.io/design/components/selection-controls.html#switches) ✓**
-- **[Sliders](https://material.io/design/components/sliders.html) ~** ([Lab](/lab/about/)) 
-  - **[Continuous](https://material.io/design/components/sliders.html#continuous-slider) ✓**
-  - **[Discrete](https://material.io/design/components/sliders.html#discrete-slider) ~**
-- **[Snackbars](https://material.io/design/components/snackbars.html) ✓** (*Legacy Material v1*)
-- **[Subheaders](https://material.io/archive/guidelines/components/subheaders.html) ✓** (*Legacy Material v1*) 
-  - **[List](https://material.io/archive/guidelines/components/subheaders.html#subheaders-list-subheaders) ✓**
-  - **[Grid](https://material.io/archive/guidelines/components/subheaders.html#subheaders-list-subheaders) ✓**
-  - [Menu](https://material.io/archive/guidelines/components/subheaders.html#subheaders-list-subheaders)
-- **[Steppers](https://material.io/archive/guidelines/components/steppers.html) ✓** (*Legacy Material v1*) 
-  - **[Horizontal](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steppers) ✓**
-  - **[Vertical](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steppers) ✓**
-  - **[Mobile steps](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steps) ✓**
-- **[Tabs](https://material.io/design/components/tabs.html) ✓** 
-  - **[Fixed tabs](https://material.io/design/components/tabs.html#fixed-tabs) ✓**
-  - **[Scrollable tabs](https://material.io/design/components/tabs.html#scrollable-tabs) ✓**
-- **[Text fields](https://material.io/design/components/text-fields.html) ✓** 
-  - **[Standard](https://material.io/archive/guidelines/components/text-fields.html) ✓** (Legacy Material v1)
-  - **[Filled](https://material.io/design/components/text-fields.html#filled-text-field) ✓**
-  - **[Outline](https://material.io/design/components/text-fields.html#outlined-text-field) ✓**
-  - [Types](https://material.io/design/components/text-fields.html#input-types): 
-    - **Single-line ✓**
-    - **Multi-line ✓**
-    - Text-area
-    - **Full-width ✓**
-  - [Assistive elements:](https://material.io/design/components/text-fields.html#anatomy) 
-    - **Helper text ✓**
-    - **Error message ✓**
-    - **Icons ✓**
-    - Character counter
-- **[Toolbars](https://material.io/archive/guidelines/components/toolbars.html) ✓** (Legacy Material v1)
-- **[Tooltips](https://material.io/design/components/tooltips.html) ✓** 
-  - **Desktop ✓**
-  - **Mobile ✓**
+- 應用欄 
+  - **[前](https://material.io/design/components/app-bars-top.html)✓**
+  - [底部](https://material.io/design/components/app-bars-bottom.html)
+- **[底部導航](https://material.io/design/components/bottom-navigation.html)✓**
+- **[按鈕](https://material.io/design/components/buttons.html)✓** 
+  - **[文本 & 包含按鈕（原平 & 升起）](https://material.io/design/components/buttons.html)✓**
+  - [切換按鈕](https://material.io/design/components/buttons.html#buttons-toggle-buttons)
+  - **[圖標切換按鈕](https://material.io/design/components/buttons.html#toggle-button) ✓** （自定義複選框）
+- **[按鈕：懸浮操作按鈕](https://material.io/design/components/buttons-floating-action-button.html)✓** 
+  - 轉變： 
+    - **[快速撥號](https://material.io/design/components/buttons-floating-action-button.html#types-of-transitions) ~** （[實驗](/lab/about/)）
+    - [菜單](https://material.io/design/components/buttons-floating-action-button.html#types-of-transitions)
+    - [變形](https://material.io/design/components/buttons-floating-action-button.html#types-of-transitions)
+    - [全屏](https://material.io/design/components/buttons-floating-action-button.html#types-of-transitions)
+  - [擴展FAB](https://material.io/design/components/buttons-floating-action-button.html#extended-fab) 
+    - 快速撥號
+- **[卡](https://material.io/design/components/cards.html)✓**
+- **[芯片](https://material.io/design/components/chips.html)✓** 
+  - **[輸入](https://material.io/design/components/chips.html#input-chips)✓**
+  - [選擇](https://material.io/design/components/chips.html#choice-chips)
+  - [過濾](https://material.io/design/components/chips.html#filter-chips)
+  - [行動](https://material.io/design/components/chips.html#action-chips)
+- **[數據表](https://material.io/design/components/data-tables.html)✓** 
+  - **可排序✓**
+  - **可選擇✓**
+  - **分頁✓**
+- **[對話框](https://material.io/design/components/dialogs.html)✓** 
+  - **[警報對話框](https://material.io/design/components/dialogs.html#alert-dialog)✓**
+  - **[簡單對話](https://material.io/design/components/dialogs.html#simple-dialog) ✓** （可與對話框和列表來構造。）
+  - **[確認對話框](https://material.io/design/components/dialogs.html#confirmation-dialog)✓**
+  - **[全屏對話框](https://material.io/design/components/dialogs.html#full-screen-dialog)✓**
+- **[除法](https://material.io/design/components/dividers.html)✓** 
+  - **[全出血](https://material.io/design/components/dividers.html#types)✓**
+  - **[插圖](https://material.io/design/components/dividers.html#types)✓**
+  - [中間](https://material.io/design/components/dividers.html#types)
+  - [副標題](https://material.io/design/components/dividers.html#types)
+- **[擴展面板](https://material.io/archive/guidelines/components/expansion-panels.html) ✓** （*傳統材料V1*）
+- **[圖像列表](https://material.io/design/components/image-lists.html) ✓** （AKA網格列表）
+- **[解釋](https://material.io/design/components/lists.html)✓** 
+  - [類型：](https://material.io/design/components/lists.html#types) 
+    - **單線✓**
+    - **兩行✓**
+    - 三線
+  - **頭像✓**
+  - **圖標✓**
+  - 縮略圖
+  - **控制✓** 
+    - **複選框✓**
+    - **展開/折疊✓** （AKA嵌套）
+    - **切換✓**
+    - 重新排序
+- **[菜單](https://material.io/design/components/menus.html)✓** 
+  - **[下拉菜單](https://material.io/design/components/menus.html#dropdown-menu)✓** （可以構建） 
+    - [級聯](https://material.io/design/components/menus.html#dropdown-menu)
+  - [暴露的下拉菜單](https://material.io/design/components/menus.html#exposed-dropdown-menu) 
+    - **文本字段下拉菜單✓** （選擇）
+    - 可編輯的下拉菜單
+  - **上下文✓**
+- **[進度指示符](https://material.io/design/components/progress-indicators.html)✓** 
+  - **[線性](https://material.io/design/components/progress-indicators.html#linear-progress-indicators)✓**
+  - **[循環](https://material.io/design/components/progress-indicators.html#circular-progress-indicators)✓**
+  - **[加載](https://material.io/archive/guidelines/components/progress-activity.html) ✓** （*傳統材料V1*）
+- **[選擇控件](https://material.io/design/components/selection-controls.html)✓** 
+  - **[複選框](https://material.io/design/components/selection-controls.html#checkboxes)✓**
+  - **[單選按鈕](https://material.io/design/components/selection-controls.html#radio-buttons)✓**
+  - **[交換機](https://material.io/design/components/selection-controls.html#switches)✓**
+- **[滑桿](https://material.io/design/components/sliders.html)~** （[實驗](/lab/about/)） 
+  - **[連續](https://material.io/design/components/sliders.html#continuous-slider)✓**
+  - **[離散](https://material.io/design/components/sliders.html#discrete-slider)~**
+- **[小吃店](https://material.io/design/components/snackbars.html) ✓** （*傳統材料V1*）
+- **[副標題](https://material.io/archive/guidelines/components/subheaders.html)✓** （*遺產材料v1*） 
+  - **[列表](https://material.io/archive/guidelines/components/subheaders.html#subheaders-list-subheaders)✓**
+  - **[網格](https://material.io/archive/guidelines/components/subheaders.html#subheaders-list-subheaders)✓**
+  - [菜單](https://material.io/archive/guidelines/components/subheaders.html#subheaders-list-subheaders)
+- **[踏步機](https://material.io/archive/guidelines/components/steppers.html)✓** （*遺產材料v1*） 
+  - **[水平](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steppers)✓**
+  - **[立式](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steppers)✓**
+  - **[移動步驟](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steps)✓**
+- **[標籤](https://material.io/design/components/tabs.html)✓** 
+  - **[固定突片](https://material.io/design/components/tabs.html#fixed-tabs)✓**
+  - **[滾動製表符](https://material.io/design/components/tabs.html#scrollable-tabs)✓**
+- **[文本字段](https://material.io/design/components/text-fields.html)✓** 
+  - **[標準](https://material.io/archive/guidelines/components/text-fields.html) ✓** （傳統材料V1）
+  - **[填充](https://material.io/design/components/text-fields.html#filled-text-field)✓**
+  - **[概述](https://material.io/design/components/text-fields.html#outlined-text-field)✓**
+  - [類型](https://material.io/design/components/text-fields.html#input-types): 
+    - **單線✓**
+    - **多線✓**
+    - 文本區
+    - **全寬✓**
+  - [輔助要素：](https://material.io/design/components/text-fields.html#anatomy) 
+    - **幫助者文本✓**
+    - **錯誤信息✓**
+    - **圖標✓**
+    - 字符計數器
+- **[工具欄](https://material.io/archive/guidelines/components/toolbars.html) ✓** （傳統材料V1）
+- **[工具提示](https://material.io/design/components/tooltips.html)✓** 
+  - **桌面✓**
+  - **移動✓**
