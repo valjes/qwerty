@@ -1,21 +1,21 @@
-# Blog layout
+# Схема блога
 
-## Usage
+## использование
 
-Simply copy the files into your project, or one of the [example applications](https://github.com/mui-org/material-ui/tree/master/examples), and import and use the `Dashboard` component.
+Просто скопируйте файлы в свой проект или один из [примерных приложений](https://github.com/mui-org/material-ui/tree/master/examples)и импортируйте и используйте компонент `Dashboard`.
 
-You can easily customise the layout to suit your design, and substitute an alternative markdown renderer.
+Вы можете легко настроить макет в соответствии с вашим дизайном и заменить альтернативный рендеринг уценки.
 
-## Files
+## файлы
 
-| File             | Purpose                                                                                                                                   |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| `Blog.js`        | Main file. Customise the layout by adding grid components and changing breakpoints.                                                       |
-| `Markdown.js`    | Markdown renderer. It enhances react-markdown output to use the Typography |component. You can customise it or substitute an alternative. |
-| `blog-post.x.md` | Sample blog posts to demonstrate the renderer.                                                                                            |
+| файл             | Цель                                                                                                                                                         |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `Blog.js`        | Основной файл. Настройте макет, добавив компоненты сетки и изменив точки останова.                                                                           |
+| `Markdown.js`    | Markdown renderer. Он усиливает выходной сигнал обратной связи для использования компонента Typography |. Вы можете настроить его или заменить альтернативу. |
+| `blog-post.x.md` | Образцы сообщений в блоге, чтобы продемонстрировать рендер.                                                                                                  |
 
-## Dependencies
+## зависимости
 
-- `@material-ui/core`
-- `@material-ui/icons`
-- `react-markdown`
+- `@ Материал-щ / ядро`
+- `@ материал-UI / иконки`
+- `реагирую-уценка`
