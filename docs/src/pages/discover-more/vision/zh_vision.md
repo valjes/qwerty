@@ -1,16 +1,16 @@
-# Material-UI’s Vision
+# Material-UI的願景
 
-<p class="description">Our vision is to provide an elegant React implementation of the Material Design guidelines that can be customized to fully match your brand.</p>
+<p class="description">我們的願景是提供優雅的React實施材料設計指南，可以進行定制以完全匹配您的品牌。</p>
 
-The Material Design guidelines are an incredible starting point, but they do not provide guidance on all aspects or needs of an application. In addition to the guidelines-specific implementation, we want Material-UI to become whatever is generally useful for application development, all in the spirit of the Material Design guidelines.
+材料設計指南是一個令人難以置信的起點，但它們並未提供有關應用程序所有方面或需求的指導。 除了特定於指南的實現之外，我們還希望Material-UI成為應用程序開發通常有用的任何內容，所有這些都符合Material Design準則的精神。
 
-Therefore, Material-UI will be not only be an implementation of the Material Design guidelines, but a general use UI library of components that are needed by many. This generalized use doesn't imply any other design methodology. It also means we will have components or combinations that are simply not addressed in the design guidelines.
+因此，Material-UI不僅是Material Design準則的實現，而且是許多人需要的一般用途UI庫。 這種通用用法並不意味著任何其他設計方法。 這也意味著我們將擁有設計指南中未解決的組件或組合。
 
-We will focus on providing all the low-level tools needed to build a rich user-interface with React. Once we implement the Material design specification (which is a bar set quite high), you should be able to take advantage of it for you own business with any style customization needed. We want to see companies succeeding using Material-UI in a way that matches their brand, close to the material philosophy or not. We don't want them to feel that their UI simply looks like another Google product.
+我們將專注於提供使用React構建豐富用戶界面所需的所有低級工具。 一旦我們實現了Material設計規範（這是一個非常高的條形設置），您應該能夠利用它來為您自己的業務提供所需的任何樣式定制。 我們希望看到公司成功地使用Material-UI以匹配他們的品牌，接近物質哲學與否。 我們不希望他們認為他們的用戶界面看起來像其他Google產品。
 
-From a developer's point of view, we want Material-UI to:
+從開發人員的角度來看，我們希望Material-UI能夠：
 
-- Deliver on fully encapsulated / composable React components.
-- Be themeable / customizable.
-- Be cross browser compatible and accessible.
-- Promote developer joy, a sense of community, and an environment where new and experienced developers can learn from each other.
+- 提供完全封裝/可組合的React組件。
+- 是主題/可定制的。
+- 跨瀏覽器兼容和可訪問。
+- 提升開發人員的喜悅感，社區感，以及新老有經驗的開發人員可以相互學習的環境。
