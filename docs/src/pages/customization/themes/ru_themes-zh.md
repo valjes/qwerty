@@ -1,78 +1,78 @@
-# Themes
+# Темы
 
-<p class="description">Customize Material-UI with your theme. You can change the colors, the typography and much more.</p>
+<p class="description">Настройте Material-UI с помощью своей темы. Вы можете изменить цвета, типографику и многое другое.</p>
 
-The theme specifies the color of the components, darkness of the surfaces, level of shadow, appropriate opacity of ink elements, etc.
+Тема определяет цвет компонентов, темноту поверхностей, уровень тени, соответствующую непрозрачность элементов чернил и т. Д.
 
-Themes let you apply a consistent tone to your app. It allows you to **customize all design aspects** of your project in order to meet the specific needs of your business or brand.
+Темы позволяют применять последовательный тон к вашему приложению. Это позволяет **настроить все аспекты дизайна** вашего проекта в целях удовлетворения конкретных потребностей вашего бизнеса или бренда.
 
-To promote greater consistency between apps, light and dark theme types are available to choose from. By default, components use the light theme type.
+Чтобы обеспечить большую согласованность между приложениями, доступны различные типы тем и темных тем. По умолчанию компоненты используют тип легкой темы.
 
-## Theme provider
+## Поставщик темы
 
-If you wish to customize the theme, you need to use the `MuiThemeProvider` component in order to inject a theme into your application. However, this is optional; Material-UI components come with a default theme.
+Если вы хотите настроить тему, вам нужно использовать компонент `MuiThemeProvider` , чтобы ввести тему в ваше приложение. Однако это необязательно; Компоненты Material-UI имеют тему по умолчанию.
 
-`MuiThemeProvider` relies on the context feature of React to pass the theme down to the components, so you need to make sure that `MuiThemeProvider` is a parent of the components you are trying to customize. You can learn more about this in [the API section](#muithemeprovider).
+`MuiThemeProvider` полагается на контекстную функцию React, чтобы передать тему до компонентов, поэтому вам нужно убедиться, что `MuiThemeProvider` является родительским элементом компонентов, которые вы пытаетесь настроить. Вы можете узнать больше об этом в [разделе API](#muithemeprovider).
 
-## Theme configuration variables
+## Параметры конфигурации темы
 
-Changing the theme configuration variables is the most effective way to match Material-UI to your needs. The following sections cover the most important theme variables:
+Изменение переменных конфигурации темы является наиболее эффективным способом сопоставления Material-UI с вашими потребностями. В следующих разделах рассматриваются наиболее важные переменные темы:
 
-- [Palette](#palette)
-- [Type (light / dark theme)](#type-light-dark-theme-)
-- [Typography](#typography)
-- [Other variables](#other-variables)
-- [Custom variables](#custom-variables)
+- [палитра](#palette)
+- [Тип (светлая / темная тема)](#type-light-dark-theme-)
+- [Типография](#typography)
+- [Другие переменные](#other-variables)
+- [Пользовательские переменные](#custom-variables)
 
-### Palette
+### палитра
 
-#### Intentions
+#### намерения
 
-A color intention is a mapping of a palette to a given intention within your application.
+Цвета цвета - это сопоставление палитры с заданным намерением в вашем приложении.
 
-The theme exposes the following color intentions:
+Тема раскрывает следующие цветовые намерения:
 
-- primary - used to represent primary interface elements for a user.
-- secondary - used to represent secondary interface elements for a user.
-- error - used to represent interface elements that the user should be made aware of.
+- primary - используется для представления основных элементов интерфейса для пользователя.
+- вторичный - используется для представления вторичных элементов интерфейса для пользователя.
+- error - используется для представления элементов интерфейса, о которых должен знать пользователь.
 
-The default palette uses the shades prefixed with `A` (`A200`, etc.) for the secondary intention, and the un-prefixed shades for the other intentions.
+Палитра по умолчанию использует оттенки с префиксом `A` (`A200`и т. Д.) Для вторичного намерения и не префиксные оттенки для других намерений.
 
-If you want to learn more about color, you can check out [the color section](/style/color/).
+Если вы хотите узнать больше о цвете, вы можете проверить [цветную секцию](/style/color/).
 
-#### Custom palette
+#### Пользовательская палитра
 
-You may override the default palette values by including a `palette` object as part of your theme.
+Вы можете переопределить значение палитры по умолчанию, в том числе `палитр` объект как часть вашей темы.
 
-If any of the [`palette.primary`](/customization/default-theme/?expend-path=$.palette.primary), [`palette.secondary`](/customization/default-theme/?expend-path=$.palette.secondary) or [`palette.error`](/customization/default-theme/?expend-path=$.palette.error) 'intention' objects are provided, they will replace the defaults.
+Если какая-либо из [`палитры .primary`](/customization/default-theme/?expend-path=$.palette.primary), [`palette.secondary`](/customization/default-theme/?expend-path=$.palette.secondary) или [`palette.error`](/customization/default-theme/?expend-path=$.palette.error) объектов «намерения», они заменят значения по умолчанию.
 
-The intention value can either be a [color](/style/color/) object, or an object with one or more of the following keys:
+Значение намерения может быть либо объектом [color](/style/color/) , либо объектом с одним или несколькими из следующих ключей:
 
 ```js
 interface PaletteIntention {
-  light?: string;
+  light ?: string;
   main: string;
-  dark?: string;
-  contrastText?: string;
+  темные: струнные;
+  contrastText ?: string;
 };
 ```
 
-**Using a color object**
+**Использование цветового объекта**
 
-The simplest way to customize an intention is to import one or more of the provided colors and apply them to a palette intention:
+Самый простой способ настроить намерение - импортировать один или несколько предоставленных цветов и применить их к намерению палитры:
 
 ```js
-import { createMuiTheme } from '@material-ui/core/styles';
-import blue from '@material-ui/core/colors/blue';
+import { createMuiTheme } из '@ material-ui / core / styles';
+импортировать синий цвет из '@ material-ui / core / colors / blue';
 
-const theme = createMuiTheme({
-  palette: {
+const theme = createMuiTheme ({
+  палитры: {
     primary: blue,
   },
 });
 ```
 
-If the intention key receives a color object as in the example above, the following mapping is used to populate the required keys:
+Если ключ намерения получает цветной объект, как в приведенном выше примере, для заполнения необходимых ключей используется следующее сопоставление:
 
 ```js
 palette: {
@@ -80,96 +80,96 @@ palette: {
     light: palette.primary[300],
     main: palette.primary[500],
     dark: palette.primary[700],
-    contrastText: getContrastText(palette.primary[500]),
+    contrastText: getContrastText (palette.primary[500]),
   },
   secondary: {
-    light: palette.secondary.A200,
+    свет: palette.secondary.A200,
     main: palette.secondary.A400,
     dark: palette.secondary.A700,
-    contrastText: getContrastText(palette.secondary.A400),
+    contrastText: getContrastText (palette.secondary.A400),
   },
   error: {
-    light: palette.error[300],
+    light: palette. ошибка[300],
     main: palette.error[500],
     dark: palette.error[700],
-    contrastText: getContrastText(palette.error[500]),
+    contrastText: getContrastText (palette.error[500]),
   },
 },
 ```
 
-This example illustrates how you could recreate the default palette values:
+В этом примере показано, как можно воссоздать значения палитры по умолчанию:
 
 ```js
-import { createMuiTheme } from '@material-ui/core/styles';
-import indigo from '@material-ui/core/colors/indigo';
-import pink from '@material-ui/core/colors/pink';
-import red from '@material-ui/core/colors/red';
+import { createMuiTheme } из '@ material-ui / core / styles';
+import indigo из '@ material-ui / core / colors / indigo';
+импорт розовый из '@ material-ui / core / colors / pink';
+импортировать красный цвет из '@ material-ui / core / colors / red';
 
-// All the following keys are optional.
-// We try our best to provide a great default value.
-const theme = createMuiTheme({
+// Все следующие ключи являются необязательными.
+// Мы стараемся предоставить отличное значение по умолчанию.
+const theme = createMuiTheme ({
   palette: {
-    primary: indigo,
-    secondary: pink,
-    error: red,
-    // Used by `getContrastText()` to maximize the contrast between the background and
-    // the text.
+    primary: индиго,
+    вторичный: розовый,
+    ошибка: красный,
+    // Используется `getContrastText ()`, чтобы максимизировать контраст между фоном и
+    // текстом.
     contrastThreshold: 3,
-    // Used to shift a color's luminance by approximately
-    // two indexes within its tonal palette.
-    // E.g., shift from Red 500 to Red 300 or Red 700.
-    tonalOffset: 0.2,
+    // Используется для смещения яркости цвета примерно на
+    // два индекса в своей тональной палитре.
+    // Например, переходим из Red 500 в Red 300 или Red 700.
+    tonalOffset: 0,2,
   },
 });
 ```
 
-**Providing the colors directly**
+**Предоставление цветов непосредственно**
 
-If you wish to provide more customized colors, you can either create your own color object, or directly supply colors to some or all of the intention's keys:
+Если вы хотите предоставить более индивидуальные цвета, вы можете либо создать свой собственный цветной объект, либо напрямую указать цвета для некоторых или всех ключей намерения:
 
 ```js
-import { createMuiTheme } from '@material-ui/core/styles';
+import { createMuiTheme } из '@ material-ui / core / styles';
 
-const theme = createMuiTheme({
+const theme = createMuiTheme ({
   palette: {
     primary: {
-      // light: will be calculated from palette.primary.main,
-      main: '#ff4400',
-      // dark: will be calculated from palette.primary.main,
-      // contrastText: will be calculated to contrast with palette.primary.main
+      // свет: будет рассчитываться из палитры.primary.main,
+      main: '# ff4400',
+      // dark: будет рассчитываться из палитры.primary .main,
+      // contrastText: будет рассчитан для контраста с палитрой. Primary.main
     },
-    secondary: {
-      light: '#0066ff',
-      main: '#0044ff',
-      // dark: will be calculated from palette.secondary.main,
-      contrastText: '#ffcc00',
+    вторичный: {
+      light: '# 0066ff',
+      main: '# 0044ff',
+      // dark: будет рассчитан from palette.secondary.main,
+      contrastText: '# ffcc00',
     },
-    // error: will use the default color
+    // ошибка: будет использовать цвет по умолчанию
   },
 });
 ```
 
-As in the example above, if the intention object contains custom colors using any of the `main`, `light`, `dark` or `contrastText` keys, these map as follows:
+Как и в приведенном выше примере, если объект намерения содержит пользовательские цвета, используя любую из `основных`, `световых`, `темных` или `контрастных текста` , эти карты выглядят следующим образом:
 
-- If the `dark` and / or `light` keys are omitted, their value(s) will be calculated from `main`, according to the `tonalOffset` value.
+- Если клавиши `темных` и / или `световых` опущены, их значение (ы) будет рассчитываться из `основных`соответствии с `тональным значением для фокуса`.
 
-- If `contrastText` is omitted, its value will be calculated to contrast with `main`, according to the`contrastThreshold` value.
+- Если `contrastText` опущен, его значение будет вычислено, чтобы контрастировать с `основными`, в соответствии с`контрастными значениями`.
 
-Both the `tonalOffset` and `contrastThreshold` values may be customized as needed. A higher value for `tonalOffset` will make calculated values for `light` lighter, and `dark` darker. A higher value for `contrastThreshold` increases the point at which a background color is considered light, and given a dark `contrastText`.
+Оба значения `tonalOffset` и `contrastThreshold` могут быть настроены по мере необходимости. Более высокое значение `tonalOffset` будет делать расчетные значения для `света` легче, и `темноты` темнее. Более высокое значение для `контрастности Пороговое значение` увеличивает точку, в которой цвет фона считается светлым, и придается темный `контрастаText`.
 
-Note that `contrastThreshold` follows a non-linear curve.
+Обратите внимание, что `контраст. Порог` следует за нелинейной кривой.
 
-#### Example
+#### пример
 
-{{"demo": "pages/customization/themes/Palette.js"}}
+{{"demo": "pages / customization / themes / Palette.js"}}
 
-#### Color tool
+#### Цветной инструмент
 
-Need inspiration? The Material Design team has built an awesome [palette configuration tool](/style/color/#color-tool) to help you.
+Вам нужно вдохновение? Команда Material Design построила удивительный [конфигурации инструмента палитра](/style/color/#color-tool) , чтобы помочь вам.
 
-### Type (light /dark theme)
+### Тип (светлая / темная тема)
 
-You can make the theme dark by setting `type` to `dark`. While it's only a single property value change, internally it modifies the value of the following keys:
+Вы можете сделать тему темной, установив `тип` в `темный`. Хотя это изменение только одного значения свойства, внутренне оно изменяет значение следующих ключей:
 
 - `palette.text`
 - `palette.divider`
@@ -177,72 +177,72 @@ You can make the theme dark by setting `type` to `dark`. While it's only a singl
 - `palette.action`
 
 ```js
-const theme = createMuiTheme({
+const theme = createMuiTheme ({
   palette: {
     type: 'dark',
   },
 });
 ```
 
-{{"demo": "pages/customization/themes/DarkTheme.js", "hideEditButton": true}}
+{{"demo": "pages / customization / themes / DarkTheme.js", "hideEditButton": true}}
 
-### Typography
+### Типография
 
-Too many type sizes and styles at once can spoil any layout. The theme provides a **limited set of type sizes** that work well together along with the layout grid. These sizes are used across the components.
+Слишком много типоразмеров и стилей сразу может испортить любой макет. Тема предоставляет **ограниченный набор типовых размеров** которые хорошо работают вместе с сеткой макета. Эти размеры используются во всех компонентах.
 
-Have a look at the following example regarding changing the default values, such as the font family. If you want to learn more about typography, you can check out [the typography section](/style/typography/).
+Посмотрите следующий пример, касающийся изменения значений по умолчанию, например семейства шрифтов. Если вы хотите больше узнать о типографии, вы можете проверить [раздел](/style/typography/)типографии.
 
-{{"demo": "pages/customization/themes/TypographyTheme.js"}}
+{{"demo": "pages / customization / themes / TypographyTheme.js"}}
 
-### Typography - Font family
+### Типография - Семейство шрифтов
 
 ```js
-const theme = createMuiTheme({
+const theme = createMuiTheme ({
   typography: {
-    // Use the system font instead of the default Roboto font.
+    // Использовать системный шрифт вместо шрифта Roboto по умолчанию.
     fontFamily: [
       '-apple-system',
       'BlinkMacSystemFont',
-      '"Segoe UI"',
+      '' Segoe UI '',
       'Roboto',
-      '"Helvetica Neue"',
+      '' Helvetica Neue '',
       'Arial',
       'sans-serif',
-      '"Apple Color Emoji"',
-      '"Segoe UI Emoji"',
-      '"Segoe UI Symbol"',
-    ].join(','),
+      «Apple Color Emoji»,
+      «Segoe UI Emoji»,
+      '«Symgo UI Symbol»,
+    ] .join (', '),
   },
 });
 ```
 
-### Typography - Font size
+### Типография - Размер шрифта
 
-Material-UI uses `rem` units for the font size. The browser `<html>` element default font size is `16px`, but browsers have an option to change this value, so `rem` units allow us to accommodate the user's settings, resulting in a much better user experience. Users change font size settings for all kinds of reasons, from poor eyesight to choosing optimum settings for devices that can be vastly different in size and viewing distance.
+Материал-пользовательский интерфейс использует `единиц` единицы для размера шрифта. Размер шрифта по умолчанию для браузера `<html>` составляет `пикселей`, но браузеры имеют возможность изменить это значение, поэтому `rem` единиц позволяют нам учитывать настройки пользователя, что приводит к значительному улучшению работы пользователя. Пользователи меняют настройки размера шрифта по разным причинам, от плохого зрения до выбора оптимальных настроек для устройств, которые могут быть значительно разными по размеру и дальности просмотра.
 
-To change the font-size of Material-UI you can provide a `fontSize` property. The default value is `14px`.
+Чтобы изменить размер шрифта Material-UI, вы можете предоставить свойство `fontSize`. Значение по умолчанию - `14px`.
 
 ```js
-const theme = createMuiTheme({
+const theme = createMuiTheme ({
   typography: {
-    // In Japanese the characters are usually larger.
+    // В японском языке символы обычно больше.
     fontSize: 12,
   },
 });
 ```
 
-The computed font size by the browser follows this mathematical equation:
+Вычисленный размер шрифта браузером следует этому математическому уравнению:
 
-![font-size](/static/images/font-size.gif) <!-- https://latex.codecogs.com/gif.latex?computed&space;=&space;specification&space;\frac{typography.fontSize}{14}&space;\frac{html&space;font&space;size}{typography.htmlFontSize} -->
+![размер шрифта](/static/images/font-size.gif) <!-- https://latex.codecogs.com/gif.latex?computed&space;=&space;specification&space;\frac{typography.fontSize}{14}&space;\frac{html&space;font&space;size}{typography.htmlFontSize} -->
 
-### Typography - HTML font size
+### Типография - размер шрифта HTML
 
-You might want to change the `<html>` element default font size. For instance, when using the [10px simplification](https://www.sitepoint.com/understanding-and-using-rem-units-in-css/). We provide a `htmlFontSize` theme property for this use case. It's telling Material-UI what's the font-size on the `<html>` element is. It's used to adjust the `rem` value so the calculated font-size always match the specification.
+Возможно, вы захотите изменить размер шрифта по умолчанию `<html>`. Например, при использовании упрощения [10px](https://www.sitepoint.com/understanding-and-using-rem-units-in-css/). Мы предоставляем свойство темы `htmlFontSize` для этого варианта использования. Это говорит Material-UI, каков размер шрифта на элементе `<html>`. Он используется для настройки значения `rem` поэтому рассчитанный размер шрифта всегда соответствует спецификации.
 
 ```js
-const theme = createMuiTheme({
+const theme = createMuiTheme ({
   typography: {
-    // Tell Material-UI what's the font-size on the html element is.
+    // Tell Material-UI, каков размер шрифта на элементе html.
     htmlFontSize: 10,
   },
 });
@@ -250,102 +250,102 @@ const theme = createMuiTheme({
 
 ```css
 html {
-  font-size: 62.5%; /* 62.5% of 16px = 10px */
+  font-size: 62.5%; / * 62,5% от 16px = 10px * /
 }
 ```
 
-*You need to apply the above CSS on the html element of this page to see the below demo rendered correctly*
+*Вам нужно применить вышеуказанный CSS в элементе html этой страницы, чтобы увидеть приведенную ниже демонстрационную версию правильно*
 
-{{"demo": "pages/customization/themes/FontSizeTheme.js"}}
+{{"demo": "pages / customization / themes / FontSizeTheme.js"}}
 
-### Other variables
+### Другие переменные
 
-In addition to the palette, dark and light types, and typography, the theme normalizes implementation by providing many more default values, such as breakpoints, shadows, transitions, etc. You can check out the [default theme section](/customization/default-theme/) to view the default theme in full.
+Помимо палитры, темных и светлых типов и типографики, тема нормализует реализацию, предоставляя множество других значений по умолчанию, таких как точки останова, тени, переходы и т. Д. Вы можете проверить [раздел темы по умолчанию](/customization/default-theme/) для просмотра темы по умолчанию в полном объеме.
 
-### Custom variables
+### Пользовательские переменные
 
-When using Material-UI's [styling solution](/customization/css-in-js/) with your own components, you can also take advantage of the theme. It can be convenient to add additional variables to the theme so you can use them everywhere. For instance:
+При использовании материалов-UI в [стайлинга решение](/customization/css-in-js/) с помощью собственных компонентов, вы можете также воспользоваться этой темы. Может быть удобно добавить дополнительные переменные в тему, чтобы вы могли использовать их повсюду. Например:
 
-{{"demo": "pages/customization/themes/CustomStyles.js"}}
+{{"demo": "pages / customization / themes / CustomStyles.js"}}
 
-## Customizing all instances of a component type
+## Настройка всех экземпляров типа компонента
 
 ### CSS
 
-When the configuration variables aren't powerful enough, you can take advantage of the `overrides` key of the `theme` to potentially change every single **style** injected by Material-UI into the DOM. That's a really powerful feature.
+Когда переменные конфигурации недостаточно мощны, вы можете воспользоваться клавишей `переопределений` из `темы` чтобы потенциально изменить каждый **стиль** введенный Material-UI в DOM. Это действительно мощная функция.
 
 ```js
-const theme = createMuiTheme({
-  overrides: {
-    MuiButton: { // Name of the component ⚛️ / style sheet
-      root: { // Name of the rule
-        color: 'white', // Some CSS
+const theme = createMuiTheme ({
+  переопределяет: {
+    MuiButton: {// Имя компонента ⚛️ / style sheet
+      root: {// Название правила
+        : белый, // Some CSS
       },
     },
   },
 });
 ```
 
-{{"demo": "pages/customization/themes/OverridesCss.js"}}
+{{"demo": "pages / customization / themes / OverridesCss.js"}}
 
-The list of these customization points for each component is documented under the **Component API** section. For instance, you can have a look at the [Button](/api/button/#css-api). Alternatively, you can always have a look at the [implementation](https://github.com/mui-org/material-ui/blob/master/packages/material-ui/src/Button/Button.js).
+Список этих точек настройки для каждого компонента документируется в разделе **Component API**. Например, вы можете посмотреть на [кнопки](/api/button/#css-api). Кроме того , вы всегда можете посмотреть на [реализации](https://github.com/mui-org/material-ui/blob/master/packages/material-ui/src/Button/Button.js).
 
-### Properties
+### свойства
 
-You can also apply properties on all the instances of a component type. We expose a `props` key in the `theme` for this use case.
+Вы также можете применять свойства во всех экземплярах типа компонента. Мы обнародуем `реквизит` ключ в `теме` для этого варианта использования.
 
 ```js
-const theme = createMuiTheme({
-  props: {
-    // Name of the component ⚛️
+const theme = createMuiTheme ({
+  реквизитов: {
+    // Имя компонента ⚛️
     MuiButtonBase: {
-      // The properties to apply
-      disableRipple: true, // No more ripple, on the whole application 
+      // Свойства для применения
+      disableRipple: true, // не более рябь, для всего приложения 
     },
-  },
+  } ,
 });
 ```
 
-{{"demo": "pages/customization/themes/OverridesProperties.js"}}
+{{"demo": "pages / customization / themes / OverridesProperties.js"}}
 
-## Accessing the theme in a component
+## Доступ к теме в компоненте
 
-You might need to access the theme variables inside your React components. Let's say you want to display the value of the primary color, you can use the `withTheme()` higher-order component to do so. Here is an example:
+Вам может потребоваться доступ к переменным темы внутри ваших компонентов React. Предположим, вы хотите отобразить значение основного цвета, для этого вы можете использовать компонент `сTheme ()` более высокого порядка. Вот пример:
 
-{{"demo": "pages/customization/themes/WithTheme.js"}}
+{{"demo": "pages / customization / themes / WithTheme.js"}}
 
-## Nesting the theme
+## Вложенная тема
 
-The theming solution is very flexible, as you can nest multiple theme providers. This can be really useful when dealing with different area of your application that have distinct appearance from each other.
+Тематическое решение очень гибкое, так как вы можете вставлять несколько поставщиков тем. Это может быть очень полезно при работе с разными областями приложения, которые имеют отличный внешний вид друг от друга.
 
-{{"demo": "pages/customization/themes/Nested.js"}}
+{{"demo": "pages / customization / themes / Nested.js"}}
 
-#### A note on performance
+#### Замечание о производительности
 
-The performance implications of nesting the `MuiThemeProvider` component are linked to JSS's work behind the scenes. The main point to understand is that we cache the injected CSS with the following tuple `(styles, theme)`.
+Последствия производительности вложенности компонента `MuiThemeProvider` связаны с работой JSS за кулисами. Главное, чтобы понять, что мы кэшируем внедренный CSS следующим кортежем `(стили, тема)`.
 
-- `theme`: If you provide a new theme at each render, a new CSS object will be computed and injected. Both for UI consistency and performance, it's better to render a limited number of theme objects.
-- `styles`: The larger the styles object is, the more work is needed.
+- `тема`: если вы предоставляете новую тему для каждого рендеринга, будет вычисляться и вводиться новый объект CSS. Как для согласованности и производительности пользовательского интерфейса, лучше отображать ограниченное количество объектов темы.
+- `стилей`: чем больше объект стилей, тем больше работы требуется.
 
 ## API
 
 ### `MuiThemeProvider`
 
-This component takes a `theme` property, and makes the `theme` available down the React tree thanks to React context. It should preferably be used at **the root of your component tree**.
+Этот компонент принимает свойство `theme` и делает `темы` доступными для дерева React благодаря контексту React. Его предпочтительно использовать в **корневом каталоге вашего дерева компонентов**.
 
-You can see the full properties API in [this dedicated page](/api/mui-theme-provider/).
+Вы можете увидеть полное свойства API в [этой специальной странице](/api/mui-theme-provider/).
 
-#### Examples
+#### Примеры
 
 ```jsx
 import React from 'react';
-import { render } from 'react-dom';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import Root from './Root';
+импорт { render } из «реагирования»;
+import { MuiThemeProvider, createMuiTheme } из '@ material-ui / core / styles';
+import Root из './Root';
 
-const theme = createMuiTheme();
+const theme = createMuiTheme ();
 
-function App() {
+функция App () {
   return (
     <MuiThemeProvider theme={theme}>
       <Root />
@@ -353,59 +353,59 @@ function App() {
   );
 }
 
-render(<App />, document.querySelector('#app'));
+render (<App />, document.querySelector ('# app'));
 ```
 
-### `createMuiTheme(options) => theme`
+### `createMuiTheme (options) => тема`
 
-Generate a theme base on the options received.
+Создайте базу тем для полученных параметров.
 
-#### Arguments
+#### аргументы
 
-1. `options` (*Object*): Takes an incomplete theme object and adds the missing parts.
+1. `options` (*Object*): принимает незавершенный объект темы и добавляет недостающие части.
 
-#### Returns
+#### Возвращает
 
-`theme` (*Object*): A complete, ready to use theme object.
+`тема` (*объект*): полный, готовый к использованию объект темы.
 
-#### Examples
+#### Примеры
 
 ```js
-import { createMuiTheme } from '@material-ui/core/styles';
-import purple from '@material-ui/core/colors/purple';
-import green from '@material-ui/core/colors/green';
+import { createMuiTheme } из '@ material-ui / core / styles';
+импортировать фиолетовый из '@ material-ui / core / colors / purple';
+импортировать зеленый цвет из '@ material-ui / core / colors / green';
 
-const theme = createMuiTheme({
-  palette: {
+const theme = createMuiTheme ({
+  палитры: {
     primary: purple,
     secondary: green,
   },
-  status: {
+  статус: {
     danger: 'orange',
   },
 });
 ```
 
-### `withTheme()(Component) => Component`
+### `withTheme () (Component) => Компонент`
 
-Provide the `theme` object as a property of the input component so it can be used in the render method.
+Предоставьте объект `темы` как свойство входного компонента, чтобы его можно было использовать в методе рендеринга.
 
-#### Arguments
+#### аргументы
 
-1. `Component`: The component that will be wrapped.
+1. `Компонент`: Компонент, который будет завернут.
 
-#### Returns
+#### Возвращает
 
-`Component`: The new component created.
+`Компонент`: Создан новый компонент.
 
-#### Examples
+#### Примеры
 
 ```js
-import { withTheme } from '@material-ui/core/styles';
+import { withTheme } из '@ material-ui / core / styles';
 
-function MyComponent(props) {
-  return <div>{props.theme.direction}</div>;
+функция MyComponent (реквизит) {
+  возврат <div>{props.theme.direction}</div>;
 }
 
-export default withTheme()(MyComponent);
+экспорт по умолчанию withTheme () (MyComponent);
 ```
