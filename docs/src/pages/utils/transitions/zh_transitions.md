@@ -1,67 +1,67 @@
 ---
-title: Transition React component
-components: Collapse, Fade, Grow, Slide, Zoom
+title: Transition React組件
+components: 折疊，淡入淡出，成長，滑動，縮放
 ---
-# Transitions
+# 轉變
 
-<p class="description">Transition helps make a UI expressive and easy to use.</p>
+<p class="description">過渡有助於使UI富有表現力且易於使用。</p>
 
-Material-UI provides a number of transitions that can be used to introduce some basic [motion](https://material.io/design/motion/) to your applications components.
+Material-UI提供了許多轉換，可用於向應用程序組件引入一些基本的 [motion](https://material.io/design/motion/) 。
 
-To better support server rendering Material-UI provides a `style` property to the children of some transition components (Fade, Grow, Zoom, Slide). The `style` property must be applied to the DOM for the animation to work as expected.
+為了更好地支持服務器渲染，Material-UI為某些過渡組件（淡入淡出，增長，縮放，幻燈片）的子項提供了 `樣式` 屬性 。 必須將 `style` 屬性應用於DOM才能使動畫按預期工作。
 
 ```jsx
-// The `props` object contains a `style` property.
-// You need to provide it to the `div` element as shown here.
-function MyComponent(props) {
-  return (
+//`props`對象包含`style`屬性。
+//你需要將它提供給`div`元素，如下所示。
+function MyComponent（props）{
+  return（
     <div {...props}>
       Fade
     </div>
-  );
+  ）;
 }
 
-export default Main() {
-  return (
+export default Main（）{
+  return（
     <Fade>
       <MyComponent />
     </Fade>
-  );
+  ）;
 }
 ```
 
-## Collapse
+## 坍方
 
-Expand vertically from the top of the child element. The `collapsedHeight` property can be used to set the minimum height when not expanded.
+從子元素的頂部垂直展開。 `collapsedHeight` 屬性可用於設置未展開時的最小高度。
 
-{{"demo": "pages/utils/transitions/SimpleCollapse.js"}}
+{{“demo”：“pages / utils / transitions / SimpleCollapse.js”}}
 
-## Fade
+## 褪色
 
-Fade in from transparent to opaque.
+從透明淡入淡出到不透明。
 
-{{"demo": "pages/utils/transitions/SimpleFade.js"}}
+{{“demo”：“pages / utils / transitions / SimpleFade.js”}}
 
-## Grow
+## 增長
 
-Expand outwards from the center of the child element, while also fading in from transparent to opaque.
+從子元素的中心向外擴展，同時從 透明變為不透明。
 
-The second example demonstrates how to change the `transform-origin`, and conditionally applies the `timeout` property to change the entry speed.
+第二個示例演示如何更改 `transform-origin`，並有條件地應用 `timeout` 屬性來更改輸入速度。
 
-{{"demo": "pages/utils/transitions/SimpleGrow.js"}}
+{{“demo”：“pages / utils / transitions / SimpleGrow.js”}}
 
-## Slide
+## 滑動
 
-Slide in from the edge of the screen. The `direction` property controls which edge of the screen the transition starts from.
+從屏幕邊緣滑入。 `方向` 屬性控制轉換從哪個邊緣開始。
 
-The Transition component's `mountOnEnter` property prevents the child component from being mounted until `in` is `true`. This prevents the relatively positioned component from scrolling into view from it's off-screen position. Similarly the `unmountOnExit` property removes the component from the DOM after it has been transition off screen.
+Transition組件的 `mountOnEnter` 屬性可防止子組件安裝 直到 `中的` 為 `真`。 這可以防止相對定位的組件從其屏幕外位置滾動到視圖 。 類似地， `unmountOnExit` 屬性在從屏幕轉換後從DOM中刪除組件 。
 
-{{"demo": "pages/utils/transitions/SimpleSlide.js"}}
+{{“demo”：“pages / utils / transitions / SimpleSlide.js”}}
 
-## Zoom
+## 放大
 
-Expand outwards from the center of the child element.
+從子元素的中心向外擴展。
 
-This example also demonstrates how to delay the enter transition.
+此示例還演示瞭如何延遲輸入轉換。
 
-{{"demo": "pages/utils/transitions/SimpleZoom.js"}}
+{{“demo”：“pages / utils / transitions / SimpleZoom.js”}}
