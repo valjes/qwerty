@@ -1,15 +1,15 @@
 ---
-title: Portal React component
-components: Portal
+title: Portal React組件
+components: 門戶
 ---
-# Portal
+# 門戶
 
-<p class="description">The portal component renders its children into a new "subtree" outside of current component hierarchy.</p>
+<p class="description">門戶網站組件將其子項呈現為當前組件層次結構之外的新“子樹”。</p>
 
-The children of the portal component will be appended to the `container` specified.
+門戶組件的子項將附加到指定的 `容器`。
 
-The component is used internally by the [`Modal`](/utils/modal/) and [`Popper`](/utils/popper/) components. On the server, the content won't be rendered. You have to wait for the client side reconciliation to see the children.
+該組件由 [`Modal`](/utils/modal/) 和 [`Popper`](/utils/popper/) 組件在內部使用。 在服務器上，不會呈現內容。 您必須等待客戶端對帳才能看到孩子。
 
-## Simple Portal
+## 簡單的門戶
 
-{{"demo": "pages/utils/portal/SimplePortal.js"}}
+{{“demo”：“pages / utils / portal / SimplePortal.js”}}
