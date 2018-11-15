@@ -3,37 +3,37 @@ components: CssBaseline
 ---
 # CSS Baseline
 
-<p class="description">Material-UI provides a CssBaseline component to kickstart an elegant, consistent, and simple baseline to build upon.</p>
+<p class="description">Material-UI предоставляет компонент CssBaseline для запуска элегантной, последовательной и простой базовой линии.</p>
 
-You might be familiar with [normalize.css](https://github.com/necolas/normalize.css), a collection of HTML element and attribute style-normalizations.
+Возможно, вы знакомы с [normalize.css](https://github.com/necolas/normalize.css), набором элементов HTML и атрибутами стиля-нормализации.
 
 ```jsx
 import React from 'react';
-import CssBaseline from '@material-ui/core/CssBaseline';
+импорт CssBaseline из '@ material-ui / core / CssBaseline';
 
-function MyApp() {
+функция MyApp () {
   return (
     <React.Fragment>
       <CssBaseline />
-      {/* The rest of your application */}
+      {/ * Остальная часть вашего приложения * /}
     </React.Fragment>
   );
 }
 
-export default MyApp;
+экспорт по умолчанию MyApp;
 ```
 
-## Approach
+## Подход
 
-### Page
+### страница
 
-The `<html>` and `<body>` elements are updated to provide better page-wide defaults. More specifically: - The margin in all browsers is removed. - The default Material Design background color is applied. It's using [`theme.palette.background.default`](/customization/default-theme/?expend-path=$.palette.background) for standard devices and a white background for print devices.
+Элементы `<html>` и `<body>` обновляются, чтобы обеспечить лучшие значения по умолчанию для всей страницы. Более конкретно: - маржа во всех браузерах удалена. - Используется цвет фона по умолчанию для материала. Он использует [`theme.palette.background.default`](/customization/default-theme/?expend-path=$.palette.background) для стандартных устройств и белый фон для печатных устройств.
 
-### Layout
+### раскладка
 
-- `box-sizing` is set globally on the `<html>` element to `border-box`. Every element—including `*::before` and `*::after` are declared to inherit this property, which ensures that the declared width of the element is never exceeded due to padding or border.
+- `box-sizing` устанавливается глобально на `<html>` элемента до `-х граней`. Каждый элемент, включая `* :: before` и `* :: after` , объявлен для наследования этого свойства, что гарантирует, что объявленная ширина элемента никогда не будет превышена из-за заполнения или границы.
 
-### Typography
+### Типография
 
-- Font antialiasing is enabled for better display of the Roboto font.
-- No base font-size is declared on the `<html>`, but 16px is assumed (the browser default). You can learn more about the implications of changing the `<html>` default font size in [the theme documentation](/customization/themes/#typography-html-font-size) page.
+- Сглаживание шрифтов включено для лучшего отображения шрифта Roboto.
+- Базовый размер шрифта не указан на `<html>`, но предполагается 16px (по умолчанию браузер). Вы можете узнать больше о последствиях изменения размера шрифта `<html>` умолчанию на [странице документации по теме](/customization/themes/#typography-html-font-size).
