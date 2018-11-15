@@ -1,33 +1,33 @@
 ---
-title: Grid List React component
-components: GridList, GridListTile, GridListTileBar, ListSubheader, IconButton
+title: 網格列表反應組件
+components: GridList，GridListTile，GridListTileBar，ListSubheader，IconButton
 ---
-# Grid List
+# 網格列表
 
-<p class="description">Grid lists display a collection of images in an organized grid.</p>
+<p class="description">網格列表在有組織的網格中顯示圖像集合。</p>
 
-[Grid lists](https://material.io/design/components/image-lists.html) represent a collection of items in a repeated pattern. They help improve the visual comprehension of the content they hold.
+[網格列表](https://material.io/design/components/image-lists.html) 表示重複模式中的項目集合。 它們有助於提高對所持內容的視覺理解。
 
-## Image-only Grid list
+## 僅圖像網格列表
 
-A simple example of a scrollable image `GridList`.
+可滾動圖像的一個簡單示例 `GridList`。
 
-{{"demo": "pages/demos/grid-list/ImageGridList.js", "hideEditButton": true}}
+{{“demo”：“pages / demos / grid-list / ImageGridList.js”，“hideEditButton”：true}}
 
-## Grid list with titlebars
+## 帶有標題欄的網格列表
 
-This example demonstrates the use of the `GridListTileBar` to add an overlay to each `GridListTile`. The overlay can accommodate a `title`, `subtitle` and secondary action - in this example an `IconButton`.
+此示例演示如何使用 `GridListTileBar` 為每個 `GridListTile`添加疊加層。 疊加層可以容納 `標題` `字幕` 和輔助動作 - 在這個例子中是 `IconButton`。
 
-{{"demo": "pages/demos/grid-list/TitlebarGridList.js", "hideEditButton": true}}
+{{“demo”：“pages / demos / grid-list / TitlebarGridList.js”，“hideEditButton”：true}}
 
-## Advanced Grid list
+## 高級網格列表
 
-This example demonstrates "featured" tiles, using the `rows` and `cols` props to adjust the size of the tile, and the `padding` prop to adjust the spacing. The tiles have a customized titlebar, positioned at the top and with a custom gradient `titleBackground`. The secondary action `IconButton` is positioned on the left.
+此示例演示了“特色”圖塊，使用 `行` 和 `列` 道具調整圖塊的大小，並使用 `填充` 道具調整間距。 圖塊具有自定義標題欄，位於頂部，並帶有自定義漸變 `titleBackground`。 輔助操作 `IconButton` 位於左側。
 
-{{"demo": "pages/demos/grid-list/AdvancedGridList.js", "hideEditButton": true}}
+{{“demo”：“pages / demos / grid-list / AdvancedGridList.js”，“hideEditButton”：true}}
 
-## Single line Grid list
+## 單行網格列表
 
-This example demonstrates a horizontal scrollable single-line grid list of images. Horizontally scrolling grid lists are discouraged because the scrolling interferes with typical reading patterns, affecting comprehension. One notable exception is a horizontally-scrolling, single-line grid list of images, such as a gallery.
+此示例演示了水平可滾動的單行網格圖像列表。 不鼓勵水平滾動網格列表，因為滾動會干擾典型的閱讀模式，從而影響理解。 一個值得注意的例外是水平滾動的單行網格圖像列表，例如圖庫。
 
-{{"demo": "pages/demos/grid-list/SingleLineGridList.js", "hideEditButton": true}}
+{{“demo”：“pages / demos / grid-list / SingleLineGridList.js”，“hideEditButton”：true}}
