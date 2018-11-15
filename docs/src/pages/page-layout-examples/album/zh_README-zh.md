@@ -1,18 +1,18 @@
-# Album layout
+# 專輯佈局
 
-## Usage
+## 用法
 
-Simply copy the files into your project, or one of the [example applications](https://github.com/mui-org/material-ui/tree/master/examples), and import and use the `Album` component.
+只需將文件複製到項目或 [示例應用程序](https://github.com/mui-org/material-ui/tree/master/examples)，然後導入並使用 `Album` 組件。
 
-You can customise the layout to add some pizazz in keeping with your corporate theme.
+您可以自定義佈局以添加一些符合您公司主題的pizazz。
 
-## Files
+## 檔
 
-| File       | Purpose                                            |
-| ---------- | -------------------------------------------------- |
-| `Album.js` | A simple album or gallery layout in a single file. |
+| 文件         | 目的               |
+| ---------- | ---------------- |
+| `Album.js` | 單個文件中的簡單相冊或圖庫佈局。 |
 
-## Dependencies
+## 依賴
 
-- `@material-ui/core`
-- `@material-ui/icons`
+- `@材料的UI /芯`
+- `@材料-UI /圖標`
