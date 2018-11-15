@@ -1,36 +1,36 @@
 ---
-title: Chip React component
-components: Chip
+title: Chip React組件
+components: 芯片
 ---
-# Chips
+# 芯片
 
-<p class="description">Chips are compact elements that represent an input, attribute, or action.</p>
+<p class="description">芯片是表示輸入，屬性或動作的緊湊元素。</p>
 
-[Chips](https://material.io/design/components/chips.html) allow users to enter information, make selections, filter content, or trigger actions.
+[芯片](https://material.io/design/components/chips.html) 允許用戶輸入信息，進行選擇，過濾內容或觸發操作。
 
-While included here as a standalone component, the most common use will be in some form of input, so some of the behaviour demonstrated here is not shown in context.
+雖然這裡作為獨立組件包含在內，但最常見的用途是在某種形式的輸入中，因此這裡演示的一些行為不會在上下文中顯示。
 
-## Chip
+## 芯片
 
-Examples of Chips, using an image Avatar, SVG Icon Avatar, "Letter" and (string) Avatar.
+使用圖像頭像，SVG圖標頭像，“字母”和（字符串）頭像的芯片示例。
 
-- Chips with the `onClick` property defined change appearance on focus, hover, and click.
-- Chips with the `onDelete` property defined will display a delete icon which changes appearance on hover.
+- 具有 `onClick` 屬性的芯片定義了焦點，懸停和單擊時的外觀變化。
+- 定義了 `onDelete` 屬性的芯片將顯示一個刪除圖標，該圖標會在懸停時更改外觀。
 
-{{"demo": "pages/demos/chips/Chips.js"}}
+{{“demo”：“pages / demos / chips / Chips.js”}}
 
-### Outlined Chips
+### 概述芯片
 
-Outlined chips offer an alternative style.
+概述的芯片提供了另一種風格。
 
-{{"demo": "pages/demos/chips/OutlinedChips.js"}}
+{{“demo”：“pages / demos / chips / OutlinedChips.js”}}
 
-## Chip Playground
+## 籌碼遊樂場
 
-{{"demo": "pages/demos/chips/ChipsPlayground.js"}}
+{{“demo”：“pages / demos / chips / ChipsPlayground.js”}}
 
-## Chip array
+## 芯片陣列
 
-An example of rendering multiple Chips from an array of values. Deleting a chip removes it from the array. Note that since no `onClick` property is defined, the Chip can be focused, but does not gain depth while clicked or touched.
+從值數組渲染多個Chips的示例。 刪除芯片會將其從陣列中刪除。 請注意，由於未定義 `onClick` 屬性，因此可以聚焦Chip，但在單擊或觸摸時不會獲得深度。
 
-{{"demo": "pages/demos/chips/ChipsArray.js"}}
+{{“demo”：“pages / demos / chips / ChipsArray.js”}}
