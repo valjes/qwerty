@@ -1,110 +1,110 @@
 ---
-title: Button React component
-components: Button, IconButton, ButtonBase, Zoom
+title: Button React組件
+components: Button，IconButton，ButtonBase，Zoom
 ---
-# Buttons
+# 鈕扣
 
-<p class="description">Buttons allow users to take actions, and make choices, with a single tap.</p>
+<p class="description">按鈕允許用戶只需輕按一下即可採取行動並做出選擇。</p>
 
-[Buttons](https://material.io/design/components/buttons.html) communicate actions that users can take. They are typically placed throughout your UI, in places like: - Dialogs - Modal windows - Forms - Cards - Toolbars
+[按鈕](https://material.io/design/components/buttons.html) 傳達用戶可以採取的操作。 它們通常放置在整個UI中，例如： - 對話框 - 模態窗口 - 表單 - 卡片 - 工具欄
 
-## Text Buttons
+## 文字按鈕
 
-[Text buttons](https://material.io/design/components/buttons.html#text-button) are typically used for less-pronounced actions, including those located:
+[文本按鈕](https://material.io/design/components/buttons.html#text-button) 通常用於不太明顯的操作，包括那些位於：
 
-- In dialogs
-- In cards
+- 在對話框中
+- 在卡片中
 
-In cards, text buttons help maintain an emphasis on card content.
+在卡片中，文本按鈕有助於保持對卡片內容的重視。
 
-{{"demo": "pages/demos/buttons/TextButtons.js"}}
+{{“demo”：“pages / demos / buttons / TextButtons.js”}}
 
-## Outlined Buttons
+## 概述按鈕
 
-[Outlined buttons](https://material.io/design/components/buttons.html#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
+[概述按鈕](https://material.io/design/components/buttons.html#outlined-button) 是中等強調按鈕。 它們包含重要的操作，但不是應用程序中的主要操作。
 
-### Alternatives
+### 備擇方案
 
-Outlined buttons are also a lower emphasis alternative to contained buttons, or a higher emphasis alternative to text buttons.
+概述按鈕也是包含按鈕的低重點替代，或者是文本按鈕的更高重點替代。
 
-{{"demo": "pages/demos/buttons/OutlinedButtons.js"}}
+{{“demo”：“pages / demos / buttons / OutlinedButtons.js”}}
 
-## Contained Buttons
+## 包含按鈕
 
-[Contained buttons](https://material.io/design/components/buttons.html#contained-button) are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
+[包含的按鈕](https://material.io/design/components/buttons.html#contained-button) 是高強度的，通過使用高程和填充來區分。 它們包含應用程序的主要操作。
 
-The last example of this demo show how to use an upload button.
+此演示的最後一個示例顯示瞭如何使用上傳按鈕。
 
-{{"demo": "pages/demos/buttons/ContainedButtons.js"}}
+{{“demo”：“pages / demos / buttons / ContainedButtons.js”}}
 
-## Floating Action Buttons
+## 浮動動作按鈕
 
-A [floating action button](https://material.io/design/components/buttons-floating-action-button.html) (FAB) performs the primary, or most common, action on a screen. It appears in front of all screen content, typically as a circular shape with an icon in its center. FABs come in three types: regular, mini, and extended.
+[浮動操作按鈕](https://material.io/design/components/buttons-floating-action-button.html) （FAB）在屏幕上執行主要或最常見的操作。 它出現在所有屏幕內容的前面，通常是一個圓形，中間有一個圖標。 FAB有三種類型：常規，迷你和擴展。
 
-Only use a FAB if it is the most suitable way to present a screen’s primary action.
+如果它是最適合呈現屏幕主要操作的方式，則僅使用FAB。
 
-Only one floating action button is recommended per screen to represent the most common action.
+每個屏幕僅建議一個浮動操作按鈕來表示最常見的操作。
 
-{{"demo": "pages/demos/buttons/FloatingActionButtons.js"}}
+{{“demo”：“pages / demos / buttons / FloatingActionButtons.js”}}
 
-The floating action button animates onto the screen as an expanding piece of material, by default.
+默認情況下，浮動操作按鈕會在屏幕上顯示為擴展材料。
 
-A floating action button that spans multiple lateral screens (such as tabbed screens) should briefly disappear, then reappear if its action changes.
+跨越多個橫向屏幕（例如標籤式屏幕）的浮動操作按鈕應該短暫消失，然後在其動作發生變化時重新出現。
 
-The Zoom transition can be used to achieve this. Note that since both the exiting and entering animations are triggered at the same time, we use `enterDelay` to allow the outgoing Floating Action Button's animation to finish before the new one enters.
+可以使用縮放轉換來實現此目的。 請注意，由於同時觸發退出和進入動畫，我們使用 `enterDelay` 來允許傳出的浮動動作按鈕的動畫在新動畫進入之前完成。
 
-{{"demo": "pages/demos/buttons/FloatingActionButtonZoom.js"}}
+{{“demo”：“pages / demos / buttons / FloatingActionButtonZoom.js”}}
 
-## Icon Buttons
+## 圖標按鈕
 
-Icon buttons are commonly found in app bars and toolbars.
+圖標按鈕通常位於應用欄和工具欄中。
 
-Icons are also appropriate for toggle buttons that allow a single choice to be selected or deselected, such as adding or removing a star to an item.
+圖標也適用於切換按鈕，允許選擇或取消選擇單個選項，例如向項目添加或刪除星形。
 
-{{"demo": "pages/demos/buttons/IconButtons.js"}}
+{{“demo”：“pages / demos / buttons / IconButtons.js”}}
 
-## Sizes
+## 尺寸
 
-Fancy larger or smaller buttons? Use the `size` or the `mini` property.
+花式更大或更小的按鈕？ 使用 `尺寸` 或 `迷你` 屬性。
 
-{{"demo": "pages/demos/buttons/ButtonSizes.js"}}
+{{“demo”：“pages / demos / buttons / ButtonSizes.js”}}
 
-### Buttons with icons and label
+### 有像和標籤的按鈕
 
-Sometimes you might want to have icons for certain button to enhance the UX of the application as we recognize logos more easily than plain text. For example, if you have a delete button you can label it with a dustbin icon.
+有時您可能希望為某個按鈕添加圖標以增強應用程序的用戶體驗，因為我們比純文本更容易識別徽標。 例如，如果您有刪除按鈕，則可以使用垃圾箱圖標對其進行標記。
 
-{{"demo": "pages/demos/buttons/IconLabelButtons.js"}}
+{{“demo”：“pages / demos / buttons / IconLabelButtons.js”}}
 
-## Customized Buttons
+## 定制按鈕
 
-If you have been reading the [overrides documentation page](/customization/overrides/) but you are not confident jumping in, here are examples of how you can change the main color of a Button using classes, and using a theme; and of a Bootstrap style Button.
+如果你一直在閱讀 [覆蓋文檔頁面](/customization/overrides/) 但是你沒有自信地跳入，這裡有一些例子，說明如何使用類和主題來改變Button的主顏色;以及Bootstrap樣式按鈕。
 
-{{"demo": "pages/demos/buttons/CustomizedButtons.js"}}
+{{“demo”：“pages / demos / buttons / CustomizedButtons.js”}}
 
-## Complex Buttons
+## 複雜的按鈕
 
-The Text Buttons, Contained Buttons, Floating Action Buttons and Icon Buttons are built on top of the same component: the `ButtonBase`. You can take advantage of this lower level component to build custom interactions.
+文本按鈕，包含按鈕，浮動動作按鈕和圖標按鈕構建在同一組件之上： `ButtonBase`。 您可以利用此較低級別組件來構建自定義交互。
 
-{{"demo": "pages/demos/buttons/ButtonBases.js"}}
+{{“demo”：“pages / demos / buttons / ButtonBases.js”}}
 
-## Third-party routing library
+## 第三方路由庫
 
-One common use case is to use the button to trigger a navigation to a new page. The `ButtonBase` component provides a property to handle this use case: `component`. Given that a lot of our interactive components rely on `ButtonBase`, you should be able to take advantage of it everywhere:
+一個常見的用例是使用按鈕觸發導航到新頁面。 `ButtonBase` 組件提供了處理此用例的屬性： `組件`。 鑑於我們的許多交互式組件都依賴於 `ButtonBase`，您應該能夠在任何地方利用它：
 
 ```jsx
-import { Link } from 'react-router-dom'
-import Button from '@material-ui/core/Button';
+進口 { Link } 從“反應路由器-DOM'
+導入按鈕從”@材料-UI /核心/按鈕';
 
 <Button component={Link} to="/open-collective">
-  Link
+  鏈接
 </Button>
 ```
 
-or if you want to avoid properties collisions:
+或者如果您想避免屬性衝突：
 
 ```jsx
-import { Link } from 'react-router-dom'
-import Button from '@material-ui/core/Button';
+進口 { Link } 從“反應路由器-DOM'
+導入按鈕從”@材料-UI /核心/按鈕';
 
 const MyLink = props => <Link to="/open-collective" {...props} />
 
@@ -113,4 +113,4 @@ const MyLink = props => <Link to="/open-collective" {...props} />
 </Button>
 ```
 
-*Note: Creating `MyLink` is necessary to prevent unexpected unmounting. You can read more about it [here](/guides/composition/#component-property).*
+*注意：創建 `MyLink` 是必要的，以防止意外卸載。 你可以閱讀更多關於它的 [位置](/guides/composition/#component-property)。*
