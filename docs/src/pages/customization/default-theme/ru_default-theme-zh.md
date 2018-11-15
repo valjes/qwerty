@@ -1,13 +1,13 @@
-# Default Theme
+# Тема по умолчанию
 
-<p class="description">Here's what the theme object looks like with the default values.</p>
+<p class="description">Вот как выглядит объект темы со значениями по умолчанию.</p>
 
-{{"demo": "pages/customization/default-theme/DefaultTheme.js", "hideEditButton": true}}
+{{"demo": "pages / customization / default-theme / DefaultTheme.js", "hideEditButton": true}}
 
-The theme normalizes implementation by providing default values for palette, dark and light types, typography, breakpoints, shadows, transitions, etc.
+Тема нормализует реализацию, предоставляя значения по умолчанию для палитры, темных и светлых типов, типографики, точек останова, теней, переходов и т. Д.
 
-Tip: you can play with the theme object in your console too. **We expose a global `theme` variable on all the pages**.
+Совет. Вы также можете играть с объектом темы в своей консоли. **Мы публикуем глобальную переменную `тему` на всех страницах**.
 
-Please take note that the documentation site is using a custom theme. As a result, the demos you see here might disagree with the values above.
+Обратите внимание, что на сайте документации используется пользовательская тема. В результате демонстрации, которые вы видите здесь, могут не совпадать со значениями выше.
 
-If you want to learn more about how the theme is assembled, take a look at [`material-ui/style/createMuiTheme.js`](https://github.com/mui-org/material-ui/blob/master/packages/material-ui/src/styles/createMuiTheme.js), and the related imports which `createMuiTheme` uses.
+Если вы хотите узнать больше о том, как собирается тема, посмотрите на [`material-ui / style / createMuiTheme.js`](https://github.com/mui-org/material-ui/blob/master/packages/material-ui/src/styles/createMuiTheme.js)и соответствующие импорты, которые использует `createMuiTheme`.
