@@ -1,13 +1,13 @@
-# Default Theme
+# 默認主題
 
-<p class="description">Here's what the theme object looks like with the default values.</p>
+<p class="description">這是主題對象使用默認值的樣子。</p>
 
-{{"demo": "pages/customization/default-theme/DefaultTheme.js", "hideEditButton": true}}
+{{“demo”：“pages / customization / default-theme / DefaultTheme.js”，“hideEditButton”：true}}
 
-The theme normalizes implementation by providing default values for palette, dark and light types, typography, breakpoints, shadows, transitions, etc.
+主題通過為調色板，暗色和淺色類型，排版，斷點，陰影，過渡等提供默認值來規範化實現。
 
-Tip: you can play with the theme object in your console too. **We expose a global `theme` variable on all the pages**.
+提示：您也可以在控制台中使用主題對象。 **我們在所有頁面**上公開全局 `主題` 變量。
 
-Please take note that the documentation site is using a custom theme. As a result, the demos you see here might disagree with the values above.
+請注意，文檔站點使用自定義主題。 因此，您在此處看到的演示 可能不同意上述值。
 
-If you want to learn more about how the theme is assembled, take a look at [`material-ui/style/createMuiTheme.js`](https://github.com/mui-org/material-ui/blob/master/packages/material-ui/src/styles/createMuiTheme.js), and the related imports which `createMuiTheme` uses.
+如果您想了解更多的主題是如何組裝的，看看 [`材料UI /風格/ createMuiTheme.js`](https://github.com/mui-org/material-ui/blob/master/packages/material-ui/src/styles/createMuiTheme.js)， 以及相關的進口這 `createMuiTheme` 用途。
