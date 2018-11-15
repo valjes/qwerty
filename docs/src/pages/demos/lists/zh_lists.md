@@ -1,79 +1,79 @@
 ---
-title: List React component
-components: Collapse, Divider, List, ListItem, ListItemAvatar, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader
+title: 列出React組件
+components: Collapse，Divider，List，ListItem，ListItemAvatar，ListItemIcon，ListItemSecondaryAction，ListItemText，ListSubheader
 ---
-# Lists
+# 清單
 
-<p class="description">Lists are continuous, vertical indexes of text or images.</p>
+<p class="description">列表是文本或圖像的連續垂直索引。</p>
 
-[Lists](https://material.io/design/components/lists.html) are a continuous group of text or images. They are composed of items containing primary and supplemental actions, which are represented by icons and text.
+[列表](https://material.io/design/components/lists.html) 是一組連續的文本或圖像。 它們由包含主要和補充操作的項目組成，這些操作由圖標和文本表示。
 
-## Simple List
+## 簡單清單
 
-{{"demo": "pages/demos/lists/SimpleList.js"}}
+{{“demo”：“pages / demos / lists / SimpleList.js”}}
 
-The last item of the previous demo shows how you can render a link:
+上一個演示的最後一項顯示瞭如何呈現鏈接：
 
 ```jsx
-function ListItemLink(props) {
+function ListItemLink（props）{
   return <ListItem button component="a" {...props} />;
 }
 
-//...
+// ...
 
 <ListItemLink href="#simple-list">
   <ListItemText primary="Spam" />
 </ListItemLink>
 ```
 
-You can find a [demo with React Router following this section](/guides/composition/#react-router) of the documentation.
+您可以按照文檔的第</a> 部分找到帶有React Router的 演示。</p> 
 
-## Folder List
+## 文件夾列表
 
-{{"demo": "pages/demos/lists/FolderList.js"}}
+{{“demo”：“pages / demos / lists / FolderList.js”}}
 
-## Inset List
+## 插入列表
 
-{{"demo": "pages/demos/lists/InsetList.js"}}
+{{“demo”：“pages / demos / lists / InsetList.js”}}
 
-## Nested List
+## 嵌套列表
 
-{{"demo": "pages/demos/lists/NestedList.js"}}
+{{“demo”：“pages / demos / lists / NestedList.js”}}
 
-## Selected ListItem
+## 選擇ListItem
 
-{{"demo": "pages/demos/lists/SelectedListItem.js"}}
+{{“demo”：“pages / demos / lists / SelectedListItem.js”}}
 
-## Pinned Subheader List
+## 固定的子標題列表
 
-Upon scrolling, subheaders remain pinned to the top of the screen until pushed off screen by the next subheader.
+滾動時，子標題仍然固定在屏幕頂部，直到下一個子標題推離屏幕。
 
-This feature is relying on the CSS sticky positioning. Unfortunately it's [not implemented](https://caniuse.com/#search=sticky) by all the browsers we are supporting. We default to `disableSticky` when not supported.
+此功能依賴於CSS粘貼定位。 不幸的是它的 [沒有實現](https://caniuse.com/#search=sticky) 所有我們支持的瀏覽器。 不支持時，我們默認為 `disableSticky`。
 
-{{"demo": "pages/demos/lists/PinnedSubheaderList.js"}}
+{{“demo”：“pages / demos / lists / PinnedSubheaderList.js”}}
 
-## List Controls
+## 列表控件
 
-### Checkbox
+### 複選框
 
-A checkbox can either be a primary action or a secondary action.
+複選框可以是主要操作，也可以是次要操作。
 
-The checkbox is the primary action and the state indicator for the list item. The comment button is a secondary action and a separate target.
+該複選框是列表項的主要操作和狀態指示器。 註釋按鈕是輔助操作和單獨的目標。
 
-{{"demo": "pages/demos/lists/CheckboxList.js"}}
+{{“demo”：“pages / demos / lists / CheckboxList.js”}}
 
-The checkbox is the secondary action for the list item and a separate target.
+該複選框是列表項的輔助操作和單獨的目標。
 
-{{"demo": "pages/demos/lists/CheckboxListSecondary.js"}}
+{{“demo”：“pages / demos / lists / CheckboxListSecondary.js”}}
 
-### Switch
+### 開關
 
-The switch is the secondary action and a separate target.
+該開關是輔助操作和單獨的目標。
 
-{{"demo": "pages/demos/lists/SwitchListSecondary.js"}}
+{{“demo”：“pages / demos / lists / SwitchListSecondary.js”}}
 
-## Interactive
+## 互動
 
-Below is an interactive demo that lets you explore the visual results of the different settings:
+下面是一個交互式演示，可讓您探索不同設置的可視結果：
 
-{{"demo": "pages/demos/lists/InteractiveList.js"}}
+{{“demo”：“pages / demos / lists / InteractiveList.js”}}
