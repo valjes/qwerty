@@ -1,116 +1,116 @@
 ---
-title: Button React component
-components: Button, IconButton, ButtonBase, Zoom
+title: Компонент Button React
+components: Кнопка, IconButton, ButtonBase, Zoom
 ---
-# Buttons
+# Кнопки
 
-<p class="description">Buttons allow users to take actions, and make choices, with a single tap.</p>
+<p class="description">Кнопки позволяют пользователям выполнять действия и делать выбор одним нажатием.</p>
 
-[Buttons](https://material.io/design/components/buttons.html) communicate actions that users can take. They are typically placed throughout your UI, in places like: - Dialogs - Modal windows - Forms - Cards - Toolbars
+[Кнопки](https://material.io/design/components/buttons.html) связывают действия, которые могут выполнять пользователи. Они обычно размещаются в вашем пользовательском интерфейсе в таких местах, как: - Диалоги - Модальные окна - Формы - Карты - Панели инструментов
 
-## Text Buttons
+## Текстовые кнопки
 
-[Text buttons](https://material.io/design/components/buttons.html#text-button) are typically used for less-pronounced actions, including those located:
+[Текстовые кнопки](https://material.io/design/components/buttons.html#text-button) обычно используются для менее выраженных действий, в том числе расположенных:
 
-- In dialogs
-- In cards
+- В диалогах
+- В карточках
 
-In cards, text buttons help maintain an emphasis on card content.
+В карточках текстовые кнопки помогают акцентировать внимание на содержании карты.
 
-{{"demo": "pages/demos/buttons/TextButtons.js"}}
+{{"demo": "pages / demos / buttons / TextButtons.js"}}
 
-## Outlined Buttons
+## Контурные кнопки
 
-[Outlined buttons](https://material.io/design/components/buttons.html#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
+[Очерченные кнопки](https://material.io/design/components/buttons.html#outlined-button) - кнопки среднего акцента. Они содержат действия, которые важны, но не являются основным действием в приложении.
 
-### Alternatives
+### альтернативы
 
-Outlined buttons are also a lower emphasis alternative to contained buttons, or a higher emphasis alternative to text buttons.
+Очерченные кнопки также представляют собой альтернативу с меньшим упором на содержащиеся кнопки или более высокую акцентированную альтернативу текстовым кнопкам.
 
-{{"demo": "pages/demos/buttons/OutlinedButtons.js"}}
+{{"demo": "pages / demos / buttons / OutlinedButtons.js"}}
 
-## Contained Buttons
+## Содержащиеся кнопки
 
-[Contained buttons](https://material.io/design/components/buttons.html#contained-button) are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
+[Содержащиеся кнопки](https://material.io/design/components/buttons.html#contained-button) имеют высокий уровень выделения, отличающийся использованием высоты и заполнением. Они содержат действия, которые являются основными для вашего приложения.
 
-The last example of this demo show how to use an upload button.
+В последнем примере этой демонстрации показано, как использовать кнопку загрузки.
 
-{{"demo": "pages/demos/buttons/ContainedButtons.js"}}
+{{"demo": "pages / demos / buttons / ContainedButtons.js"}}
 
-## Floating Action Buttons
+## Плавающие кнопки действий
 
-A [floating action button](https://material.io/design/components/buttons-floating-action-button.html) (FAB) performs the primary, or most common, action on a screen. It appears in front of all screen content, typically as a circular shape with an icon in its center. FABs come in three types: regular, mini, and extended.
+Кнопка [плавающего действия](https://material.io/design/components/buttons-floating-action-button.html) (FAB) выполняет основное или наиболее частое действие на экране. Он появляется перед всем содержимым экрана, как правило, в виде круглой формы с иконкой в ​​центре. FAB выпускаются трех типов: обычные, мини-и расширенные.
 
-Only use a FAB if it is the most suitable way to present a screen’s primary action.
+Используйте только FAB, если это наиболее подходящий способ представить основное действие экрана.
 
-Only one floating action button is recommended per screen to represent the most common action.
+Для отображения наиболее частого действия рекомендуется использовать только одну кнопку плавающего действия.
 
-{{"demo": "pages/demos/buttons/FloatingActionButtons.js"}}
+{{"demo": "pages / demos / buttons / FloatingActionButtons.js"}}
 
-The floating action button animates onto the screen as an expanding piece of material, by default.
+По умолчанию кнопка плавающего действия анимируется на экране как расширяющийся кусок материала.
 
-A floating action button that spans multiple lateral screens (such as tabbed screens) should briefly disappear, then reappear if its action changes.
+Кнопка плавающего действия, которая охватывает несколько боковых экранов (например, экранов с вкладками), должна кратковременно исчезнуть, а затем снова появится, если ее действие изменится.
 
-The Zoom transition can be used to achieve this. Note that since both the exiting and entering animations are triggered at the same time, we use `enterDelay` to allow the outgoing Floating Action Button's animation to finish before the new one enters.
+Для достижения этой цели можно использовать трансфокатор. Обратите внимание, что поскольку одновременно запускаются и входящие и входящие анимации, мы используем `enterDelay` чтобы анимация исходящей анимации плавающего действия заканчивалась до ввода нового.
 
-{{"demo": "pages/demos/buttons/FloatingActionButtonZoom.js"}}
+{{"demo": "pages / demos / buttons / FloatingActionButtonZoom.js"}}
 
-## Icon Buttons
+## Кнопки значков
 
-Icon buttons are commonly found in app bars and toolbars.
+Кнопки значков обычно встречаются в панелях приложений и панелях инструментов.
 
-Icons are also appropriate for toggle buttons that allow a single choice to be selected or deselected, such as adding or removing a star to an item.
+Значки также подходят для кнопок переключения, которые позволяют выбирать или отменять один выбор, например добавление или удаление звезды в элемент.
 
-{{"demo": "pages/demos/buttons/IconButtons.js"}}
+{{"demo": "pages / demos / buttons / IconButtons.js"}}
 
-## Sizes
+## Размеры
 
-Fancy larger or smaller buttons? Use the `size` or the `mini` property.
+Необычные большие или меньшие кнопки? Используйте свойство `размера` или `мини-`.
 
-{{"demo": "pages/demos/buttons/ButtonSizes.js"}}
+{{"demo": "pages / demos / buttons / ButtonSizes.js"}}
 
-### Buttons with icons and label
+### Кнопки с иконками и ярлыками
 
-Sometimes you might want to have icons for certain button to enhance the UX of the application as we recognize logos more easily than plain text. For example, if you have a delete button you can label it with a dustbin icon.
+Иногда вам может понадобиться значки для определенной кнопки для улучшения UX приложения, поскольку мы распознаем логотипы более легко, чем обычный текст. Например, если у вас есть кнопка удаления, вы можете пометить ее значком мусорной корзины.
 
-{{"demo": "pages/demos/buttons/IconLabelButtons.js"}}
+{{"demo": "pages / demos / buttons / IconLabelButtons.js"}}
 
-## Customized Buttons
+## Индивидуальные кнопки
 
-If you have been reading the [overrides documentation page](/customization/overrides/) but you are not confident jumping in, here are examples of how you can change the main color of a Button using classes, and using a theme; and of a Bootstrap style Button.
+Если вы читаете в [переопределяет документации страницу](/customization/overrides/) , но вы не уверены , прыжки в, вот примеры того , как вы можете изменить основной цвет кнопки с помощью классов, и используя тему; и кнопки стиля Bootstrap.
 
-{{"demo": "pages/demos/buttons/CustomizedButtons.js"}}
+{{"demo": "pages / demos / buttons / CustomizedButtons.js"}}
 
-## Complex Buttons
+## Комплексные кнопки
 
-The Text Buttons, Contained Buttons, Floating Action Buttons and Icon Buttons are built on top of the same component: the `ButtonBase`. You can take advantage of this lower level component to build custom interactions.
+Текстовые кнопки, кнопки со стрелками, кнопки с плавающей запятой и кнопки значков построены поверх одного и того же компонента: `ButtonBase`. Вы можете использовать этот компонент нижнего уровня для создания пользовательских взаимодействий.
 
-{{"demo": "pages/demos/buttons/ButtonBases.js"}}
+{{"demo": "pages / demos / buttons / ButtonBases.js"}}
 
-## Third-party routing library
+## Сторонняя библиотека маршрутизации
 
-One common use case is to use the button to trigger a navigation to a new page. The `ButtonBase` component provides a property to handle this use case: `component`. Given that a lot of our interactive components rely on `ButtonBase`, you should be able to take advantage of it everywhere:
+Один из распространенных вариантов использования заключается в использовании кнопки для запуска навигации на новую страницу. Компонент `ButtonBase` предоставляет свойство для обработки этого варианта использования: `компонента`. Учитывая, что многие наши интерактивные компоненты полагаются на `ButtonBase`, вы сможете использовать его везде:
 
 ```jsx
-import { Link } from 'react-router-dom'
-import Button from '@material-ui/core/Button';
+import { Link } from 'response-router-dom'
+import button from '@ material-ui / core / Button';
 
 <Button component={Link} to="/open-collective">
-  Link
+  Ссылка
 </Button>
 ```
 
-or if you want to avoid properties collisions:
+или если вы хотите избежать столкновений свойств:
 
 ```jsx
-import { Link } from 'react-router-dom'
-import Button from '@material-ui/core/Button';
+import { Link } from 'response-router-dom'
+import button from '@ material-ui / core / Button';
 
-const MyLink = props => <Link to="/open-collective" {...props} />
+const MyLink = реквизит => <Link to="/open-collective" {...props} />
 
 <Button component={MyLink}>
-  Link
+  Ссылка
 </Button>
 ```
 
-*Note: Creating `MyLink` is necessary to prevent unexpected unmounting. You can read more about it [here](/guides/composition/#component-property).*
+*Примечание. Создание `MyLink` необходимо для предотвращения неожиданного размонтирования. Вы можете прочитать больше об этом [здесь](/guides/composition/#component-property).*
