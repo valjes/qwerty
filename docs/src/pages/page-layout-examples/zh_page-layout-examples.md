@@ -1,13 +1,13 @@
-# Page layout examples
+# 頁面佈局示例
 
-<p class="description">A selection of basic page layouts to help you get started building your app.</p>
+<p class="description">一系列基本頁面佈局可幫助您開始構建應用程序。</p>
 
-They can be combined with one of the [example applications](https://github.com/mui-org/material-ui/tree/master/examples) to form a complete starter.
+它們可以與 [示例應用程序](https://github.com/mui-org/material-ui/tree/master/examples) 一個組合以形成完整的啟動器。
 
-Sections of each layout are clearly defined either by comments or use of separate files, making it simple to extract parts of a page (such as a "hero unit", or footer, for example) for reuse in other pages.
+通過註釋或使用單獨的文件清楚地定義每個佈局的部分， 使得提取頁面的部分（例如“英雄單元”或頁腳） 變得簡單，以便在其他頁面中重複使用。
 
-For multi-part examples, a table in the README at the linked source code location describes the purpose of each file.
+對於多部分實施例中，在鏈接源代碼位置的自述一個表描述 每個文件的目的。
 
-{{"demo": "pages/page-layout-examples/PageLayoutExamples.js", "hideHeader": true}}
+{{“demo”：“pages / page-layout-examples / PageLayoutExamples.js”，“hideHeader”：true}}
 
-If while using these examples you make changes or enhancements that could improve the developer experience, or you would like to contribute an additional example, please consider creating a [pull-request on GitHub](https://github.com/mui-org/material-ui/pulls).
+如果在使用這些例子你做，可以提高更改或增強 開發經驗，或者你想貢獻一個附加的例子， 請考慮創建一個 [GitHub上拉請求](https://github.com/mui-org/material-ui/pulls)。
