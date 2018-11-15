@@ -1,175 +1,175 @@
-# Themes
+# 主題
 
-<p class="description">Customize Material-UI with your theme. You can change the colors, the typography and much more.</p>
+<p class="description">使用您的主題自定義Material-UI。 您可以更改顏色，排版等等。</p>
 
-The theme specifies the color of the components, darkness of the surfaces, level of shadow, appropriate opacity of ink elements, etc.
+主題指定組件的顏色，表面的暗度，陰影的級別，墨水元素的適當​​不透明度等。
 
-Themes let you apply a consistent tone to your app. It allows you to **customize all design aspects** of your project in order to meet the specific needs of your business or brand.
+主題可讓您為應用程序應用一致的音調。它可以讓你 **自定義所有的設計方面** 項目，以滿足您的企業或品牌的特定需求。
 
-To promote greater consistency between apps, light and dark theme types are available to choose from. By default, components use the light theme type.
+為了提高應用程序之間的一致性，可以選擇明暗主題類型。 默認情況下，組件使用燈光主題類型。
 
-## Theme provider
+## 主題提供者
 
-If you wish to customize the theme, you need to use the `MuiThemeProvider` component in order to inject a theme into your application. However, this is optional; Material-UI components come with a default theme.
+如果要自定義主題，則需要使用 `MuiThemeProvider` 組件才能將主題註入到應用程序中。 但是，這是可選的; Material-UI組件帶有默認主題。
 
-`MuiThemeProvider` relies on the context feature of React to pass the theme down to the components, so you need to make sure that `MuiThemeProvider` is a parent of the components you are trying to customize. You can learn more about this in [the API section](#muithemeprovider).
+`MuiThemeProvider` 依賴於React的上下文功能將主題傳遞給組件，因此您需要確保 `MuiThemeProvider` 是您嘗試自定義的組件的父級。 您可以了解更多有關這 [API部分](#muithemeprovider)。
 
-## Theme configuration variables
+## 主題配置變量
 
-Changing the theme configuration variables is the most effective way to match Material-UI to your needs. The following sections cover the most important theme variables:
+更改主題配置變量是將Material-UI與您的需求相匹配的最有效方法。 以下部分介紹了最重要的主題變量：
 
-- [Palette](#palette)
-- [Type (light / dark theme)](#type-light-dark-theme-)
-- [Typography](#typography)
-- [Other variables](#other-variables)
-- [Custom variables](#custom-variables)
+- [調色板](#palette)
+- [類型（淺色/深色主題）](#type-light-dark-theme-)
+- [活版印刷](#typography)
+- [其他變量](#other-variables)
+- [自定義變量](#custom-variables)
 
-### Palette
+### 調色板
 
-#### Intentions
+#### 意向
 
-A color intention is a mapping of a palette to a given intention within your application.
+顏色意圖是將調色板映射到應用程序中的給定意圖。
 
-The theme exposes the following color intentions:
+該主題揭示了以下顏色意圖：
 
-- primary - used to represent primary interface elements for a user.
-- secondary - used to represent secondary interface elements for a user.
-- error - used to represent interface elements that the user should be made aware of.
+- primary - 用於表示用戶的主要界面元素。
+- secondary - 用於表示用戶的輔助界面元素。
+- error - 用於表示用戶應該知道的界面元素。
 
-The default palette uses the shades prefixed with `A` (`A200`, etc.) for the secondary intention, and the un-prefixed shades for the other intentions.
+默認調色板使用前綴為 `A` （`A200`等）的陰影作為次要意圖，使用未加前綴的陰影表示其他意圖。
 
-If you want to learn more about color, you can check out [the color section](/style/color/).
+如果您想了解更多的顏色，你可以檢查出 [顏色項](/style/color/)。
 
-#### Custom palette
+#### 定制調色板
 
-You may override the default palette values by including a `palette` object as part of your theme.
+您可以通過在主題中包含 `調色板` 對象來覆蓋默認調色板值。
 
-If any of the [`palette.primary`](/customization/default-theme/?expend-path=$.palette.primary), [`palette.secondary`](/customization/default-theme/?expend-path=$.palette.secondary) or [`palette.error`](/customization/default-theme/?expend-path=$.palette.error) 'intention' objects are provided, they will replace the defaults.
+如果任何的 [`palette.primary`](/customization/default-theme/?expend-path=$.palette.primary)， [`palette.secondary`](/customization/default-theme/?expend-path=$.palette.secondary) 或 [`palette.error`](/customization/default-theme/?expend-path=$.palette.error) 提供的意圖'對象，它們將取代的默認值。
 
-The intention value can either be a [color](/style/color/) object, or an object with one or more of the following keys:
+意圖值可以是 [顏色](/style/color/) 對象，也可以是具有以下一個或多個鍵的對象：
 
 ```js
 interface PaletteIntention {
-  light?: string;
-  main: string;
-  dark?: string;
-  contrastText?: string;
+  light？：string;
+  主要：字符串;
+  黑暗？：字符串;
+  contrastText？：string;
 };
 ```
 
-**Using a color object**
+**使用顏色對象**
 
-The simplest way to customize an intention is to import one or more of the provided colors and apply them to a palette intention:
+自定義意圖的最簡單方法是導入一個或多個提供的顏色並將其應用於調色板意圖：
 
 ```js
-import { createMuiTheme } from '@material-ui/core/styles';
-import blue from '@material-ui/core/colors/blue';
+從'@ material-ui / core / styles'導入 { createMuiTheme } ;
+從'@ material-ui / core / colors / blue'導入藍色;
 
-const theme = createMuiTheme({
-  palette: {
+const的主題= createMuiTheme（{
+  調色板： {
     primary: blue,
-  },
-});
+  }，
+}）;
 ```
 
-If the intention key receives a color object as in the example above, the following mapping is used to populate the required keys:
+如果意圖鍵接收到顏色對象，如上例所示，則使用以下映射來填充所需的鍵：
 
 ```js
-palette: {
-  primary: {
-    light: palette.primary[300],
-    main: palette.primary[500],
-    dark: palette.primary[700],
-    contrastText: getContrastText(palette.primary[500]),
-  },
-  secondary: {
-    light: palette.secondary.A200,
-    main: palette.secondary.A400,
-    dark: palette.secondary.A700,
-    contrastText: getContrastText(palette.secondary.A400),
-  },
-  error: {
-    light: palette.error[300],
-    main: palette.error[500],
-    dark: palette.error[700],
-    contrastText: getContrastText(palette.error[500]),
-  },
-},
+調色板：{
+  初級：{
+    光：palette.primary[300]，
+    主：palette.primary[500]，
+    黑暗：palette.primary[700]，
+    contrastText：getContrastText（palette.primary[500]），
+  }，
+  二次：{
+    光：palette.secondary.A200，
+    主：palette.secondary.A400，
+    黑暗：palette.secondary.A700，
+    contrastText：getContrastText（palette.secondary.A400），
+  }，
+  錯誤：{
+    光：調色板。錯誤[300]，
+    主：palette.error[500]，
+    黑暗：palette.error[700]，
+    contrastText：getContrastText（palette.error[500]），
+  }，
+}，
 ```
 
-This example illustrates how you could recreate the default palette values:
+此示例說明瞭如何重新創建默認調色板值：
 
 ```js
-import { createMuiTheme } from '@material-ui/core/styles';
-import indigo from '@material-ui/core/colors/indigo';
-import pink from '@material-ui/core/colors/pink';
-import red from '@material-ui/core/colors/red';
+從'@ material-ui / core / styles'導入 { createMuiTheme } ;
+從'@ material-ui / core / colors / indigo'導入indigo;
+從'@ material-ui / core / colors / pink'導入粉紅色;
+從'@ material-ui / core / colors / red'導入紅色;
 
-// All the following keys are optional.
-// We try our best to provide a great default value.
-const theme = createMuiTheme({
-  palette: {
-    primary: indigo,
-    secondary: pink,
-    error: red,
-    // Used by `getContrastText()` to maximize the contrast between the background and
-    // the text.
-    contrastThreshold: 3,
-    // Used to shift a color's luminance by approximately
-    // two indexes within its tonal palette.
-    // E.g., shift from Red 500 to Red 300 or Red 700.
-    tonalOffset: 0.2,
-  },
-});
+//以下所有鍵都是可選的。
+//我們盡力提供一個很好的默認值。
+const theme = createMuiTheme（{
+  palette：{
+    primary：indigo，
+    secondary：pink，
+    error：red，
+    //由`getContrastText（）`使用，以最大化背景和
+    //文本之間的對比度。
+    contrastThreshold：3，
+    //用於一個顏色的亮度由大約偏移
+    //兩個索引其色調調色板內。
+    //例如，從紅色500轉換到紅色300或紅色700。
+    tonalOffset：0.2，
+  }，
+}）;
 ```
 
-**Providing the colors directly**
+**直接提供顏色**
 
-If you wish to provide more customized colors, you can either create your own color object, or directly supply colors to some or all of the intention's keys:
+如果您希望提供更多自定義顏色，您可以創建自己的顏色對象，也可以直接為意圖的部分或全部鍵提供顏色：
 
 ```js
-import { createMuiTheme } from '@material-ui/core/styles';
+從'@ material-ui / core / styles'導入 { createMuiTheme } ;
 
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      // light: will be calculated from palette.primary.main,
-      main: '#ff4400',
-      // dark: will be calculated from palette.primary.main,
-      // contrastText: will be calculated to contrast with palette.primary.main
-    },
-    secondary: {
-      light: '#0066ff',
-      main: '#0044ff',
-      // dark: will be calculated from palette.secondary.main,
-      contrastText: '#ffcc00',
-    },
-    // error: will use the default color
-  },
-});
+const theme = createMuiTheme（{
+  palette：{
+    primary：{
+      // light：將從palette.primary.main計算，
+      main：'＃ff4400'，
+      // dark：將從palette.primary計算.main，
+      // contrastText：將被計算為與palette.primary.main
+    }對比，
+    次要：{
+      light：'＃0066ff'，
+      main：'＃0044ff'，
+      // dark：將被計算來自palette.secondary.main，
+      contrastText：'＃ffcc00'，
+    }，
+    //錯誤：將使用默認顏色
+  }，
+}）;
 ```
 
-As in the example above, if the intention object contains custom colors using any of the `main`, `light`, `dark` or `contrastText` keys, these map as follows:
+如在上面的示例中，如果意圖對象使用任何的包含自定義顏色 `主`， `光`， `暗` 或 `contrastText` 鍵，這些地圖如下：
 
-- If the `dark` and / or `light` keys are omitted, their value(s) will be calculated from `main`, according to the `tonalOffset` value.
+- 如果省略 `暗` 和/或 `亮` 鍵，則根據 `tonalOffset` 值從 `主`計算它們的值。
 
-- If `contrastText` is omitted, its value will be calculated to contrast with `main`, according to the`contrastThreshold` value.
+- 如果省略 `contrastText` ，則根據`contrastThreshold` 值計算其值以與 `main`對比。
 
-Both the `tonalOffset` and `contrastThreshold` values may be customized as needed. A higher value for `tonalOffset` will make calculated values for `light` lighter, and `dark` darker. A higher value for `contrastThreshold` increases the point at which a background color is considered light, and given a dark `contrastText`.
+`tononalOffset` 和 `contrastThreshold` 值都可以根據需要進行定制。 `tonalOffset` 較高值將使 `light` 計算值更亮，而 `dark` 更暗。 `對比度閾值` 較高值增加了背景顏色被認為是亮的點，並且給出了暗 `對比度文本`。
 
-Note that `contrastThreshold` follows a non-linear curve.
+請注意， `contrastThreshold` 遵循非線性曲線。
 
-#### Example
+#### 例
 
-{{"demo": "pages/customization/themes/Palette.js"}}
+{{“demo”：“pages / customization / themes / Palette.js”}}
 
-#### Color tool
+#### 顏色工具
 
-Need inspiration? The Material Design team has built an awesome [palette configuration tool](/style/color/#color-tool) to help you.
+需要靈感？ Material Design團隊已經構建了一個非常棒的 [調色板配置工具](/style/color/#color-tool) 來幫助您。
 
-### Type (light /dark theme)
+### 類型（淺色/深色主題）
 
-You can make the theme dark by setting `type` to `dark`. While it's only a single property value change, internally it modifies the value of the following keys:
+您可以通過將 `類型` 設置為 `暗`來使主題變暗。 雖然它只是單個屬性值更改，但在內部它會修改以下鍵的值：
 
 - `palette.text`
 - `palette.divider`
@@ -177,235 +177,235 @@ You can make the theme dark by setting `type` to `dark`. While it's only a singl
 - `palette.action`
 
 ```js
-const theme = createMuiTheme({
-  palette: {
+常量主題= createMuiTheme（{
+  調色板： {
     type: 'dark',
-  },
-});
+  }，
+}）;
 ```
 
-{{"demo": "pages/customization/themes/DarkTheme.js", "hideEditButton": true}}
+{{“demo”：“pages / customization / themes / DarkTheme.js”，“hideEditButton”：true}}
 
-### Typography
+### 活版印刷
 
-Too many type sizes and styles at once can spoil any layout. The theme provides a **limited set of type sizes** that work well together along with the layout grid. These sizes are used across the components.
+一次太多的類型大小和样式會破壞任何佈局。 主題提供了 **有限集合型尺寸的** 與佈局網格沿一起很好地工作。 這些尺寸用於各個組件。
 
-Have a look at the following example regarding changing the default values, such as the font family. If you want to learn more about typography, you can check out [the typography section](/style/typography/).
+請查看以下有關更改默認值的示例，例如字體系列。 如果您想了解有關排版的更多信息，可以查看 [排版部分](/style/typography/)。
 
-{{"demo": "pages/customization/themes/TypographyTheme.js"}}
+{{“demo”：“pages / customization / themes / TypographyTheme.js”}}
 
-### Typography - Font family
+### 排版 - 字​​體系列
 
 ```js
-const theme = createMuiTheme({
-  typography: {
-    // Use the system font instead of the default Roboto font.
-    fontFamily: [
-      '-apple-system',
-      'BlinkMacSystemFont',
-      '"Segoe UI"',
-      'Roboto',
-      '"Helvetica Neue"',
-      'Arial',
-      'sans-serif',
-      '"Apple Color Emoji"',
-      '"Segoe UI Emoji"',
-      '"Segoe UI Symbol"',
-    ].join(','),
-  },
-});
+const theme = createMuiTheme（{
+  typography：{
+    //使用系統字體而不是默認的Roboto字體。
+    fontFamily中：[
+      ' -蘋果系統'，
+      'BlinkMacSystemFont'，
+      “'的Segoe UI”'，
+      '的Roboto'，
+      '“Helvetica Neue字體”'，
+      'Arial字體'，
+      '無襯線'，
+      '“Apple Color Emoji”'，
+      '“Segoe UI Emoji”'，
+      '“Segoe UI Symbol”'，
+    ] .join（'，'），
+  }，
+}）;
 ```
 
-### Typography - Font size
+### 排版 - 字​​體大小
 
-Material-UI uses `rem` units for the font size. The browser `<html>` element default font size is `16px`, but browsers have an option to change this value, so `rem` units allow us to accommodate the user's settings, resulting in a much better user experience. Users change font size settings for all kinds of reasons, from poor eyesight to choosing optimum settings for devices that can be vastly different in size and viewing distance.
+Material-UI使用 `rem` 單位作為字體大小。 瀏覽器 `<html>` 元素默認字體大小為 `16px`，但瀏覽器可以選擇更改此值，因此 `rem` 單位允許我們適應用戶的設置，從而帶來更好的用戶體驗。 用戶可以出於各種原因更改字體大小設置，從視力不佳到為大小和觀看距離差異很大的設備選擇最佳設置。
 
-To change the font-size of Material-UI you can provide a `fontSize` property. The default value is `14px`.
+要更改Material-UI的字體大小，您可以提供 `fontSize` 屬性。 默認值為 `14px`。
 
 ```js
-const theme = createMuiTheme({
-  typography: {
-    // In Japanese the characters are usually larger.
-    fontSize: 12,
-  },
-});
+const theme = createMuiTheme（{
+  typography：{
+    //在日語中，字符通常較大。
+    fontSize的：12，
+  }，
+}）;
 ```
 
-The computed font size by the browser follows this mathematical equation:
+瀏覽器計算出的字體大小遵循以下數學公式：
 
-![font-size](/static/images/font-size.gif) <!-- https://latex.codecogs.com/gif.latex?computed&space;=&space;specification&space;\frac{typography.fontSize}{14}&space;\frac{html&space;font&space;size}{typography.htmlFontSize} -->
+![字體大小](/static/images/font-size.gif) <!-- https://latex.codecogs.com/gif.latex?computed&space;=&space;specification&space;\frac{typography.fontSize}{14}&space;\frac{html&space;font&space;size}{typography.htmlFontSize} -->
 
-### Typography - HTML font size
+### 排版 - HTML字體大小
 
-You might want to change the `<html>` element default font size. For instance, when using the [10px simplification](https://www.sitepoint.com/understanding-and-using-rem-units-in-css/). We provide a `htmlFontSize` theme property for this use case. It's telling Material-UI what's the font-size on the `<html>` element is. It's used to adjust the `rem` value so the calculated font-size always match the specification.
+您可能想要更改 `<html>` 元素的默認字體大小。 例如，使用 [10px簡化時](https://www.sitepoint.com/understanding-and-using-rem-units-in-css/)。 我們為這個用例提供了一個 `htmlFontSize` 主題屬性。 它告訴Material-UI `<html>` 元素的字體大小是多少。 它用於調整 `rem` 值，因此計算出的字體大小始終與規範匹配。
 
 ```js
-const theme = createMuiTheme({
-  typography: {
-    // Tell Material-UI what's the font-size on the html element is.
-    htmlFontSize: 10,
-  },
-});
+const theme = createMuiTheme（{
+  typography：{
+    //告訴Material-UI html元素的字體大小是什麼。
+    htmlFontSize：10，
+  }，
+}）;
 ```
 
 ```css
 html {
-  font-size: 62.5%; /* 62.5% of 16px = 10px */
+  字體大小：62.5％; / * 62.5％的16px = 10px * /
 }
 ```
 
-*You need to apply the above CSS on the html element of this page to see the below demo rendered correctly*
+*您需要在此頁面的html元素上應用上述CSS，以查看正確呈現的以下演示*
 
-{{"demo": "pages/customization/themes/FontSizeTheme.js"}}
+{{“demo”：“pages / customization / themes / FontSizeTheme.js”}}
 
-### Other variables
+### 其他變量
 
-In addition to the palette, dark and light types, and typography, the theme normalizes implementation by providing many more default values, such as breakpoints, shadows, transitions, etc. You can check out the [default theme section](/customization/default-theme/) to view the default theme in full.
+除了調色板，暗色和淺色類型以及排版外，主題還通過提供更多默認值（例如斷點，陰影，過渡等）來規範化實現。 您可以查看 [默認主題部分](/customization/default-theme/) 以完整查看默認主題。
 
-### Custom variables
+### 自定義變量
 
-When using Material-UI's [styling solution](/customization/css-in-js/) with your own components, you can also take advantage of the theme. It can be convenient to add additional variables to the theme so you can use them everywhere. For instance:
+使用Material-UI的 [樣式解決方案](/customization/css-in-js/) 和您自己的組件時，您還可以利用主題。 可以方便地向主題添加其他變量，以便您可以在任何地方使用它們。 例如：
 
-{{"demo": "pages/customization/themes/CustomStyles.js"}}
+{{“demo”：“pages / customization / themes / CustomStyles.js”}}
 
-## Customizing all instances of a component type
+## 自定義組件類型的所有實例
 
 ### CSS
 
-When the configuration variables aren't powerful enough, you can take advantage of the `overrides` key of the `theme` to potentially change every single **style** injected by Material-UI into the DOM. That's a really powerful feature.
+當配置變量不夠強大時，您可以利用 `主題` 的 `覆蓋` 鍵來潛在地將Material-UI注入的每個 **樣式** 更改為DOM。 這是一個非常強大的功能。
 
 ```js
-const theme = createMuiTheme({
-  overrides: {
-    MuiButton: { // Name of the component ⚛️ / style sheet
-      root: { // Name of the rule
-        color: 'white', // Some CSS
-      },
-    },
-  },
-});
+const theme = createMuiTheme（{
+  覆蓋：{
+    MuiButton：{//組件的名稱⚛️/樣式表
+      root：{//規則的名稱
+        顏色：'white'，//一些CSS
+      }，
+    }，
+  }，
+}）;
 ```
 
-{{"demo": "pages/customization/themes/OverridesCss.js"}}
+{{“demo”：“pages / customization / themes / OverridesCss.js”}}
 
-The list of these customization points for each component is documented under the **Component API** section. For instance, you can have a look at the [Button](/api/button/#css-api). Alternatively, you can always have a look at the [implementation](https://github.com/mui-org/material-ui/blob/master/packages/material-ui/src/Button/Button.js).
+每個組件的這些自定義點列表記錄在 **Component API** 部分下。 例如，您可以查看 [按鈕](/api/button/#css-api)。 或者，您可以隨時查看 [實現](https://github.com/mui-org/material-ui/blob/master/packages/material-ui/src/Button/Button.js)。
 
-### Properties
+### 屬性
 
-You can also apply properties on all the instances of a component type. We expose a `props` key in the `theme` for this use case.
+您還可以在組件類型的所有實例上應用屬性。 我們在這個用例的 `主題` 公開了一個 `道具` 鍵。
 
 ```js
-const theme = createMuiTheme({
-  props: {
-    // Name of the component ⚛️
-    MuiButtonBase: {
-      // The properties to apply
-      disableRipple: true, // No more ripple, on the whole application 
-    },
-  },
-});
+常量主題= createMuiTheme（{
+  道具：{
+    //組件⚛️的名稱
+    MuiButtonBase：{
+      //屬性申請
+      disableRipple：真，//沒有更多的波紋，對整個應用 
+    }，
+  } ，
+}）;
 ```
 
-{{"demo": "pages/customization/themes/OverridesProperties.js"}}
+{{“demo”：“pages / customization / themes / OverridesProperties.js”}}
 
-## Accessing the theme in a component
+## 訪問組件中的主題
 
-You might need to access the theme variables inside your React components. Let's say you want to display the value of the primary color, you can use the `withTheme()` higher-order component to do so. Here is an example:
+您可能需要訪問React組件中的主題變量。 假設您要顯示主色的值，可以使用 `withTheme（）` 高階組件來執行此操作。 這是一個例子：
 
-{{"demo": "pages/customization/themes/WithTheme.js"}}
+{{“demo”：“pages / customization / themes / WithTheme.js”}}
 
-## Nesting the theme
+## 嵌套主題
 
-The theming solution is very flexible, as you can nest multiple theme providers. This can be really useful when dealing with different area of your application that have distinct appearance from each other.
+主題解決方案非常靈活，因為您可以嵌套多個主題提供程序。 在處理具有彼此明顯外觀的應用程序的不同區域時，這非常有用。
 
-{{"demo": "pages/customization/themes/Nested.js"}}
+{{“demo”：“pages / customization / themes / Nested.js”}}
 
-#### A note on performance
+#### 關於表現的說明
 
-The performance implications of nesting the `MuiThemeProvider` component are linked to JSS's work behind the scenes. The main point to understand is that we cache the injected CSS with the following tuple `(styles, theme)`.
+嵌套 `MuiThemeProvider` 組件的性能影響與JSS在幕後的工作相關聯。 要理解的要點是我們使用以下元組 `（樣式，主題）`緩存注入的CSS。
 
-- `theme`: If you provide a new theme at each render, a new CSS object will be computed and injected. Both for UI consistency and performance, it's better to render a limited number of theme objects.
-- `styles`: The larger the styles object is, the more work is needed.
+- `主題`：如果在每個渲染中提供新主題，則將計算並註入新的CSS對象。 對於UI一致性和性能，最好渲染有限數量的主題對象。
+- `樣式`：樣式對象越大，需要的工作量越多。
 
 ## API
 
 ### `MuiThemeProvider`
 
-This component takes a `theme` property, and makes the `theme` available down the React tree thanks to React context. It should preferably be used at **the root of your component tree**.
+該組件採用 `主題` 屬性，並且由於React上下文，使得 `主題` 在React樹下可用。 它最好應在組件樹</strong>的根處使用 **。</p> 
 
-You can see the full properties API in [this dedicated page](/api/mui-theme-provider/).
+你可以看到完整的屬性API [這個專用頁面](/api/mui-theme-provider/)。
 
-#### Examples
+#### 例子
 
 ```jsx
-import React from 'react';
-import { render } from 'react-dom';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import Root from './Root';
+從'react'中導入React;
+從'react-dom'導入 { render } ;
+從'@ material-ui / core / styles'導入 { MuiThemeProvider, createMuiTheme } ;
+從'./Root'導入Root;
 
-const theme = createMuiTheme();
+const theme = createMuiTheme（）;
 
-function App() {
-  return (
+功能App（）{
+  return（
     <MuiThemeProvider theme={theme}>
       <Root />
     </MuiThemeProvider>
-  );
+  ）;
 }
 
-render(<App />, document.querySelector('#app'));
+render（<App />，document.querySelector（'＃app'））;
 ```
 
-### `createMuiTheme(options) => theme`
+### `createMuiTheme（options）=> 主題`
 
-Generate a theme base on the options received.
+根據收到的選項生成主題。
 
-#### Arguments
+#### 參數
 
-1. `options` (*Object*): Takes an incomplete theme object and adds the missing parts.
+1. `選項` （*對象*）：採用不完整的主題對象並添加缺少的部分。
 
-#### Returns
+#### 返回
 
-`theme` (*Object*): A complete, ready to use theme object.
+`主題` （*對象*）：一個完整的，隨時可用的主題對象。
 
-#### Examples
+#### 例子
 
 ```js
-import { createMuiTheme } from '@material-ui/core/styles';
-import purple from '@material-ui/core/colors/purple';
-import green from '@material-ui/core/colors/green';
+從'@ material-ui / core / styles'導入 { createMuiTheme } ;
+從'@ material-ui / core / colors / purple'導入紫色;
+從'@ material-ui / core / colors / green'導入綠色;
 
-const theme = createMuiTheme({
-  palette: {
+const的主題= createMuiTheme（{
+  調色板： {
     primary: purple,
     secondary: green,
-  },
-  status: {
+  }，
+  的狀態： {
     danger: 'orange',
-  },
-});
+  }，
+}）;
 ```
 
-### `withTheme()(Component) => Component`
+### `withTheme（）（Component）=> Component`
 
-Provide the `theme` object as a property of the input component so it can be used in the render method.
+提供 `主題` 像作為輸入組件的屬性，以便可以在render方法中使用它。
 
-#### Arguments
+#### 參數
 
-1. `Component`: The component that will be wrapped.
+1. `組件`：將被包裝的組件。
 
-#### Returns
+#### 返回
 
-`Component`: The new component created.
+`組件`：創建新組件。
 
-#### Examples
+#### 例子
 
 ```js
-import { withTheme } from '@material-ui/core/styles';
+從'@ material-ui / core / styles'導入 { withTheme } ;
 
-function MyComponent(props) {
+函數MyComponent（props）{
   return <div>{props.theme.direction}</div>;
 }
 
-export default withTheme()(MyComponent);
+導出默認withTheme（）（MyComponent）;
 ```
