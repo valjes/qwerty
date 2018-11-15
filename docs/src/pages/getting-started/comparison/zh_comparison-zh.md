@@ -1,112 +1,112 @@
-# Comparison with other libraries
+# 與其他圖書館比較
 
-<p class="description">You’re here because you want to know if Material-UI can solve your specific problems better. That’s what we hope to answer for you here.</p>
+<p class="description">您在這裡是因為您想知道Material-UI是否可以更好地解決您的具體問題。 這就是我們希望在這里為您解答的問題。</p>
 
-This is definitely one of the most challenging pages in the guide to write, but we do feel it’s important. Odds are, you’ve had problems you tried to solve and you’ve used another library to solve them.
+這絕對是編寫指南中最具挑戰性的頁面之一，但我們確實認為這很重要。 可能的情況是，你遇到了你試圖解決的問題，並且你已經使用了另一個庫來解決它們。
 
-We’d like your help keeping this document up-to-date because the JavaScript world moves fast! If you notice an inaccuracy or something that doesn’t seem quite right, please let us know by [opening an issue](https://github.com/mui-org/material-ui/issues/new?title=[docs]+Inaccuracy+in+comparison+guide).
+我們希望您幫助保持此文檔的最新狀態，因為JavaScript世界快速發展！ 如果您發現不准確或者看起來不太正確的事情，請通過 [打開問題告訴我們](https://github.com/mui-org/material-ui/issues/new?title=[docs]+Inaccuracy+in+comparison+guide)。
 
-We cover the following libraries:
+我們涵蓋以下圖書館：
 
-- [Material-UI](#material-ui)
-- [Material Design Lite (MDL)](#material-design-lite-mdl-)
-- [Material Components Web (MDC-web)](#material-components-web-mdc-web-)
-- [Materialize](#materialize)
-- [React Toolbox](#react-toolbox)
+- [材料的UI](#material-ui)
+- [Material Design Lite（MDL）](#material-design-lite-mdl-)
+- [材料組件Web（MDC-web）](#material-components-web-mdc-web-)
+- [物質化](#materialize)
+- [反應工具箱](#react-toolbox)
 
-## Material-UI
+## 材料的UI
 
-![stars](https://img.shields.io/github/stars/mui-org/material-ui.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/@material-ui/core.svg)
+![明星](https://img.shields.io/github/stars/mui-org/material-ui.svg?style=social&label=Stars) ![npm下載](https://img.shields.io/npm/dm/@material-ui/core.svg)
 
-We'll try very hard to avoid bias, although as the core team, we obviously like Material-UI a lot ❤️. There are some problems we think it solves better than anything else out there; if we didn’t believe that, we wouldn’t be working on it
+我們會盡力避免偏見，雖然作為核心團隊，我們顯然很喜歡Material-UI❤️。 我們認為它解決的問題比其他任何問題都要好;如果我們不相信，我們就不會這樣做
 
-We do want to be fair and accurate though, so where other libraries offer significant advantages we try to list these as well.
+我們確實希望公平和準確，所以在其他圖書館提供顯著優勢的地方，我們也嘗試列出這些。
 
-## Material Design Lite (MDL)
+## Material Design Lite（MDL）
 
-![stars](https://img.shields.io/github/stars/google/material-design-lite.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/material-design-lite.svg)
+![明星](https://img.shields.io/github/stars/google/material-design-lite.svg?style=social&label=Stars) ![npm下載](https://img.shields.io/npm/dm/material-design-lite.svg)
 
-Material Design Lite, while a very well-thought-out Material Design implementation, was primarily maintained by Developer Relations at Google. Today, **the project is no longer maintained**. So what happened?
+Material Design Lite雖然是經過深思熟慮的Material Design實現，但主要由Google的Developer Relations維護。 今天， **該項目不再維護**。 所以發生了什麼事？
 
-The Material Components Web team started out building MDC-web as "MDL v2", but, after collaborating on it for a few months, both teams felt it best to bring the project under the Material Design team's purview. This shift meant a re-orientation of goals away from simply "adding a Material Design look and feel" to websites, and towards the goal of a canonical Material Design implementation for the entire web platform.
+Material Components Web團​​隊開始將MDC-web構建為“MDL v2”，但是，經過幾個月的合作，兩個團隊都認為最好將項目納入Material Design團隊的職權範圍。 這種轉變意味著重新定位目標，而不是簡單地“向網站添加材料設計外觀和感覺”，以及實現整個網絡平台的規範材料設計實現的目標。
 
-## Material Components Web (MDC-web)
+## 材料組件Web（MDC-web）
 
-![stars](https://img.shields.io/github/stars/material-components/material-components-web.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/material-components-web.svg)
+![明星](https://img.shields.io/github/stars/material-components/material-components-web.svg?style=social&label=Stars) ![npm下載](https://img.shields.io/npm/dm/material-components-web.svg)
 
-We are very happy to see this project supported by Google and its design team. It sends a clear signal that the [Material Design specification](https://material.io/design/) is here to stay, as they continue to invest in it.
+我們很高興看到Google及其設計團隊支持該項目。 它發出一個明確的信號，即 [材料設計規範](https://material.io/design/) 將繼續存在，因為它們繼續投資。
 
-### Frameworks and libraries
+### 框架和庫
 
-Material-UI focuses exclusively on the React library, although, given that Preact supports the very same API, we hope to soon support it too. Supporting one framework allows us to do less but do it better.
+Material-UI專注於React庫，但是，鑑於Preact支持相同的API，我們希望很快也能支持它。 支持一個框架可以讓我們做得更少，但做得更好。
 
-This comes in different flavors:
+這有不同的風格：
 
-- Having fewer constraints, we can make trade-offs specific to our target framework. We have fewer edge-cases to take into account.
-- We can spend more time on nailing the React use case.
+- 由於約束較少，我們可以根據目標框架進行權衡。 我們需要考慮更少的邊緣情況。
+- 我們可以花更多的時間來確定React用例。
 
-MDC-web was designed from the ground up to be fully compatible with 3rd party JS frameworks and libraries. They list 3rd-party framework integration projects in the github [README](https://github.com/material-components/material-components-web/#material-components-for-the-web)
+MDC-web從一開始就設計為與第三方JS框架和庫完全兼容。 他們在github [README](https://github.com/material-components/material-components-web/#material-components-for-the-web)列出了第三方框架集成項目
 
-### Styling solution
+### 造型解決方案
 
-[Material-UI carries a heavy legacy with styles](https://github.com/oliviertassinari/a-journey-toward-better-style). Our very first release was using LESS, but seeing the limitation of this solution, we quickly started looking into alternatives. Our first migration was towards using an inline-style solution. This was promising:
+[Material-UI帶有風格](https://github.com/oliviertassinari/a-journey-toward-better-style)的重要遺產。 我們的第一個版本是使用LESS，但看到這個解決方案的局限性，我們很快就開始研究替代方案。 我們的第一次遷移是使用內聯式解決方案。 這很有希望：
 
-- It allowed us to remove the dependency on the LESS toolchain for our users. We removed one important friction in the installation process. (**simpler**)
-- We were able to change the theme at runtime, nest different themes, and have dynamic styles. (**more powerful**)
-- We reduced the loading time by breaking the big monolithic CSS file in order to enable code splitting. (**faster**)
-- The style override story became more intuitive, as we were free of CSS specificity issues. (**simpler**)
+- 它允許我們為用戶刪除對LESS工具鏈的依賴。 我們在安裝過程中刪除了一個重要的摩擦。 （**更簡單**）
+- 我們能夠在運行時更改主題，嵌套不同的主題，並具有動態樣式。 （**更強大**）
+- 我們通過打破大的單片CSS文件來減少加載時間，以便啟用代碼分割。 （**更快**）
+- 樣式覆蓋故事變得更直觀，因為我們沒有CSS特異性問題。 （**更簡單**）
 
-Eventually, we reached the limitations of inline-styles and moved toward a CSS-in-JS solution. This transition was made without losing the enhancements the first migration introduced **We strongly think that CSS-in-JS is the future of the web platform**. You can [learn more about our new styling solution](/customization/css-in-js/) in the documentation.
+最終，我們達到了內聯樣式的局限性，並轉向了CSS-in-JS解決方案。 這種轉變又不失第一次遷移中引入的增強作出 **我們強烈認為，CSS-在-JS是網絡平台的未來**。 你可以 [了解更多關於我們的新造型的解決方案](/customization/css-in-js/) 的文件中。
 
-MDC-web relies on SCSS as Bootstrap v4. The SCSS architecture is pretty close to LESS - a technology we replaced for its limitations.
+MDC-web依賴於SCSS作為Bootstrap v4。 SCSS架構非常接近LESS - 我們為其局限性而取代的技術。
 
-### The vision
+### 願景
 
-Our vision is to provide an elegant implementation of the Material Design guidelines **and more**.
+我們的願景是提供材料設計指南 **和更多的優雅實施**。
 
-> The Material Design guidelines are an incredible starting point, but they do not provide guidance on all aspects or needs of an application. In addition to the guideline-specific implementation, we want Material-UI to become whatever is generally useful for application development, all in the spirit of the Material Design guidelines.
+> 材料設計指南是一個令人難以置信的起點，但它們並未提供有關應用程序所有方面或需求的指導。 除了特定於指南的實現之外，我們還希望Material-UI成為應用程序開發通常有用的任何內容，所有這些都符合Material Design準則的精神。
 > 
-> *[An extract taken from the [vision section](/discover-more/vision/) of the documentation.]*
+> *[摘自文獻的 [視覺部分](/discover-more/vision/)]*
 
-We want to see businesses succeeding in taking advantage of Material-UI to ship an awesome UI to their users while having it match their brand, so we have invested a lot in the customization capabilities of Material-UI.
+我們希望看到企業成功利用Material-UI為用戶提供了一個非常棒的用戶界面，同時讓它與品​​牌相匹配，因此我們在Material-UI的定制功能上投入了大量資金。
 
-The only goal of MDC-Web is to be a Material Design implementation for the web platform. **Nothing more, nothing less**. They will not consider making changes to the components - especially UX changes - that would facilitate additional flexibility at the cost of breaking with the core Material Design system, as that is a non-goal of the project. *[source](https://github.com/mui-org/material-ui/issues/6799#issuecomment-299925174)*
+MDC-Web的唯一目標是成為Web平台的Material Design實現。 **沒有更多，沒有更少**。 他們不會考慮對組件進行更改 - 尤其是用戶體驗更改 - 這會以犧牲核心Material Design系統為代價來促進額外的靈活性，因為這是項目的非目標。 *[來源](https://github.com/mui-org/material-ui/issues/6799#issuecomment-299925174)*
 
-### Tests
+### 測試
 
-Both projects invest a lot in tests. At the time of writing, both projects have over 99% test coverage:
+這兩個項目都在測試中投入了很多。 在撰寫本文時，兩個項目的測試覆蓋率均超過99％：
 
-- Material-UI has 1200+ unit tests running on Chrome 49, Firefox 45, Safari 10 and Edge 14.
-- MDC-web has 1200+ unit tests running on all the major browsers.
+- Material-UI在Chrome 49，Firefox 45，Safari 10和Edge 14上運行了1200多個單元測試。
+- MDC-web在所有主流瀏覽器上運行1200多個單元測試。
 
-Still, there is one thing that sets Material-UI apart and it's key: We have [hundreds of visual regression tests](https://www.argos-ci.com/mui-org/material-ui) when MDC-web doesn't have any. With visual regression tests, you don't have to make any trade-off:
+儘管如此，有一件事將Material-UI與眾不同而且關鍵在於：當MDC-web沒有任何時候，我們有 [百個視覺回歸測試](https://www.argos-ci.com/mui-org/material-ui)。 通過視覺回歸測試，您無需進行任何權衡：
 
-- You can spend less time making sure every contribution doesn't introduce unexpected regressions. The **less** time you spend on a single contribution, the **more** contributions you can accept.
-- You can merge new contributions without digging much. Effectively, you are not waiting for users to report regressions. It's **efficient** and **improves the library quality**.
+- 您可以花更少的時間確保每個貢獻都不會引入意外的回歸。 在 **小於** 時，你在一個單一的貢獻花，在 **以上** 捐款可以接受。
+- 你可以合併新的貢獻，而不需要挖掘太多。 實際上，您不是在等待用戶報告回歸。 它是 **有效** 和 **提高了圖書館質量**。
 
-## Materialize
+## 物質化
 
-![stars](https://img.shields.io/github/stars/Dogfalo/materialize.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/materialize-css.svg)
+![明星](https://img.shields.io/github/stars/Dogfalo/materialize.svg?style=social&label=Stars) ![npm下載](https://img.shields.io/npm/dm/materialize-css.svg)
 
-### Browser support
+### 瀏覽器支持
 
-Materialize supports a wider range of browsers than Material-UI does, for instance, they support IE 10 while [we only support IE 11](/getting-started/supported-platforms/). Only supporting IE 11 allows us to take full advantage of the flexbox layout. IE 10 has many issues with flexbox.
+Materialize支持比Material-UI更廣泛的瀏覽器，例如，它們支持IE 10，而 [我們只支持IE 11](/getting-started/supported-platforms/)。 只支持IE 11，我們才能充分利用flexbox佈局。 IE 10與flexbox有很多問題。
 
-### Styling solution
+### 造型解決方案
 
-Materialize uses SCSS, a styling architecture Material-UI moved away from 2 years ago. We explain why in the [MDC-web section](#styling-solution) above.
+Materialise使用SCSS，一種造型架構Material-UI從2年前開始移動。 我們在上面的 [MDC-web部分](#styling-solution) 解釋了原因。
 
-## React Toolbox
+## 反應工具箱
 
-![stars](https://img.shields.io/github/stars/react-toolbox/react-toolbox.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/react-toolbox.svg)
+![明星](https://img.shields.io/github/stars/react-toolbox/react-toolbox.svg?style=social&label=Stars) ![npm下載](https://img.shields.io/npm/dm/react-toolbox.svg)
 
-### Styling solution
+### 造型解決方案
 
-While both React Toolbox and Material-UI are betting on CSS-in-JS, we have taken a different trade-off. Material-UI has chosen **JSS** while React Toolbox started rewriting their library with **styled-components**. We picked JSS over styled-components for the following reason:
+雖然React Toolbox和Material-UI都在關注CSS-in-JS，但我們採取了不同的權衡。 Material-UI選擇了 **JSS** 而React Toolbox開始用 **樣式組件重寫他們的庫**。 我們在樣式組件上選擇了JSS，原因如下：
 
-- JSS exposes a low-level API: 
-  - We are free to model it to our unique needs, which has allowed us to build one of the most advanced override and theming mechanism.
-  - It's not coupled to React like `styled-components` is. It has the potential to reach any 3rd party JS frameworks and libraries. The parallels can be made with SCSS. SCSS is compatible with any JavaScript frameworks and libraries, helping it to get traction in the community.
-- JSS is [two times faster](https://github.com/A-gambit/CSS-IN-JS-Benchmarks/blob/master/RESULT.md) to mount components than styled-components is, with all the optimization turned on.
+- JSS公開了一個低級API： 
+  - 我們可以根據我們的獨特需求進行建模，這使我們能夠構建最先進的覆蓋和主題機制之一。
+  - 它沒有像 `樣式的組件` 那樣耦合到React。 它有可能覆蓋任何第三方JS框架和庫。 可以使用SCSS進行相似之處。 SCSS與任何JavaScript框架和庫兼容，有助於它在社區中獲得牽引力。
+- JSS是 [快兩倍](https://github.com/A-gambit/CSS-IN-JS-Benchmarks/blob/master/RESULT.md) 安裝組件比風格的成分是，所有的優化開啟。
 
-This is not to say that Material-UI is opinionated about how users write their styles. You can use styled-components if you would like to do so.
+這並不是說Material-UI是關於用戶如何編寫樣式的觀點。 如果您願意，可以使用樣式組件。
