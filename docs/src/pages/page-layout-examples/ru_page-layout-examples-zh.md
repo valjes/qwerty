@@ -1,13 +1,13 @@
-# Page layout examples
+# Примеры макета страницы
 
-<p class="description">A selection of basic page layouts to help you get started building your app.</p>
+<p class="description">Выбор основных макетов страниц, которые помогут вам приступить к созданию своего приложения.</p>
 
-They can be combined with one of the [example applications](https://github.com/mui-org/material-ui/tree/master/examples) to form a complete starter.
+Их можно комбинировать с одним из [примерных приложений](https://github.com/mui-org/material-ui/tree/master/examples) чтобы сформировать полный стартер.
 
-Sections of each layout are clearly defined either by comments or use of separate files, making it simple to extract parts of a page (such as a "hero unit", or footer, for example) for reuse in other pages.
+Разделы каждого макета четко определяются либо комментариями, либо использованием отдельных файлов, что упрощает извлечение части страницы (например, «единица героя» или нижний колонтитул, например) для повторного использования на других страницах.
 
-For multi-part examples, a table in the README at the linked source code location describes the purpose of each file.
+Для примеров с несколькими частями таблица в README в привязке исходного кода описывает назначение каждого файла.
 
-{{"demo": "pages/page-layout-examples/PageLayoutExamples.js", "hideHeader": true}}
+{{"demo": "pages / page-layout-examples / PageLayoutExamples.js", "hideHeader": true}}
 
-If while using these examples you make changes or enhancements that could improve the developer experience, or you would like to contribute an additional example, please consider creating a [pull-request on GitHub](https://github.com/mui-org/material-ui/pulls).
+Если при использовании этих примеров вы вносите изменения или улучшения, которые могли бы улучшить опыт разработчика, или вы хотели бы добавить дополнительный пример, рассмотрите возможность создания запроса на выбор [на GitHub](https://github.com/mui-org/material-ui/pulls).
