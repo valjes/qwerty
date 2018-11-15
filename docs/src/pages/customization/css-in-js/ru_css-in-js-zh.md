@@ -1,44 +1,44 @@
-# CSS in JS
+# CSS в JS
 
-<p class="description">即使您没有使用我们的组件, 您也可以利用我们的造型解决方案。</p>
+<p class="description">即使 您 没有 使用 我们 的 组件, 您 也 可以 利用 我们 的 造型 解决 方案.</p>
 
-Material-UI aims to provide strong foundations for building dynamic UIs. For the sake of simplicity, **we expose our styling solution to users**. You can use it, but you don't have to. This styling solution is [interoperable with](/guides/interoperability/) all the other major solutions.
+Material-UI нацелен на создание прочных основ для создания динамических пользовательских интерфейсов. Для простоты, **мы разоблачим наше решение для стилей для пользователей**. Вы можете использовать его, но вам этого не нужно. Это решение для моделирования является [совместимым с](/guides/interoperability/) всеми другими основными решениями.
 
-## Material-UI's styling solution
+## Решение для моделирования материала-UI
 
-In previous versions, Material-UI has used LESS, then a custom inline-style solution to write the style of the components, but these approaches have proven to be limited. Most recently, we have [moved toward](https://github.com/oliviertassinari/a-journey-toward-better-style) a *CSS-in-JS* solution. It **unlocks many great features** (theme nesting, dynamic styles, self-support, etc.). We think that it's the future:
+В предыдущих версиях Material-UI использовал LESS, а затем пользовательское встроенное решение для написания стиля компонентов, но эти подходы оказались ограниченными. Совсем недавно, мы имеем [перемещается к](https://github.com/oliviertassinari/a-journey-toward-better-style) *CSS-в-JS* раствора. Он **разблокирует множество замечательных функций** (тематическое вложение, динамические стили, самоподдержка и т. Д.). Мы считаем, что это будущее:
 
-- [A Unified Styling Language](https://medium.com/seek-blog/a-unified-styling-language-d0c208de2660)
-- [The future of component-based styling](https://medium.freecodecamp.org/css-in-javascript-the-future-of-component-based-styling-70b161a79a32)
-- [Convert SCSS (Sass) to CSS-in-JS](https://egghead.io/courses/convert-scss-sass-to-css-in-js)
+- [Единый язык стилизации](https://medium.com/seek-blog/a-unified-styling-language-d0c208de2660)
+- [Будущее компоновки на основе компонентов](https://medium.freecodecamp.org/css-in-javascript-the-future-of-component-based-styling-70b161a79a32)
+- [Преобразование SCSS (Sass) в CSS-in-JS](https://egghead.io/courses/convert-scss-sass-to-css-in-js)
 
-So, you may have noticed in the demos what *CSS-in-JS* looks like. We use the higher-order component created by [`withStyles`](#api) to inject an array of styles into the DOM as CSS, using JSS. Here's an example:
+Таким образом, вы , возможно, заметили в демоса , что *CSS-в-JS* выглядит. Мы используем компонент более высокого порядка, созданный с помощью [`withStyles`](#api) чтобы ввести массив стилей в DOM как CSS, используя JSS. Вот пример:
 
-{{"demo": "pages/customization/css-in-js/CssInJs.js"}}
+{{"demo": "pages / customization / css-in-js / CssInJs.js"}}
 
 ## JSS
 
-Material-UI's styling solution uses [JSS](https://github.com/cssinjs/jss) at its core. It's a [high performance](https://github.com/cssinjs/jss/blob/master/docs/performance.md) JS to CSS compiler which works at runtime and server-side. It is about 8 kB (minified and gzipped) and is extensible via a [plugins](https://github.com/cssinjs/jss/blob/master/docs/plugins.md) API.
+Решение для моделирования материала-UI использует [JSS](https://github.com/cssinjs/jss) по своему ядру. Это [высокой производительности](https://github.com/cssinjs/jss/blob/master/docs/performance.md) JS для компилятора CSS , который работает во время выполнения и на стороне сервера. Это около 8 кБ (минимизировано и gzipped) и расширяемо через API-интерфейсы [plugins](https://github.com/cssinjs/jss/blob/master/docs/plugins.md).
 
-If you end up using this styling solution in your codebase, you're going to need to *learn the API*. The best place to start is by looking at the features that each [plugin](http://cssinjs.org/plugins/) provides. Material-UI uses [few of them](#plugins). You can always add new plugins if needed with the [`JssProvider`](https://github.com/cssinjs/react-jss#custom-setup) helper.
+Если вы в конечном итоге с помощью этого стайлинга решение в вашем коде, вы будете нуждаться в *изучить API*. Самое лучшее место для начала, глядя на особенности , что каждый [плагин](http://cssinjs.org/plugins/) обеспечивает. Material-UI использует [из них](#plugins). Вы всегда можете добавить новые плагины, если необходимо, с помощью помощника [`JssProvider`](https://github.com/cssinjs/react-jss#custom-setup).
 
-If you wish to build your own instance of `jss` **and** support *rtl* make sure you also include the [jss-rtl](https://github.com/alitaheri/jss-rtl) plugin. Check the jss-rtl [readme](https://github.com/alitaheri/jss-rtl#simple-usage) to learn how.
+Если вы хотите создать свой собственный экземпляр `jss` **и** поддержите *rtl* убедитесь, что вы также включили [jss-rtl](https://github.com/alitaheri/jss-rtl) плагин. Проверьте jss-rtl [readme](https://github.com/alitaheri/jss-rtl#simple-usage) чтобы узнать, как это сделать.
 
-## Sheets registry
+## Реестр ведомостей
 
-When rendering on the server, you will need to get all rendered styles as a CSS string. The `SheetsRegistry` class allows you to manually aggregate and stringify them. Read more about [Server Rendering](/guides/server-rendering/).
+При рендеринге на сервере вам нужно будет получить все отображаемые стили в виде строки CSS. Класс `SheetsRegistry` позволяет вручную группировать и строгать их. Подробнее о [серверах Rendering](/guides/server-rendering/).
 
-{{"demo": "pages/customization/css-in-js/JssRegistry.js", "hideEditButton": true}}
+{{"demo": "pages / customization / css-in-js / JssRegistry.js", "hideEditButton": true}}
 
-## Sheets manager
+## Менеджер листов
 
-The sheets manager uses a [reference counting](https://en.wikipedia.org/wiki/Reference_counting) algorithm in order to attach and detach the style sheets only once per (styles, theme) couple. This technique provides an important performance boost when re-rendering instances of a component.
+Менеджер листов использует [подсчет ссылочный](https://en.wikipedia.org/wiki/Reference_counting) алгоритм для того , чтобы прикрепиться и разделиться таблицы стилей только один раз в (стили, темы) пара. Этот метод обеспечивает значительное повышение производительности при повторной передаче экземпляров компонента.
 
-When only rendering on the client, that's not something you need to be aware of. However, when rendering on the server you do. You can read more about [Server Rendering](/guides/server-rendering/).
+Когда только рендеринг на клиенте, это не то, о чем вам нужно знать. Однако при рендеринге на сервере вы это делаете. Вы можете узнать больше о [Server Rendering](/guides/server-rendering/).
 
-## Class names
+## Названия классов
 
-You may have noticed that the class names generated by our styling solution are **non-deterministic**, so you can't rely on them to stay the same. The following CSS won't work:
+Возможно, вы заметили, что имена классов, сгенерированные нашим решением для стилизации, являются **недетерминированными**, поэтому вы не можете полагаться на них, чтобы оставаться неизменными. Следующий CSS не будет работать:
 
 ```css
 .MuiAppBar-root-12 {
@@ -46,76 +46,76 @@ You may have noticed that the class names generated by our styling solution are 
 }
 ```
 
-Instead, you have to use the `classes` property of a component to override them. On the other hand, thanks to the non-deterministic nature of our class names, we can implement optimizations for development and production. They are easy to debug in development and as short as possible in production:
+Вместо этого вы должны использовать свойство `классов` компонента для их переопределения. С другой стороны, благодаря неопределенному характеру имен наших классов мы можем реализовать оптимизацию для разработки и производства. Они легко отлаживаются в разработке и как можно короче в производстве:
 
-- development: `.MuiAppBar-root-12`
-- production: `.jss12`
+- разработка: `.MuiAppBar-root-12`
+- производство: `.jss12`
 
-If you don't like this default behavior, you can change it. JSS relies on the concept of [class name generator](http://cssinjs.org/js-api/#generate-your-own-class-names).
+Если вам не нравится это поведение по умолчанию, вы можете его изменить. JSS опирается на концепцию [класса имя генератора](http://cssinjs.org/js-api/#generate-your-own-class-names).
 
-### Global CSS
+### Глобальный CSS
 
-We provide a custom implementation of the class name generator for Material-UI needs: [`createGenerateClassName()`](#creategenerateclassname-options-class-name-generator). As well as the option to make the class names **deterministic** with the `dangerouslyUseGlobalCSS` option. When turned on, the class names will look like this:
+Мы предоставляем пользовательскую реализацию генератора имен классов для потребностей Material-UI: [`createGenerateClassName ()`](#creategenerateclassname-options-class-name-generator). А также возможность сделать имена классов **детерминированными** с `опасноUseGlobalCSS`. При включении имена классов будут выглядеть так:
 
-- development: `.MuiAppBar-root`
-- production: `.MuiAppBar-root`
+- разработка: `.MuiAppBar-root`
+- производство: `.MuiAppBar-root`
 
-⚠️ **Be cautious when using `dangerouslyUseGlobalCSS`.** We provide this option as an escape hatch for quick prototyping. Relying on it for code running in production has the following implications:
+⚠️ **Будьте осторожны при использовании `опасноUseGlobalCSS`.** Мы предоставляем эту опцию в качестве защитного люка для быстрого прототипирования. Опираясь на это для запуска кода в производстве имеет следующие последствия:
 
-- Global CSS is inherently fragile. People use strict methodologies like [BEM](http://getbem.com/introduction/) to workaround the issue.
-- It's harder to keep track of `classes` API changes.
+- Глобальный CSS по своей сути является хрупким. Люди используют строгие методологии, такие как [BEM](http://getbem.com/introduction/) для решения проблемы.
+- Сложнее отслеживать изменения API-интерфейсов `классов`.
 
-⚠️ When using `dangerouslyUseGlobalCSS` standalone (without Material-UI), you should name your style sheets. `withStyles` has a name option for that:
+⚠️ При использовании `опасноUseGlobalCSS` автономно (без Material-UI), вы должны назвать свои таблицы стилей. `withStyles` имеет для этого параметр имени:
 
 ```jsx
-const Button = withStyles(styles, { name: 'button' })(ButtonBase)
+const Button = withStyles (стили, { name: 'button' }) (ButtonBase)
 ```
 
-## CSS injection order
+## Порядок вставки CSS
 
-The CSS injected by Material-UI to style a component has the highest specificity possible as the `<link>` is injected at the bottom of the `<head>` to ensure the components always render correctly.
+CSS, введенный Material-UI для стилизации компонента, имеет самую высокую специфичность, поскольку `<link>` вводится в нижней части `<head>` чтобы гарантировать, что компоненты всегда отображаются правильно.
 
-You might, however, also want to override these styles, for example with styled-components. If you are experiencing a CSS injection order issue, JSS [provides a mechanism](https://github.com/cssinjs/jss/blob/master/docs/setup.md#specify-dom-insertion-point) to handle this situation. By adjusting the placement of the `insertionPoint` within your HTML head you can [control the order](http://cssinjs.org/js-api/#attach-style-sheets-in-a-specific-order) that the CSS rules are applied to your components.
+Однако вы можете также переопределить эти стили, например, с помощью стилизованных компонентов. Если вы столкнулись с проблемой заказа на поставку CSS, JSS [предоставляет механизм](https://github.com/cssinjs/jss/blob/master/docs/setup.md#specify-dom-insertion-point) для обработки этой ситуации. Регулируя размещение `ТочкаВставки` в вашем HTML голове вы можете [контролировать порядок](http://cssinjs.org/js-api/#attach-style-sheets-in-a-specific-order) , что правила CSS применяются к компонентам.
 
-### HTML comment
+### Комментарий HTML
 
-The simplest approach is to add an HTML comment that determines where JSS will inject the styles:
+Самый простой подход - добавить комментарий HTML, который определяет, где JSS будет вводить стили:
 
 ```jsx
 <head>
-  <!-- jss-insertion-point -->
+  <! - jss-insertion-point ->
   <link href="..." />
 </head>
 ```
 
 ```jsx
-import JssProvider from 'react-jss/lib/JssProvider';
-import { create } from 'jss';
-import { createGenerateClassName, jssPreset } from '@material-ui/core/styles';
+импортировать JssProvider из 'response-jss / lib / JssProvider';
+import { create } из 'jss';
+import { createGenerateClassName, jssPreset } из '@ material-ui / core / styles';
 
-const generateClassName = createGenerateClassName();
-const jss = create({
-  ...jssPreset(),
-  // We define a custom insertion point that JSS will look for injecting the styles in the DOM.
+const generateClassName = createGenerateClassName ();
+const jss = create ({
+  ... jssPreset (),
+  // Мы определяем настраиваемую точку вставки, которую JSS будет искать для вставки стилей в DOM.
   insertionPoint: 'jss-insertion-point',
 });
 
-function App() {
+функция App () {
   return (
     <JssProvider jss={jss} generateClassName={generateClassName}>
-      ...
+...
     </JssProvider>
   );
 }
 
-export default App;
+экспортное приложение по умолчанию;
 ```
 
-### Other HTML element
+### Другой элемент HTML
 
-[Create React App](https://github.com/facebook/create-react-app) strips HTML comments when creating the production build. To get around the issue, you can provide a DOM element (other than a comment) as the JSS insertion point.
+[Create React App](https://github.com/facebook/create-react-app) разбивает комментарии HTML при создании сборки сборки. Чтобы обойти эту проблему, вы можете указать элемент DOM (кроме комментария) в качестве точки вставки JSS.
 
-For example, a `<noscript>` element:
+Например, элемент `<noscript>`:
 
 ```jsx
 <head>
@@ -125,127 +125,127 @@ For example, a `<noscript>` element:
 ```
 
 ```jsx
-import JssProvider from 'react-jss/lib/JssProvider';
-import { create } from 'jss';
-import { createGenerateClassName, jssPreset } from '@material-ui/core/styles';
+импортировать JssProvider из 'response-jss / lib / JssProvider';
+import { create } из 'jss';
+import { createGenerateClassName, jssPreset } из '@ material-ui / core / styles';
 
-const generateClassName = createGenerateClassName();
-const jss = create({
-  ...jssPreset(),
-  // We define a custom insertion point that JSS will look for injecting the styles in the DOM.
-  insertionPoint: document.getElementById('jss-insertion-point'),
+const generateClassName = createGenerateClassName ();
+const jss = create ({
+  ... jssPreset (),
+  // Мы определяем настраиваемую точку вставки, которую JSS будет искать для вставки стилей в DOM.
+  insertionPoint: document.getElementById ('jss-insertion-point'),
 });
 
-function App() {
+функция App () {
   return (
     <JssProvider jss={jss} generateClassName={generateClassName}>
-      ...
+...
     </JssProvider>
   );
 }
 
-export default App;
+экспортное приложение по умолчанию;
 ```
 
 ### JS createComment
 
-codesandbox.io prevents the access to the `<head>` element. To get around the issue, you can use the JavaScript `document.createComment()` API:
+codesandbox.io предотвращает доступ к элементу `<head>`. Чтобы обойти эту проблему, вы можете использовать JavaScript `document.createComment ()` API:
 
 ```jsx
-import JssProvider from 'react-jss/lib/JssProvider';
-import { create } from 'jss';
-import { createGenerateClassName, jssPreset } from '@material-ui/core/styles';
+импортировать JssProvider из 'response-jss / lib / JssProvider';
+import { create } из 'jss';
+import { createGenerateClassName, jssPreset } из '@ material-ui / core / styles';
 
-const styleNode = document.createComment("jss-insertion-point");
-document.head.insertBefore(styleNode, document.head.firstChild);
+const styleNode = document.createComment ("jss-insertion-point");
+document.head.insertBefore (styleNode, document.head.firstChild);
 
-const generateClassName = createGenerateClassName();
-const jss = create({
-  ...jssPreset(),
-  // We define a custom insertion point that JSS will look for injecting the styles in the DOM.
+const generateClassName = createGenerateClassName ();
+const jss = create ({
+  ... jssPreset (),
+  // Мы определяем настраиваемую точку вставки, которую JSS будет искать для вставки стилей в DOM.
   insertionPoint: 'jss-insertion-point',
 });
 
-function App() {
+функция App () {
   return (
     <JssProvider jss={jss} generateClassName={generateClassName}>
-      ...
+...
     </JssProvider>
   );
 }
 
-export default App;
+экспортное приложение по умолчанию;
 ```
 
 ## JssProvider
 
-react-jss exposes a `JssProvider` component to configure JSS for the underlying child components. There are different use cases:
+response-jss предоставляет компонент `JssProvider` для настройки JSS для базовых дочерних компонентов. Существуют различные варианты использования:
 
-- Providing a class name generator.
-- [Providing a Sheets registry.](/customization/css-in-js/#sheets-registry)
-- Providing a JSS instance. You might want to support [Right-to-left](/guides/right-to-left/) or changing the [CSS injection order](/customization/css-in-js/#css-injection-order). Read [the JSS documentation](http://cssinjs.org/js-api/) to learn more about the options available. Here is an example:
+- Предоставление генератора имен классов.
+- [Предоставление реестра листов.](/customization/css-in-js/#sheets-registry)
+- Предоставление экземпляра JSS. Возможно, вы захотите поддержать [справа налево](/guides/right-to-left/) или изменить [порядок вставки CSS](/customization/css-in-js/#css-injection-order). Прочтите [документацию JSS](http://cssinjs.org/js-api/) чтобы узнать больше о доступных параметрах. Вот пример:
 
 ```jsx
-import JssProvider from 'react-jss/lib/JssProvider';
-import { create } from 'jss';
-import { createGenerateClassName, jssPreset } from '@material-ui/core/styles';
+импортировать JssProvider из 'response-jss / lib / JssProvider';
+import { create } из 'jss';
+import { createGenerateClassName, jssPreset } из '@ material-ui / core / styles';
 
-const generateClassName = createGenerateClassName();
-const jss = create(jssPreset());
+const generateClassName = createGenerateClassName ();
+const jss = create (jssPreset ());
 
-function App() {
+функция App () {
   return (
     <JssProvider jss={jss} generateClassName={generateClassName}>
-      ...
+...
     </JssProvider>
   );
 }
 
-export default App;
+экспортное приложение по умолчанию;
 ```
 
-## Plugins
+## Плагины
 
-JSS uses the concept of plugins to extend its core, allowing people to cherry-pick the features they need. You pay the performance overhead for only what's you are using. Given `withStyles` is our internal styling solution, all the plugins aren't available by default. We have added the following list:
+JSS использует концепцию плагинов для расширения своего ядра, позволяя людям зависеть от функций, которые им нужны. Вы оплачиваете накладные расходы только за то, что используете. Учитывая, что `withStyles` является нашим внутренним решением для моделирования, все плагины недоступны по умолчанию. Мы добавили следующий список:
 
-- [jss-global](http://cssinjs.org/jss-global/)
-- [jss-nested](http://cssinjs.org/jss-nested/)
-- [jss-camel-case](http://cssinjs.org/jss-camel-case/)
-- [jss-default-unit](http://cssinjs.org/jss-default-unit/)
-- [jss-vendor-prefixer](http://cssinjs.org/jss-vendor-prefixer/)
-- [jss-props-sort](http://cssinjs.org/jss-props-sort/)
+- [JSS-глобальный](http://cssinjs.org/jss-global/)
+- [JSS-вложенными](http://cssinjs.org/jss-nested/)
+- [JSS-верблюд случай](http://cssinjs.org/jss-camel-case/)
+- [JSS-умолчанию-блок](http://cssinjs.org/jss-default-unit/)
+- [JSS-поставщика prefixer](http://cssinjs.org/jss-vendor-prefixer/)
+- [JSS-реквизит сортировка](http://cssinjs.org/jss-props-sort/)
 
-It's a subset of [jss-preset-default](http://cssinjs.org/jss-preset-default/). Of course, you are free to add a new plugin. We have one example for the [`jss-rtl` plugin](/guides/right-to-left/#3-jss-rtl).
+Это подмножество [jss-preset-default](http://cssinjs.org/jss-preset-default/). Конечно, вы можете добавить новый плагин. Мы имеем один пример для [`JSS-РТЛ` плагина](/guides/right-to-left/#3-jss-rtl).
 
 ## API
 
-### `withStyles(styles, [options]) => higher-order component`
+### `withStyles (styles, [options]) => компонент более высокого порядка`
 
-Link a style sheet with a component. It does not modify the component passed to it; instead, it returns a new component with a `classes` property. This `classes` object contains the name of the class names injected in the DOM.
+Свяжите таблицу стилей с компонентом. Он не изменяет переданный ему компонент; вместо этого он возвращает новый компонент с свойством `классов`. Этот объект `классов` содержит имя названий классов, введенных в DOM.
 
-Some implementation details that might be interesting to being aware of:
+Некоторые детали реализации, которые могут быть интересны для понимания:
 
-- It adds a `classes` property so you can override the injected class names from the outside.
-- It adds an `innerRef` property so you can get a reference to the wrapped component. The usage of `innerRef` is identical to `ref`.
-- It forwards *non React static* properties so this HOC is more "transparent". For instance, it can be used to defined a `getInitialProps()` static method (next.js).
+- Он добавляет свойство `классов` чтобы вы могли переопределить введенные имена классов извне.
+- Он добавляет свойство `innerRef` поэтому вы можете получить ссылку на обернутый компонент. Использование `innerRef` идентично `ref`.
+- Он перенаправляет *не React static* свойств, поэтому этот HOC является более «прозрачным». Например, он может быть использован для определен `getInitialProps ()` статический метод (next.js).
 
-#### Arguments
+#### аргументы
 
-1. `styles` (*Function | Object*): A function generating the styles or a styles object. It will be linked to the component. Use the function signature if you need to have access to the theme. It's provided as the first argument.
-2. `options` (*Object* [optional]): 
-    - `options.withTheme` (*Boolean* [optional]): Defaults to `false`. Provide the `theme` object to the component as a property.
-    - `options.name` (*String* [optional]): The name of the style sheet. Useful for debugging. If the value isn't provided, it will try to fallback to the name of the component.
-    - `options.flip` (*Boolean* [optional]): When set to `false`, this sheet will opt-out the `rtl` transformation. When set to `true`, the styles are inversed. When set to `null`, it follows `theme.direction`.
-    - The other keys are forwarded to the options argument of [jss.createStyleSheet([styles], [options])](http://cssinjs.org/js-api/#create-style-sheet).
+1. `стилей` (*Функция | Объект*): функция, генерирующая стили или объект стилей. Он будет связан с компонентом. Используйте подпись функции, если вам нужен доступ к теме. Это первый аргумент.
+2. `опции` (*Объект* [optional]): 
+    - `options.withTheme` (*Boolean* [optional]): По умолчанию `false`. Предоставьте объект `темы` компоненту как свойство.
+    - `options.name` (*String* [optional]): имя таблицы стилей. Полезно для отладки. Если значение не указано, оно попытается отступить от имени компонента.
+    - `options.flip` (*Boolean* [optional]): если установлено значение `false`, этот лист откажется от преобразования `rtl`. Когда установлено значение `true`, стили обращаются. Если установлено значение `null`, это означает `theme.direction`.
+    - Другие ключи пересылаются в аргумент options [jss.createStyleSheet ([styles], [options])](http://cssinjs.org/js-api/#create-style-sheet).
 
-#### Returns
+#### Возвращает
 
-`higher-order component`: Should be used to wrap a component.
+`компонент более высокого порядка`: следует использовать для обертывания компонента.
 
-#### Examples
+#### Примеры
 
 ```jsx
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles } из '@ material-ui / core / styles';
 
 const styles = {
   root: {
@@ -253,19 +253,19 @@ const styles = {
   },
 };
 
-class MyComponent extends React.Component {
+класс MyComponent расширяет React.Component {
   render () {
     return <div className={this.props.classes.root} />;
   }
 }
 
-export default withStyles(styles)(MyComponent);
+экспорт по умолчанию withStyles (styles) (MyComponent);
 ```
 
-Also, you can use as [decorators](https://babeljs.io/docs/en/babel-plugin-proposal-decorators) like so:
+Кроме того, вы можете использовать как [декораторов](https://babeljs.io/docs/en/babel-plugin-proposal-decorators) так:
 
 ```jsx
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles } из '@ material-ui / core / styles';
 
 const styles = {
   root: {
@@ -273,76 +273,76 @@ const styles = {
   },
 };
 
-@withStyles(styles)
-class MyComponent extends React.Component {
+@withStyles (стили)
+класс MyComponent расширяет React.Component {
   render () {
     return <div className={this.props.classes.root} />;
   }
 }
 
-export default MyComponent
+экспорт по умолчанию MyComponent
 ```
 
-### `createGenerateClassName([options]) => class name generator`
+### `createGenerateClassName ([options]) => генератор имен классов`
 
-A function which returns [a class name generator function](http://cssinjs.org/js-api/#generate-your-own-class-names).
+Функция, которая возвращает [функцию генератора имен классов](http://cssinjs.org/js-api/#generate-your-own-class-names).
 
-#### Arguments
+#### аргументы
 
-1. `options` (*Object* [optional]): 
-    - `options.dangerouslyUseGlobalCSS` (*Boolean* [optional]): Defaults to `false`. Makes the Material-UI class names deterministic.
-    - `options.productionPrefix` (*String* [optional]): Defaults to `'jss'`. The string used to prefix the class names in production.
-    - `options.seed` (*String* [optional]): Defaults to `''`. The string used to uniquely identify the generator. It can be used to avoid class name collisions when using multiple generators.
+1. `опции` (*Объект* [optional]): 
+    - `options.dangerouslyUseGlobalCSS` (*Boolean* [optional]): По умолчанию `false`. Делает имена класса Material-UI детерминированными.
+    - `options.productionPrefix` (*String* [optional]): По умолчанию `'jss'`. Строка, используемая для префикса имен классов в процессе производства.
+    - `options.seed` (*String* [optional]): По умолчанию `''`. Строка, используемая для однозначной идентификации генератора. Его можно использовать, чтобы избежать конфликтов имен классов при использовании нескольких генераторов.
 
-#### Returns
+#### Возвращает
 
-`class name generator`: The generator should be provided to JSS.
+`генератор имен классов`: генератор должен быть предоставлен JSS.
 
-#### Examples
+#### Примеры
 
 ```jsx
-import JssProvider from 'react-jss/lib/JssProvider';
-import { createGenerateClassName } from '@material-ui/core/styles';
+импортировать JssProvider из 'response-jss / lib / JssProvider';
+import { createGenerateClassName } из '@ material-ui / core / styles';
 
-const generateClassName = createGenerateClassName({
+const generateClassName = createGenerateClassName ({
   dangerouslyUseGlobalCSS: true,
   productionPrefix: 'c',
 });
 
-function App() {
+функция App () {
   return (
     <JssProvider generateClassName={generateClassName}>
-      ...
+...
     </JssProvider>
   );
 }
 
-export default App;
+экспортное приложение по умолчанию;
 ```
 
-## Alternative APIs
+## Альтернативные API
 
-Do you think that [higher-order components are the new mixins](https://cdb.reacttraining.com/use-a-render-prop-50de598f11ce)? Rest assured we don't, however because `withStyles()` is a higher-order component, it can be extended with just a **few lines of code** to match different patterns that are all idiomatic React. Here are a couple of examples.
+Считаете ли вы, что [компонентов более высокого порядка являются новыми mixins](https://cdb.reacttraining.com/use-a-render-prop-50de598f11ce)? Будьте уверены, мы этого не сделаем, однако, поскольку `withStyles ()` является компонентом более высокого порядка, его можно расширить только с помощью **строк кода** чтобы соответствовать различным шаблонам, которые являются идиоматическим Реагированием. Вот несколько примеров.
 
-### Render props API (+11 lines)
+### Render props API (+11 строк)
 
-The term [“render prop”](https://reactjs.org/docs/render-props.html) refers to a simple technique for sharing code between React components using a prop whose value is a function.
+Термин [«render prop»](https://reactjs.org/docs/render-props.html) относится к простой методике совместного использования кода между компонентами React с использованием prop, значение которого является функцией.
 
 ```jsx
-// You will find the `createStyled` implementation in the source of the demo.
-const Styled = createStyled({
+// Вы найдете реализацию `createStyled` в источнике демонстрации.
+const Styled = createStyled ({
   root: {
-    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+    background: 'linear-gradient (45deg, # FE6B8B 30%, # FF8E53 90%)',
     borderRadius: 3,
     border: 0,
     color: 'white',
     height: 48,
     padding: '0 30px',
-    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+    boxShadow: '0 3px 5px 2px rgba (255, 105, 135, .3)',
   },
 });
 
-function RenderProps() {
+функция RenderProps () {
   return (
     <Styled>
       {({ classes }) => (
@@ -355,48 +355,48 @@ function RenderProps() {
 }
 ```
 
-{{"demo": "pages/customization/css-in-js/RenderProps.js"}}
+{{"demo": "pages / customization / css-in-js / RenderProps.js"}}
 
-You can access the theme the same way you would do it with `withStyles`:
+Вы можете получить доступ к теме так же, как и с помощью `withStyles`:
 
 ```js
-const Styled = createStyled(theme => ({
-  root: {
+const Styled = createStyled (тема => ({
+  корень: {
     backgroundColor: theme.palette.background.paper,
   },
 }));
 ```
 
-[@jedwards1211](https://github.com/jedwards1211) Has taken the time to move this module into a package: [material-ui-render-props-styles](https://github.com/jcoreio/material-ui-render-props-styles). Feel free to use it.
+[@ jedwards1211](https://github.com/jedwards1211) Потрачено время, чтобы переместить этот модуль в пакет: [материала-ui-render-реквизит-стили](https://github.com/jcoreio/material-ui-render-props-styles). Не стесняйтесь использовать его.
 
-### styled-components API (+15 lines)
+### API стильных компонентов (+15 строк)
 
-styled-components's API removes the mapping between components and styles. Using components as a low-level styling construct can be simpler.
+API стилизованных компонентов удаляет сопоставление между компонентами и стилями. Использование компонентов в качестве структуры стилей низкого уровня может быть проще.
 
 ```jsx
-// You will find the `styled` implementation in the source of the demo.
-// You can even write CSS with https://github.com/cssinjs/jss-template.
-const MyButton = styled(Button)({
-  background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+// Вы найдете «стилизованную» реализацию в источнике демонстрации.
+// Вы даже можете писать CSS с помощью https://github.com/cssinjs/jss-template.
+const MyButton = style (Button) ({
+  background: 'linear-gradient (45deg, # FE6B8B 30%, # FF8E53 90%)',
   borderRadius: 3,
   border: 0,
   color: 'white',
-  height: 48,
+  height : 48,
   padding: '0 30px',
-  boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+  boxShadow: '0 3px 5px 2px rgba (255, 105, 135, .3)',
 });
 
-function StyledComponents() {
+функция StyledComponents () {
   return <MyButton>{'Styled Components'}</MyButton>;
 }
 ```
 
-{{"demo": "pages/customization/css-in-js/StyledComponents.js"}}
+{{"demo": "pages / customization / css-in-js / StyledComponents.js"}}
 
-You can access the theme the same way you would do it with `withStyles`:
+Вы можете получить доступ к теме так же, как и с помощью `withStyles`:
 
 ```js
-const MyButton = styled(Button)(theme => ({
+const MyButton = стиль (кнопка) (тема => ({
   backgroundColor: theme.palette.background.paper,
 }));
 ```
