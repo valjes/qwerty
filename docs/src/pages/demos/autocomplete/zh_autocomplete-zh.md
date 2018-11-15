@@ -1,33 +1,33 @@
 ---
-title: Autocomplete React component
-components: TextField, Paper, MenuItem, Popper
+title: 自動完成React組件
+components: TextField，Paper，MenuItem，Popper
 ---
-# Autocomplete
+# 自動完成
 
-<p class="description">The autocomplete is a normal text input enhanced by a panel of suggested options.</p>
+<p class="description">自動填充是由一組建議選項增強的普通文本輸入。</p>
 
-Material-UI doesn't provide any high-level API for solving this problem. We encourage people relying on the solutions the React community has built.
+Material-UI不提供任何高級API來解決此問題。 我們鼓勵人們依賴React社區建立的解決方案。
 
-## downshift
+## 降檔
 
-![stars](https://img.shields.io/github/stars/paypal/downshift.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/downshift.svg)
+![明星](https://img.shields.io/github/stars/paypal/downshift.svg?style=social&label=Stars) ![npm下載](https://img.shields.io/npm/dm/downshift.svg)
 
-In the following example, we demonstrate how to use [downshift](https://github.com/paypal/downshift).
+在下面的例子中，我們演示瞭如何使用 [降檔](https://github.com/paypal/downshift)。
 
-{{"demo": "pages/demos/autocomplete/IntegrationDownshift.js"}}
+{{“demo”：“pages / demos / autocomplete / IntegrationDownshift.js”}}
 
-## react-autosuggest
+## 反應-自動提示
 
-![stars](https://img.shields.io/github/stars/moroshko/react-autosuggest.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/react-autosuggest.svg)
+![明星](https://img.shields.io/github/stars/moroshko/react-autosuggest.svg?style=social&label=Stars) ![npm下載](https://img.shields.io/npm/dm/react-autosuggest.svg)
 
-In the following example, we demonstrate how to use [react-autosuggest](https://github.com/moroshko/react-autosuggest). It's also using [autosuggest-highlight](https://www.npmjs.com/package/autosuggest-highlight) for the highlighting logic.
+在以下示例中，我們演示瞭如何使用 [react-autosuggest](https://github.com/moroshko/react-autosuggest)。 它還使用 [autosuggest-highlight](https://www.npmjs.com/package/autosuggest-highlight) 作為突出顯示邏輯。
 
-{{"demo": "pages/demos/autocomplete/IntegrationAutosuggest.js"}}
+{{“demo”：“pages / demos / autocomplete / IntegrationAutosuggest.js”}}
 
-## react-select
+## 反應-選擇
 
-![stars](https://img.shields.io/github/stars/JedWatson/react-select.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/react-select.svg)
+![明星](https://img.shields.io/github/stars/JedWatson/react-select.svg?style=social&label=Stars) ![npm下載](https://img.shields.io/npm/dm/react-select.svg)
 
-In the following example, we demonstrate how to use [react-select](https://github.com/JedWatson/react-select).
+在下面的示例中，我們演示瞭如何使用 [react-select](https://github.com/JedWatson/react-select)。
 
-{{"demo": "pages/demos/autocomplete/IntegrationReactSelect.js"}}
+{{“demo”：“pages / demos / autocomplete / IntegrationReactSelect.js”}}
