@@ -1,19 +1,19 @@
 ---
-title: Transition React component
-components: Collapse, Fade, Grow, Slide, Zoom
+title: Переходный компонент реакции
+components: Свернуть, Fade, Grow, Slide, Zoom
 ---
-# Transitions
+# Переходы
 
-<p class="description">Transition helps make a UI expressive and easy to use.</p>
+<p class="description">Transition помогает сделать пользовательский интерфейс выразительным и простым в использовании.</p>
 
-Material-UI provides a number of transitions that can be used to introduce some basic [motion](https://material.io/design/motion/) to your applications components.
+Material-UI предоставляет ряд переходов, которые можно использовать для введения некоторого базового [движения](https://material.io/design/motion/) в компоненты вашего приложения.
 
-To better support server rendering Material-UI provides a `style` property to the children of some transition components (Fade, Grow, Zoom, Slide). The `style` property must be applied to the DOM for the animation to work as expected.
+Для лучшей поддержки рендеринга сервера Material-UI предоставляет свойство `style` для детей некоторых компонентов перехода (Fade, Grow, Zoom, Slide). Свойство `style` должно быть применено к DOM для того, чтобы анимация работала должным образом.
 
 ```jsx
-// The `props` object contains a `style` property.
-// You need to provide it to the `div` element as shown here.
-function MyComponent(props) {
+// Объект `props` содержит свойство` style`.
+// Вам нужно предоставить его элементу `div`, как показано здесь.
+функция MyComponent (реквизит) {
   return (
     <div {...props}>
       Fade
@@ -21,7 +21,7 @@ function MyComponent(props) {
   );
 }
 
-export default Main() {
+экспорт по умолчанию Main () {
   return (
     <Fade>
       <MyComponent />
@@ -30,38 +30,38 @@ export default Main() {
 }
 ```
 
-## Collapse
+## коллапс
 
-Expand vertically from the top of the child element. The `collapsedHeight` property can be used to set the minimum height when not expanded.
+Разверните вертикально от верхней части дочернего элемента. Свойство `collapsedHeight` можно использовать для установки минимальной высоты, если она не расширена.
 
-{{"demo": "pages/utils/transitions/SimpleCollapse.js"}}
+{{"demo": "pages / utils / transitions / SimpleCollapse.js"}}
 
-## Fade
+## увядать
 
-Fade in from transparent to opaque.
+Затухайте от прозрачного до непрозрачного.
 
-{{"demo": "pages/utils/transitions/SimpleFade.js"}}
+{{"demo": "pages / utils / transitions / SimpleFade.js"}}
 
-## Grow
+## расти
 
-Expand outwards from the center of the child element, while also fading in from transparent to opaque.
+Разверните наружу от центра дочернего элемента, а также затухайте от прозрачного до непрозрачного.
 
-The second example demonstrates how to change the `transform-origin`, and conditionally applies the `timeout` property to change the entry speed.
+Во втором примере показано, как изменить `преобразование-начало`, и условно применяет свойство `timeout` для изменения скорости ввода.
 
-{{"demo": "pages/utils/transitions/SimpleGrow.js"}}
+{{"demo": "pages / utils / transitions / SimpleGrow.js"}}
 
-## Slide
+## Горка
 
-Slide in from the edge of the screen. The `direction` property controls which edge of the screen the transition starts from.
+Вдвиньте с края экрана. Свойство `direction` определяет, с какого края экрана начинается переход.
 
-The Transition component's `mountOnEnter` property prevents the child component from being mounted until `in` is `true`. This prevents the relatively positioned component from scrolling into view from it's off-screen position. Similarly the `unmountOnExit` property removes the component from the DOM after it has been transition off screen.
+При переходе компонента `mountOnEnter` свойство предотвращает компонент ребенка от монтажа до `в` не является `истинными`. Это предотвращает прокрутку относительно позиционированного компонента из его положения вне экрана. Аналогично, свойство `unmountOnExit` удаляет компонент из DOM после того, как он переходит с экрана.
 
-{{"demo": "pages/utils/transitions/SimpleSlide.js"}}
+{{"demo": "pages / utils / transitions / SimpleSlide.js"}}
 
-## Zoom
+## Увеличить
 
-Expand outwards from the center of the child element.
+Разверните наружу от центра дочернего элемента.
 
-This example also demonstrates how to delay the enter transition.
+В этом примере также показано, как отложить переход ввода.
 
-{{"demo": "pages/utils/transitions/SimpleZoom.js"}}
+{{"demo": "pages / utils / transitions / SimpleZoom.js"}}
