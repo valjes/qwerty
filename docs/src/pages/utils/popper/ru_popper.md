@@ -1,44 +1,44 @@
 ---
-title: Popper React component
-components: Popper
+title: Компонент Поппера
+components: огнестрельное оружие
 ---
-# Popper
+# огнестрельное оружие
 
-<p class="description">A Popper can be used to display some content on top of another. It's an alternative to react-popper.</p>
+<p class="description">Поппер может использоваться для отображения некоторого контента поверх другого. Это альтернатива реакционному попперу.</p>
 
-Things to know when using the `Popper` component:
+Что нужно знать при использовании компонента `Popper`:
 
-- Poppers rely on the 3rd party library [Popper.js](https://github.com/FezVrasta/popper.js) for positioning.
-- The children is [`Portal`](/utils/portal/) to the body of the document to avoid rendering problems. You can disable this behavior with `disablePortal`.
-- The scroll and click away aren't blocked like with the [`Popover`](/utils/popover/) component. The placement of the popper updates with the available area in the viewport.
-- The `anchorEl` is passed as the reference object to create a new `Popper.js` instance.
+- Попперы полагаются на стороннюю библиотеку [Popper.js](https://github.com/FezVrasta/popper.js) для позиционирования.
+- Дети - это [`Portal`](/utils/portal/) чтобы избежать проблем. Вы можете отключить это поведение с помощью `disablePortal`.
+- Прокрутка и щелчок не блокируются, как с помощью компонента [`Popover`](/utils/popover/). Размещение popper обновляется с доступной областью в окне просмотра.
+- `anchorEl` передается в качестве эталонного объекта для создания нового экземпляра `Popper.js`.
 
-## Simple Popper
+## Простой Поппер
 
-{{"demo": "pages/utils/popper/SimplePopper.js" }}
+{{"demo": "pages / utils / popper / SimplePopper.js"}}
 
-## Scroll playground
+## Прогулка по детской площадке
 
-{{"demo": "pages/utils/popper/ScrollPlayground.js"}}
+{{"demo": "pages / utils / popper / ScrollPlayground.js"}}
 
-## Positioned Popper
+## Позиционированный Поппер
 
-{{"demo": "pages/utils/popper/PositionedPopper.js"}}
+{{"demo": "pages / utils / popper / PositionedPopper.js"}}
 
-## Without transition Popper
+## Без перехода Popper
 
-{{"demo": "pages/utils/popper/NoTransitionPopper.js"}}
+{{"demo": "pages / utils / popper / NoTransitionPopper.js"}}
 
-## Faked reference object
+## Поддельный ссылочный объект
 
-The `anchorEl` property can be a reference to a fake DOM element. You just need to create an object shaped like the [`ReferenceObject`](https://github.com/FezVrasta/popper.js/blob/0642ce0ddeffe3c7c033a412d4d60ce7ec8193c3/packages/popper/index.d.ts#L118-L123).
+Свойство `anchorEl` может быть ссылкой на поддельный элемент DOM. Вам просто нужно создать объект, подобный [`ReferenceObject`](https://github.com/FezVrasta/popper.js/blob/0642ce0ddeffe3c7c033a412d4d60ce7ec8193c3/packages/popper/index.d.ts#L118-L123).
 
-Highlight part of the text to see the popper:
+Выделите часть текста, чтобы увидеть поппера:
 
-{{"demo": "pages/utils/popper/FakedReferencePopper.js"}}
+{{"demo": "pages / utils / popper / FakedReferencePopper.js"}}
 
-## Render Props
+## Рендеринг реквизита
 
-It is a [render props](https://reactjs.org/docs/render-props.html) demo that keeps track of the local state for a single popper.
+Это [реквизит реквизита](https://reactjs.org/docs/render-props.html) демо, что отслеживает локальное состояние для одного поппера.
 
-{{"demo": "pages/utils/popper/RenderPropsPopper.js"}}
+{{"demo": "pages / utils / popper / RenderPropsPopper.js"}}
