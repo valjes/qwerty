@@ -1,0 +1,107 @@
+# 支持的組件
+
+<p class="description">以下是Material Design組件和功能的列表。 當前由Material-UI支持的那些突出顯示✓。</p>
+
+雖然我們努力遵循實際的指導原則（在指導原則相互矛盾的情況下應用 常識 - 比 可能期望的更常見），但我們不希望支持每個組件，或每個組件的每 特徵，而是提供構建塊 允許開發人員創建引人注目的用戶界面和體驗。
+
+如果您希望在此處添加對未突出顯示 的組件或功能的支持，請在提交拉取請求之前搜索相關的 [GitHub問題](https://github.com/mui-org/material-ui/issues)，或創建新的 以討論該方法。
+
+- 應用欄 
+  - **[前](https://material.io/design/components/app-bars-top.html)✓**
+  - [底部](https://material.io/design/components/app-bars-bottom.html)
+- **[底部導航](https://material.io/design/components/bottom-navigation.html)✓**
+- **[按鈕](https://material.io/design/components/buttons.html)✓** 
+  - **[文本 & 包含按鈕（原平 & 升起）](https://material.io/design/components/buttons.html)✓**
+  - [切換按鈕](https://material.io/design/components/buttons.html#buttons-toggle-buttons)
+  - **[圖標切換按鈕](https://material.io/design/components/buttons.html#toggle-button) ✓** （自定義複選框）
+- **[按鈕：懸浮操作按鈕](https://material.io/design/components/buttons-floating-action-button.html)✓** 
+  - 轉變： 
+    - **[快速撥號](https://material.io/design/components/buttons-floating-action-button.html#types-of-transitions) ~** （[實驗](/lab/about/)）
+    - [菜單](https://material.io/design/components/buttons-floating-action-button.html#types-of-transitions)
+    - [變形](https://material.io/design/components/buttons-floating-action-button.html#types-of-transitions)
+    - [全屏](https://material.io/design/components/buttons-floating-action-button.html#types-of-transitions)
+  - [擴展FAB](https://material.io/design/components/buttons-floating-action-button.html#extended-fab) 
+    - 快速撥號
+- **[卡](https://material.io/design/components/cards.html)✓**
+- **[芯片](https://material.io/design/components/chips.html)✓** 
+  - **[輸入](https://material.io/design/components/chips.html#input-chips)✓**
+  - [選擇](https://material.io/design/components/chips.html#choice-chips)
+  - [過濾](https://material.io/design/components/chips.html#filter-chips)
+  - [行動](https://material.io/design/components/chips.html#action-chips)
+- **[數據表](https://material.io/design/components/data-tables.html)✓** 
+  - **可排序✓**
+  - **可選擇✓**
+  - **分頁✓**
+- **[對話框](https://material.io/design/components/dialogs.html)✓** 
+  - **[警報對話框](https://material.io/design/components/dialogs.html#alert-dialog)✓**
+  - **[簡單對話](https://material.io/design/components/dialogs.html#simple-dialog) ✓** （可與對話框和列表來構造。）
+  - **[確認對話框](https://material.io/design/components/dialogs.html#confirmation-dialog)✓**
+  - **[全屏對話框](https://material.io/design/components/dialogs.html#full-screen-dialog)✓**
+- **[除法](https://material.io/design/components/dividers.html)✓** 
+  - **[全出血](https://material.io/design/components/dividers.html#types)✓**
+  - **[插圖](https://material.io/design/components/dividers.html#types)✓**
+  - [中間](https://material.io/design/components/dividers.html#types)
+  - [副標題](https://material.io/design/components/dividers.html#types)
+- **[擴展面板](https://material.io/archive/guidelines/components/expansion-panels.html) ✓** （*傳統材料V1*）
+- **[圖像列表](https://material.io/design/components/image-lists.html) ✓** （AKA網格列表）
+- **[解釋](https://material.io/design/components/lists.html)✓** 
+  - [類型：](https://material.io/design/components/lists.html#types) 
+    - **單線✓**
+    - **兩行✓**
+    - 三線
+  - **頭像✓**
+  - **圖標✓**
+  - 縮略圖
+  - **控制✓** 
+    - **複選框✓**
+    - **展開/折疊✓** （AKA嵌套）
+    - **切換✓**
+    - 重新排序
+- **[菜單](https://material.io/design/components/menus.html)✓** 
+  - **[下拉菜單](https://material.io/design/components/menus.html#dropdown-menu)✓** （可以構建） 
+    - [級聯](https://material.io/design/components/menus.html#dropdown-menu)
+  - [暴露的下拉菜單](https://material.io/design/components/menus.html#exposed-dropdown-menu) 
+    - **文本字段下拉菜單✓** （選擇）
+    - 可編輯的下拉菜單
+  - **上下文✓**
+- **[進度指示符](https://material.io/design/components/progress-indicators.html)✓** 
+  - **[線性](https://material.io/design/components/progress-indicators.html#linear-progress-indicators)✓**
+  - **[循環](https://material.io/design/components/progress-indicators.html#circular-progress-indicators)✓**
+  - **[加載](https://material.io/archive/guidelines/components/progress-activity.html) ✓** （*傳統材料V1*）
+- **[選擇控件](https://material.io/design/components/selection-controls.html)✓** 
+  - **[複選框](https://material.io/design/components/selection-controls.html#checkboxes)✓**
+  - **[單選按鈕](https://material.io/design/components/selection-controls.html#radio-buttons)✓**
+  - **[交換機](https://material.io/design/components/selection-controls.html#switches)✓**
+- **[滑桿](https://material.io/design/components/sliders.html)~** （[實驗](/lab/about/)） 
+  - **[連續](https://material.io/design/components/sliders.html#continuous-slider)✓**
+  - **[離散](https://material.io/design/components/sliders.html#discrete-slider)~**
+- **[小吃店](https://material.io/design/components/snackbars.html) ✓** （*傳統材料V1*）
+- **[副標題](https://material.io/archive/guidelines/components/subheaders.html)✓** （*遺產材料v1*） 
+  - **[列表](https://material.io/archive/guidelines/components/subheaders.html#subheaders-list-subheaders)✓**
+  - **[網格](https://material.io/archive/guidelines/components/subheaders.html#subheaders-list-subheaders)✓**
+  - [菜單](https://material.io/archive/guidelines/components/subheaders.html#subheaders-list-subheaders)
+- **[踏步機](https://material.io/archive/guidelines/components/steppers.html)✓** （*遺產材料v1*） 
+  - **[水平](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steppers)✓**
+  - **[立式](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steppers)✓**
+  - **[移動步驟](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steps)✓**
+- **[標籤](https://material.io/design/components/tabs.html)✓** 
+  - **[固定突片](https://material.io/design/components/tabs.html#fixed-tabs)✓**
+  - **[滾動製表符](https://material.io/design/components/tabs.html#scrollable-tabs)✓**
+- **[文本字段](https://material.io/design/components/text-fields.html)✓** 
+  - **[標準](https://material.io/archive/guidelines/components/text-fields.html) ✓** （傳統材料V1）
+  - **[填充](https://material.io/design/components/text-fields.html#filled-text-field)✓**
+  - **[概述](https://material.io/design/components/text-fields.html#outlined-text-field)✓**
+  - [類型](https://material.io/design/components/text-fields.html#input-types): 
+    - **單線✓**
+    - **多線✓**
+    - 文本區
+    - **全寬✓**
+  - [輔助要素：](https://material.io/design/components/text-fields.html#anatomy) 
+    - **幫助者文本✓**
+    - **錯誤信息✓**
+    - **圖標✓**
+    - 字符計數器
+- **[工具欄](https://material.io/archive/guidelines/components/toolbars.html) ✓** （傳統材料V1）
+- **[工具提示](https://material.io/design/components/tooltips.html)✓** 
+  - **桌面✓**
+  - **移動✓**
