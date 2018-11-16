@@ -1,17 +1,17 @@
-# Supported Platforms
+# Поддерживаемые платформы
 
-<p class="description">Learn about the platforms, from modern to old, that are supported by Material-UI.</p>
+<p class="description">Узнайте о платформах, от современных до старых, которые поддерживаются Material-UI.</p>
 
-## Browser
+## браузер
 
-Material-UI supports the latest, stable releases of all major browsers and platforms. We also support Internet Explorer 11. You don't need to provide any JavaScript polyfill as we manage unsupported browser features internally and in isolation.
+Material-UI поддерживает последние стабильные версии всех основных браузеров и платформ. Мы также поддерживаем Internet Explorer 11. Вам не нужно предоставлять какой-либо JavaScript-полиполк, поскольку мы управляем неподдерживаемыми функциями браузера как внутри, так и изолированно.
 
-| IE | Edge  | Firefox | Chrome | Safari | Googlebot |
-|:-- |:----- |:------- |:------ |:------ |:--------- |
-| 11 | >= 14 | >= 52   | >= 49  | >= 10  | ✅         |
+| IE | край   | Fire Fox | Хром   | Сафари | Googlebot |
+|:-- |:------ |:-------- |:------ |:------ |:--------- |
+| 11 | > = 14 | > = 52   | > = 49 | > = 10 | ✅         |
 
-Because Googlebot uses a web rendering service (WRS) to index the page content, it's critical that Material-UI supports it. [WRS is based on Chrome 41](https://developers.google.com/search/docs/guides/rendering). You can expect Material-UI's components to render without major issues.
+Поскольку Googlebot использует службу веб-рендеринга (WRS) для индексации содержимого страницы, крайне важно, чтобы Material-UI ее поддерживал. [WRS основан на Chrome 41](https://developers.google.com/search/docs/guides/rendering). Вы можете ожидать, что компоненты Material-UI окажутся без серьезных проблем.
 
-## Server
+## сервер
 
-Because Material-UI supports server side rendering, we need to support the latest, stable releases of [Node.js](https://github.com/nodejs/node). We try to support the [last active LTS version](https://github.com/nodejs/Release#lts-schedule1). Right now, we support **node v6.x** and newer versions.
+Поскольку Material-UI поддерживает рендеринг на стороне сервера, нам необходимо поддерживать последние стабильные версии [Node.js](https://github.com/nodejs/node). Мы стараемся поддерживать [последнюю активную версию LTS](https://github.com/nodejs/Release#lts-schedule1). Прямо сейчас мы поддерживаем **node v6.x** и более новые версии.
