@@ -1,79 +1,79 @@
 ---
-title: List React component
-components: Collapse, Divider, List, ListItem, ListItemAvatar, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader
+title: Список компонентов React
+components: Свернуть, Divider, List, ListItem, ListItemAvatar, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader
 ---
-# Lists
+# Списки
 
-<p class="description">Lists are continuous, vertical indexes of text or images.</p>
+<p class="description">Списки являются непрерывными, вертикальными индексами текста или изображений.</p>
 
-[Lists](https://material.io/design/components/lists.html) are a continuous group of text or images. They are composed of items containing primary and supplemental actions, which are represented by icons and text.
+[Списки](https://material.io/design/components/lists.html) представляют собой сплошную группу текста или изображений. Они состоят из элементов, содержащих первичные и дополнительные действия, которые представлены значками и текстом.
 
-## Simple List
+## Простой список
 
-{{"demo": "pages/demos/lists/SimpleList.js"}}
+{{"demo": "pages / demos / lists / SimpleList.js"}}
 
-The last item of the previous demo shows how you can render a link:
+Последний элемент предыдущей демонстрации показывает, как вы можете отобразить ссылку:
 
 ```jsx
-function ListItemLink(props) {
+функция ListItemLink (реквизит) {
   return <ListItem button component="a" {...props} />;
 }
 
-//...
+// ...
 
 <ListItemLink href="#simple-list">
   <ListItemText primary="Spam" />
 </ListItemLink>
 ```
 
-You can find a [demo with React Router following this section](/guides/composition/#react-router) of the documentation.
+Вы можете найти [демку с React маршрутизатора после этого раздела](/guides/composition/#react-router) документации.
 
-## Folder List
+## Список папок
 
-{{"demo": "pages/demos/lists/FolderList.js"}}
+{{"demo": "pages / demos / lists / FolderList.js"}}
 
-## Inset List
+## Список вставки
 
-{{"demo": "pages/demos/lists/InsetList.js"}}
+{{"demo": "pages / demos / lists / InsetList.js"}}
 
-## Nested List
+## Вложенный список
 
-{{"demo": "pages/demos/lists/NestedList.js"}}
+{{"demo": "pages / demos / lists / NestedList.js"}}
 
-## Selected ListItem
+## Выбранный ListItem
 
-{{"demo": "pages/demos/lists/SelectedListItem.js"}}
+{{"demo": "pages / demos / lists / SelectedListItem.js"}}
 
-## Pinned Subheader List
+## Список закрепленных подзаголовков
 
-Upon scrolling, subheaders remain pinned to the top of the screen until pushed off screen by the next subheader.
+При прокрутке подзаголовки остаются прикрепленными к верхней части экрана до тех пор, пока они не будут выведены из экрана следующим подзаголовком.
 
-This feature is relying on the CSS sticky positioning. Unfortunately it's [not implemented](https://caniuse.com/#search=sticky) by all the browsers we are supporting. We default to `disableSticky` when not supported.
+Эта функция опирается на липкое позиционирование CSS. К сожалению , это [не реализовано](https://caniuse.com/#search=sticky) всех браузеры мы поддерживаем. По умолчанию `disableSticky` не поддерживается.
 
-{{"demo": "pages/demos/lists/PinnedSubheaderList.js"}}
+{{"demo": "pages / demos / lists / PinnedSubheaderList.js"}}
 
-## List Controls
+## Элементы управления списком
 
-### Checkbox
+### флажок
 
-A checkbox can either be a primary action or a secondary action.
+Флажок может быть либо основным действием, либо вторичным действием.
 
-The checkbox is the primary action and the state indicator for the list item. The comment button is a secondary action and a separate target.
+Флажок - это основное действие и индикатор состояния для элемента списка. Кнопка комментария - это вторичное действие и отдельная цель.
 
-{{"demo": "pages/demos/lists/CheckboxList.js"}}
+{{"demo": "pages / demos / lists / CheckboxList.js"}}
 
-The checkbox is the secondary action for the list item and a separate target.
+Флажок - это вторичное действие для элемента списка и отдельной цели.
 
-{{"demo": "pages/demos/lists/CheckboxListSecondary.js"}}
+{{"demo": "pages / demos / lists / CheckboxListSecondary.js"}}
 
-### Switch
+### переключатель
 
-The switch is the secondary action and a separate target.
+Переключатель - это вторичное действие и отдельная цель.
 
-{{"demo": "pages/demos/lists/SwitchListSecondary.js"}}
+{{"demo": "pages / demos / lists / SwitchListSecondary.js"}}
 
-## Interactive
+## интерактивный
 
-Below is an interactive demo that lets you explore the visual results of the different settings:
+Ниже приведена интерактивная демонстрация, позволяющая исследовать визуальные результаты различных настроек:
 
-{{"demo": "pages/demos/lists/InteractiveList.js"}}
+{{"demo": "pages / demos / lists / InteractiveList.js"}}
