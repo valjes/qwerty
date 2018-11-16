@@ -1,11 +1,11 @@
 ---
-title: Paper React component
-components: Paper
+title: Компонент реактивной бумаги
+components: Бумага
 ---
-# Paper
+# Бумага
 
-<p class="description">In Material Design, the physical properties of paper are translated to the screen. </p>
+<p class="description">В Material Design физические свойства бумаги переводятся на экран. </p>
 
-The background of an application resembles the flat, opaque texture of a sheet of paper, and an application’s behavior mimics paper’s ability to be re-sized, shuffled, and bound together in multiple sheets.
+Фон приложения похож на плоскую непрозрачную текстуру листа бумаги, а поведение приложения имитирует способность бумаги изменять размер, перемешивать и связывать вместе на нескольких листах.
 
-{{"demo": "pages/demos/paper/PaperSheet.js"}}
+{{"demo": "pages / demos / paper / PaperSheet.js"}}
