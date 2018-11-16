@@ -1,59 +1,59 @@
 ---
-title: Menu React component
-components: Menu, MenuItem, MenuList, ClickAwayListener, Popover, Popper
+title: Компонент «Реал»
+components: Меню, MenuItem, MenuList, ClickAwayListener, Popover, Popper
 ---
-# Menus
+# меню
 
-<p class="description">Menus display a list of choices on temporary surfaces.</p>
+<p class="description">Меню отображает список вариантов на временных поверхностях.</p>
 
-A [Menu](https://material.io/design/components/menus.html) displays a list of choices on a temporary surface. They appear when users interact with a button, action, or other control.
+A [Меню](https://material.io/design/components/menus.html) отображает список вариантов на временной поверхности. Они появляются, когда пользователи взаимодействуют с кнопкой, действием или другим элементом управления.
 
-## Simple Menu
+## Простое меню
 
-Simple menus open over the anchor element by default (this option can be changed via props). When close to a screen edge, simple menus vertically realign to make all menu items are completely visible.
+Простые меню открываются по анкерному элементу по умолчанию (этот параметр можно изменить с помощью реквизита). Когда близко к краю экрана, простые меню вертикально перестраиваются, чтобы сделать все пункты меню полностью видимыми.
 
-Choosing an option should immediately ideally commit the option and close the menu.
+Выбор опции должен сразу идеально зафиксировать эту опцию и закрыть меню.
 
-**Disambiguation**: In contrast to simple menus, simple dialogs can present additional detail related to the options available for a list item or provide navigational or orthogonal actions related to the primary task. Although they can display the same content, simple menus are preferred over simple dialogs because simple menus are less disruptive to the user’s current context.
+**Несознание**: В отличие от простых меню, простые диалоги могут представлять дополнительные детали, связанные с параметрами, доступными для элемента списка, или обеспечивать навигационные или ортогональные действия, связанные с основной задачей. Хотя они могут отображать один и тот же контент, простые меню предпочтительнее простых диалогов, потому что простые меню менее разрушительны для текущего контекста пользователя.
 
-{{"demo": "pages/demos/menus/SimpleMenu.js"}}
+{{"demo": "pages / demos / menus / SimpleMenu.js"}}
 
-## Selected menus
+## Выбранные меню
 
-If used for item selection, when opened, simple menus attempt to vertically align the currently selected menu item with the anchor element. The currently selected menu item is set using the `selected` property (from [ListItem](/api/list-item/)).
+Если используется для выбора элемента, при открытии, простое меню пытается вертикально выровнять текущий выбранный элемент меню с помощью элемента привязки. Текущий выбранный пункт меню устанавливается с помощью `выбран` свойство (от [ListItem](/api/list-item/)).
 
-{{"demo": "pages/demos/menus/SimpleListMenu.js"}}
+{{"demo": "pages / demos / menus / SimpleListMenu.js"}}
 
-If text in a simple menu wraps to a second line, use a simple dialog instead. Simple dialogs can have rows with varying heights.
+Если текст в простом меню обертывается во вторую строку, используйте вместо этого простое диалоговое окно. Простые диалоги могут иметь строки с разной высотой.
 
-## Max height menus
+## Меню максимальной высоты
 
-If the height of a menu prevents all menu items from being displayed, the menu can scroll internally.
+Если высота меню запрещает отображение всех пунктов меню, меню может прокручиваться внутри.
 
-{{"demo": "pages/demos/menus/LongMenu.js"}}
+{{"demo": "pages / demos / menus / LongMenu.js"}}
 
-## MenuList composition
+## Композиция MenuList
 
-The `Menu` component uses the `Popover` component internally. However, you might want to use a different positioning strategy, or not blocking the scroll. For answering those needs, we expose a `MenuList` component that you can compose, with `Popper` in this example.
+Компонент `Menu` использует компонент `Popover` внутри. Однако вы можете использовать другую стратегию позиционирования или не блокировать прокрутку. Чтобы ответить на эти потребности, мы представляем компонент `MenuList` который вы можете создать с помощью `Popper` в этом примере.
 
-The primary responsibility of the `MenuList` component is to handle the focus.
+Основная ответственность компонента `MenuList` заключается в том, чтобы обрабатывать фокус.
 
-{{"demo": "pages/demos/menus/MenuListComposition.js"}}
+{{"demo": "pages / demos / menus / MenuListComposition.js"}}
 
-## Customized MenuItem
+## Пользовательский MenuItem
 
-The `MenuItem` is a wrapper around `ListItem` with some additional styles. You can use the same list composition features with the `MenuItem` component:
+`MenuItem` является оберткой вокруг `ListItem` с некоторыми дополнительными стилями. Вы можете использовать одни и те же функции составления списка с помощью компонента `MenuItem`:
 
-{{"demo": "pages/demos/menus/ListItemComposition.js"}}
+{{"demo": "pages / demos / menus / ListItemComposition.js"}}
 
-## Change Transition
+## Изменить переход
 
-Use a different transition altogether.
+Используйте другой переход вообще.
 
-{{"demo": "pages/demos/menus/FadeMenu.js"}}
+{{"demo": "pages / demos / menus / FadeMenu.js"}}
 
-## Render Props
+## Рендеринг реквизита
 
-It is a [render props](https://reactjs.org/docs/render-props.html) demo that keeps track of the local state for a single menu.
+Это демонстрация [реквизита](https://reactjs.org/docs/render-props.html) что отслеживает локальное состояние для одного меню.
 
-{{"demo": "pages/demos/menus/RenderPropsMenu.js"}}
+{{"demo": "pages / demos / menus / RenderPropsMenu.js"}}
