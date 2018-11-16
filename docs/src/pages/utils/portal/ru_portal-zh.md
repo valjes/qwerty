@@ -1,15 +1,15 @@
 ---
-title: Portal React component
-components: Portal
+title: Компонент Portal React
+components: Портал
 ---
-# Portal
+# Портал
 
-<p class="description">The portal component renders its children into a new "subtree" outside of current component hierarchy.</p>
+<p class="description">Компонент портала превращает своих детей в новое «поддерево» вне текущей иерархии компонентов.</p>
 
-The children of the portal component will be appended to the `container` specified.
+Дети компонента портала будут добавлены к `контейнера` указанного.
 
-The component is used internally by the [`Modal`](/utils/modal/) and [`Popper`](/utils/popper/) components. On the server, the content won't be rendered. You have to wait for the client side reconciliation to see the children.
+Компонент используется внутри с помощью компонентов [`Modal`](/utils/modal/) и [`Popper`](/utils/popper/). На сервере контент не будет отображаться. Вы должны дождаться согласования на стороне клиента, чтобы увидеть детей.
 
-## Simple Portal
+## Простой портал
 
-{{"demo": "pages/utils/portal/SimplePortal.js"}}
+{{"demo": "pages / utils / portal / SimplePortal.js"}}
