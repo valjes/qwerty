@@ -1,7 +1,7 @@
-# Showcase
+# витрина
 
-<p class="description">The following is a list of some of the public apps using Material-UI.</p>
+<p class="description">Ниже приведен список некоторых общедоступных приложений с использованием Material-UI.</p>
 
-Want to add your app? Found an app that no longer works or no longer uses Material-UI? Please submit a pull request on [GitHub](https://github.com/mui-org/material-ui) to update [this page](https://github.com/mui-org/material-ui/blob/5c70845cc4d60918c528f3aa58416ed8851a259c/docs/src/pages/discover-more/showcase/Showcase.js#L31)!
+Хотите добавить свое приложение? Нашел приложение, которое больше не работает или больше не использует Material-UI? Пожалуйста , отправьте запрос тянуть на [GitHub](https://github.com/mui-org/material-ui) обновить [эту страницу](https://github.com/mui-org/material-ui/blob/5c70845cc4d60918c528f3aa58416ed8851a259c/docs/src/pages/discover-more/showcase/Showcase.js#L31)!
 
-{{"demo": "pages/discover-more/showcase/Showcase.js", "hideHeader": true}}
+{{"demo": "pages / open-more / showcase / Showcase.js", "hideHeader": true}}
