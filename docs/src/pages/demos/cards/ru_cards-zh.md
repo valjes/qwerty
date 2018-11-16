@@ -1,41 +1,41 @@
 ---
-title: Card React component
+title: Компонент карточной реакции
 components: Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Collapse, Paper
 ---
-# Cards
+# Карты
 
-<p class="description">Cards contain content and actions about a single subject.</p>
+<p class="description">Карты содержат контент и действия по одному предмету.</p>
 
-[Cards](https://material.io/design/components/cards.html) are surfaces that display content and actions on a single topic.
+[Карты](https://material.io/design/components/cards.html) - это поверхности, отображающие контент и действия по одной теме.
 
-They should be easy to scan for relevant and actionable information. Elements, like text and images, should be placed on them in a way that clearly indicates hierarchy.
+Они должны быть легко отсканированы для получения соответствующей и действенной информации. Элементы, такие как текст и изображения, должны быть размещены на них таким образом, чтобы четко обозначать иерархию.
 
-## Simple Card
+## Простая карта
 
-Although cards can support multiple actions, UI controls, and an overflow menu, use restraint and remember that cards are entry points to more complex and detailed information.
+Хотя карты могут поддерживать несколько действий, элементы управления пользовательским интерфейсом и меню переполнения, используйте сдержанность и помните, что карты являются точками входа в более сложную и подробную информацию.
 
-{{"demo": "pages/demos/cards/SimpleCard.js"}}
+{{"demo": "pages / demos / cards / SimpleCard.js"}}
 
-## Media
+## Средства массовой информации
 
-Example of a card using an image to reinforce the content.
+Пример карты, использующей изображение для усиления содержимого.
 
-{{"demo": "pages/demos/cards/MediaCard.js"}}
+{{"demo": "pages / demos / cards / MediaCard.js"}}
 
-By default, we use the combination of a `<div>` element and a *background image* to display the media. It can be problematic in some situations. For instance, you might want to display a video or a responsive image. Use the `component` property for these use cases:
+По умолчанию мы используем комбинацию элемента `<div>` и *фонового изображения* для отображения носителя. В некоторых ситуациях это может быть проблематично. Например, вы можете отобразить видео или отзывчивое изображение. Используйте свойство `компонента` для этих случаев использования:
 
-{{"demo": "pages/demos/cards/ImgMediaCard.js"}}
+{{"demo": "pages / demos / cards / ImgMediaCard.js"}}
 
-## UI Controls
+## Элементы управления пользовательским интерфейсом
 
-Supplemental actions within the card are explicitly called out using icons, text, and UI controls, typically placed at the bottom of the card.
+Дополнительные действия внутри карты вызывают явным образом с помощью значков, текста и элементов управления пользовательского интерфейса, которые обычно помещаются в нижней части карты.
 
-Here's an example of a media control card.
+Вот пример платы управления носителем.
 
-{{"demo": "pages/demos/cards/MediaControlCard.js"}}
+{{"demo": "pages / demos / cards / MediaControlCard.js"}}
 
-## Complex Interaction
+## Комплексное взаимодействие
 
-On desktop, card content can expand.
+На рабочем столе содержимое карты может расширяться.
 
-{{"demo": "pages/demos/cards/RecipeReviewCard.js"}}
+{{"demo": "pages / demos / cards / RecipeReviewCard.js"}}
