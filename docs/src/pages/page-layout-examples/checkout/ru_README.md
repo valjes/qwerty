@@ -1,21 +1,21 @@
-# Checkout layout
+# Оформление заказа
 
-## Usage
+## использование
 
-Simply copy the files into your project, or one of the [example applications](https://github.com/mui-org/material-ui/tree/master/examples), and import and use the `Checkout` component.
+Просто скопируйте файлы в свой проект или один из [примерных приложений](https://github.com/mui-org/material-ui/tree/master/examples)и импортируйте и используйте компонент `Checkout`.
 
-You can customise the Stepper logic and steps to suit your specific checkout workflow and data requirements.
+Вы можете настроить логику шага и шаги, соответствующие вашим конкретным рабочим процедурам и требованиям к данным.
 
-## Files
+## файлы
 
-| File             | Purpose                                                                               |
-| ---------------- | ------------------------------------------------------------------------------------- |
-| `Checkout.js`    | Main file with Stepper logic.                                                         |
-| `AddressForm.js` | Capture the shipping address. Repeat this step to capture the Billing address.        |
-| `PaymentForm.js` | Capture the payment details. You may have to embed your payment provider's form here. |
-| `ReviewForm.js`  | Final step to confirm the details provided before purchase.                           |
+| файл             | Цель                                                                                        |
+| ---------------- | ------------------------------------------------------------------------------------------- |
+| `Checkout.js`    | Основной файл с шаговой логикой.                                                            |
+| `AddressForm.js` | Захватите адрес доставки. Повторите этот шаг, чтобы зафиксировать адрес фактурирования.     |
+| `PaymentForm.js` | Захватите данные платежа. Возможно, вам придется встроить форму своего поставщика платежей. |
+| `ReviewForm.js`  | Заключительный шаг для подтверждения сведений, представленных перед покупкой.               |
 
-## Dependencies
+## зависимости
 
-- `@material-ui/core`
-- `@material-ui/icons`
+- `@ Материал-щ / ядро`
+- `@ материал-UI / иконки`
