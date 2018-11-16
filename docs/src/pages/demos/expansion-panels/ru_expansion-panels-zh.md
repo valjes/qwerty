@@ -1,25 +1,25 @@
 ---
-title: Expansion Panel React component
+title: Компонент реагирования панели расширения
 components: ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, ExpansionPanelSummary
 ---
-# Expansion Panel
+# Панель расширения
 
-<p class="description">Expansion panels contain creation flows and allow lightweight editing of an element.</p>
+<p class="description">Расширительные панели содержат потоки создания и позволяют легко редактировать элемент.</p>
 
-[An expansion panel](https://material.io/archive/guidelines/components/expansion-panels.html) is a lightweight container that may either stand alone or be connected to a larger surface, such as a card.
+[Панель](https://material.io/archive/guidelines/components/expansion-panels.html) расширения представляет собой легкий контейнер, который может либо стоять отдельно, либо подключаться к большей поверхности, такой как карта.
 
-## Simple Expansion Panel
+## Простая панель расширения
 
-{{"demo": "pages/demos/expansion-panels/SimpleExpansionPanel.js"}}
+{{"demo": "страницы / demos / расширения-панели / SimpleExpansionPanel.js"}}
 
-## Secondary heading and Columns
+## Вторичный заголовок и столбцы
 
-Multiple columns can be used to structure the content, and a helper text may be added to the panel to assist the user.
+Для структурирования содержимого можно использовать несколько столбцов, а вспомогательный текст может быть добавлен в панель, чтобы помочь пользователю.
 
-{{"demo": "pages/demos/expansion-panels/DetailedExpansionPanel.js"}}
+{{"demo": "pages / demos / расширения-панели / DetailedExpansionPanel.js"}}
 
-## Controlled Accordion
+## Контролируемый аккордеон
 
-Extend the default panel behavior to create an accordion with the `ExpansionPanel` component.
+Расширьте поведение панели по умолчанию, чтобы создать аккордеон с компонентом `ExpansionPanel`.
 
-{{"demo": "pages/demos/expansion-panels/ControlledExpansionPanels.js"}}
+{{"demo": "pages / demos / расширения-панели / ControlledExpansionPanels.js"}}
