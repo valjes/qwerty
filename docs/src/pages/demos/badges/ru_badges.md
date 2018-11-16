@@ -1,17 +1,17 @@
 ---
-title: Badge React component
-components: Badge
+title: Компонент Badge React
+components: знак
 ---
-# Badge
+# знак
 
-<p class="description">Badge generates a small badge to the top-right of its child(ren).</p>
+<p class="description">Значок генерирует маленький значок в верхнем правом углу его дочернего элемента (ren).</p>
 
-## Simple Badges
+## Простые значки
 
-Examples of badges containing text, using primary and secondary colors. The badge is applied to its children.
+Примеры значков, содержащих текст, с использованием первичных и вторичных цветов. Значок применяется к своим детям.
 
-{{"demo": "pages/demos/badges/SimpleBadge.js"}}
+{{"demo": "pages / demos / badges / SimpleBadge.js"}}
 
-## Customized Badge
+## Индивидуальный значок
 
-{{"demo": "pages/demos/badges/CustomizedBadge.js"}}
+{{"demo": "pages / demos / badges / CustomizedBadge.js"}}
