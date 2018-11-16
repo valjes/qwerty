@@ -1,36 +1,36 @@
 ---
-title: Chip React component
-components: Chip
+title: Компонент Chip React
+components: чип
 ---
-# Chips
+# чипсы
 
-<p class="description">Chips are compact elements that represent an input, attribute, or action.</p>
+<p class="description">Чипы - это компактные элементы, которые представляют вход, атрибут или действие.</p>
 
-[Chips](https://material.io/design/components/chips.html) allow users to enter information, make selections, filter content, or trigger actions.
+[Чипы](https://material.io/design/components/chips.html) позволяют пользователям вводить информацию, делать выбор, фильтровать контент или запускать действия.
 
-While included here as a standalone component, the most common use will be in some form of input, so some of the behaviour demonstrated here is not shown in context.
+Хотя он включен в качестве отдельного компонента, наиболее распространенное использование будет в некотором виде ввода, поэтому некоторые из приведенных здесь действий не показаны в контексте.
 
-## Chip
+## чип
 
-Examples of Chips, using an image Avatar, SVG Icon Avatar, "Letter" and (string) Avatar.
+Примеры чипов, используя изображение Аватар, Аватар SVG Icon, «Letter» и (string) Аватар.
 
-- Chips with the `onClick` property defined change appearance on focus, hover, and click.
-- Chips with the `onDelete` property defined will display a delete icon which changes appearance on hover.
+- Чипы с свойством `onClick` определяют изменение внешнего вида в фокусе, зависания и щелчок.
+- Фишки с установленным свойством `onDelete` будут отображать значок удаления который изменяет внешний вид при наведении.
 
-{{"demo": "pages/demos/chips/Chips.js"}}
+{{"demo": "pages / demos / chips / Chips.js"}}
 
-### Outlined Chips
+### Очерченные фишки
 
-Outlined chips offer an alternative style.
+Очерченные чипы предлагают альтернативный стиль.
 
-{{"demo": "pages/demos/chips/OutlinedChips.js"}}
+{{"demo": "pages / demos / chips / OutlinedChips.js"}}
 
-## Chip Playground
+## Чип-площадка
 
-{{"demo": "pages/demos/chips/ChipsPlayground.js"}}
+{{"demo": "pages / demos / chips / ChipsPlayground.js"}}
 
-## Chip array
+## Чип-массив
 
-An example of rendering multiple Chips from an array of values. Deleting a chip removes it from the array. Note that since no `onClick` property is defined, the Chip can be focused, but does not gain depth while clicked or touched.
+Пример рендеринга нескольких фишек из массива значений. Удаление чипа удаляет его из массива. Обратите внимание , что поскольку нет `OnClick` свойства не определенно, то Чип может быть сфокусирован, но не глубины усиления во время нажатия или прикосновения.
 
-{{"demo": "pages/demos/chips/ChipsArray.js"}}
+{{"demo": "pages / demos / chips / ChipsArray.js"}}
