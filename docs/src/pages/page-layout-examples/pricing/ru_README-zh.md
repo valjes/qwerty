@@ -1,18 +1,18 @@
-# Pricing layout
+# Схема ценообразования
 
-## Usage
+## использование
 
-Simply copy the files into your project, or one of the [example applications](https://github.com/mui-org/material-ui/tree/master/examples), and import and use the `Pricing` component.
+Просто скопируйте файлы в свой проект или одно из [примерных приложений](https://github.com/mui-org/material-ui/tree/master/examples)и импортируйте и используйте компонент `ценообразования`.
 
-You can customise the layout to add some pizazz in keeping with your corporate theme.
+Вы можете настроить макет, чтобы добавить некоторый pizazz в соответствии с вашей корпоративной темой.
 
-## Files
+## файлы
 
-| File         | Purpose                                   |
-| ------------ | ----------------------------------------- |
-| `Pricing.js` | A simple pricing layout in a single file. |
+| файл         | Цель                                   |
+| ------------ | -------------------------------------- |
+| `Pricing.js` | Простой шаблон расценки в одном файле. |
 
-## Dependencies
+## зависимости
 
-- `@material-ui/core`
-- `@material-ui/icons`
+- `@ Материал-щ / ядро`
+- `@ материал-UI / иконки`
