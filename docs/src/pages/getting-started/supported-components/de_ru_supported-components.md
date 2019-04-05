@@ -1,0 +1,107 @@
+# Поддерживаемые компоненты
+
+<p class="description">Ниже приведен список компонентов и компонентов Material Design. Выделяются те, которые в настоящее время поддерживаются Material-UI ✓.</p>
+
+Несмотря на то, что мы стремимся следовать рекомендациям, где это практично (применяя здравый смысл, когда руководящие принципы противоречат - более распространенное явление, чем можно было бы ожидать), мы не ожидаем поддержки каждого компонента или каждых признаков каждого компонента, а скорее обеспечения строительные блоки до позволяют разработчикам создавать привлекательные пользовательские интерфейсы и опыт.
+
+Если вы хотите добавить поддержку компонента или функции, не выделенной здесь, выполните поиск по соответствующему [GitHub Issue](https://github.com/mui-org/material-ui/issues)или создайте новый чтобы обсудить подход до отправки запроса на перенос.
+
+- Панель приложений 
+  - **[Топ](https://material.io/design/components/app-bars-top.html)✓**
+  - [Низ](https://material.io/design/components/app-bars-bottom.html)
+- **[Нижняя навигация](https://material.io/design/components/bottom-navigation.html)✓**
+- **[Кнопки](https://material.io/design/components/buttons.html)✓** 
+  - **[Текст & содержит кнопки (ранее плоские & подняты)](https://material.io/design/components/buttons.html)✓**
+  - [Кнопки переключения](https://material.io/design/components/buttons.html#buttons-toggle-buttons)
+  - **[Кнопки переключения кнопок](https://material.io/design/components/buttons.html#toggle-button) ✓** (Пользовательский флажок)
+- **[Кнопки: плавающая кнопка действия](https://material.io/design/components/buttons-floating-action-button.html)✓** 
+  - Переходы: 
+    - **[Быстрый набор](https://material.io/design/components/buttons-floating-action-button.html#types-of-transitions) ~** ([Лаборатория](/lab/about/))
+    - [Меню](https://material.io/design/components/buttons-floating-action-button.html#types-of-transitions)
+    - [Превращаться](https://material.io/design/components/buttons-floating-action-button.html#types-of-transitions)
+    - [Полноэкранный](https://material.io/design/components/buttons-floating-action-button.html#types-of-transitions)
+  - [Расширенный FAB](https://material.io/design/components/buttons-floating-action-button.html#extended-fab) 
+    - Быстрый набор
+- **[Карточки](https://material.io/design/components/cards.html)✓**
+- **[Чипсы](https://material.io/design/components/chips.html)✓** 
+  - **[Вход](https://material.io/design/components/chips.html#input-chips)✓**
+  - [Выбор](https://material.io/design/components/chips.html#choice-chips)
+  - [Фильтр](https://material.io/design/components/chips.html#filter-chips)
+  - [действие](https://material.io/design/components/chips.html#action-chips)
+- **[Таблицы данных](https://material.io/design/components/data-tables.html)✓** 
+  - **Сортировка ✓**
+  - **Выбираемый ✓**
+  - **Разбиение на страницы ✓**
+- **[Диалоги](https://material.io/design/components/dialogs.html)✓** 
+  - **[Диалоговое окно оповещения](https://material.io/design/components/dialogs.html#alert-dialog)✓**
+  - **[Простые диалоги](https://material.io/design/components/dialogs.html#simple-dialog) ✓** (Может быть построено с помощью диалога и списка).
+  - **[Диалоги подтверждения](https://material.io/design/components/dialogs.html#confirmation-dialog)✓**
+  - **[Полноэкранные диалоги](https://material.io/design/components/dialogs.html#full-screen-dialog)✓**
+- **[Разделители](https://material.io/design/components/dividers.html)✓** 
+  - **[Полное кровотечение](https://material.io/design/components/dividers.html#types)✓**
+  - **[Вставка](https://material.io/design/components/dividers.html#types)✓**
+  - [средний](https://material.io/design/components/dividers.html#types)
+  - [подзаголовок](https://material.io/design/components/dividers.html#types)
+- **[Расширительные панели](https://material.io/archive/guidelines/components/expansion-panels.html) ✓** (*Legacy Material v1*)
+- **[Списки изображений](https://material.io/design/components/image-lists.html) ✓** (Списки сетки AKA)
+- **[Списки](https://material.io/design/components/lists.html)✓** 
+  - [Типы:](https://material.io/design/components/lists.html#types) 
+    - **Одиночная линия ✓**
+    - **Две линии ✓**
+    - Три линии
+  - **Аватар ✓**
+  - **Значок ✓**
+  - Thumbnail
+  - **Элементы управления ✓** 
+    - **Флажок ✓**
+    - **Развернуть / свернуть ✓** (вложенное AKA)
+    - **Переключатель ✓**
+    - Изменение порядка
+- **[Меню](https://material.io/design/components/menus.html)✓** 
+  - **[Выпадающее меню](https://material.io/design/components/menus.html#dropdown-menu)✓** (Может быть построено) 
+    - [каскадный](https://material.io/design/components/menus.html#dropdown-menu)
+  - [Открытые выпадающие меню](https://material.io/design/components/menus.html#exposed-dropdown-menu) 
+    - **Выпадающее меню текстового поля ✓** (Выбрать)
+    - Редактируемое выпадающее меню
+  - **Контекстуальный ✓**
+- **[Индикаторы прогресса](https://material.io/design/components/progress-indicators.html)✓** 
+  - **[Линейный](https://material.io/design/components/progress-indicators.html#linear-progress-indicators)✓**
+  - **[Циркуляр](https://material.io/design/components/progress-indicators.html#circular-progress-indicators)✓**
+  - **[Загрузка](https://material.io/archive/guidelines/components/progress-activity.html) ✓** (*Устаревший материал v1*)
+- **[Элементы управления выбором](https://material.io/design/components/selection-controls.html)✓** 
+  - **[Флажок](https://material.io/design/components/selection-controls.html#checkboxes)✓**
+  - **[Радио-кнопка](https://material.io/design/components/selection-controls.html#radio-buttons)✓**
+  - **[Переключатель](https://material.io/design/components/selection-controls.html#switches)✓**
+- **[Слайдеры](https://material.io/design/components/sliders.html)~** ([Лаборатория](/lab/about/)) 
+  - **[Непрерывный](https://material.io/design/components/sliders.html#continuous-slider)✓**
+  - **[Дискретный](https://material.io/design/components/sliders.html#discrete-slider)~**
+- **[Snackbars](https://material.io/design/components/snackbars.html) ✓** (*Legacy Material v1*)
+- **[Подзаголовки](https://material.io/archive/guidelines/components/subheaders.html)✓** (*Legacy Material v1*) 
+  - **[Список](https://material.io/archive/guidelines/components/subheaders.html#subheaders-list-subheaders)✓**
+  - **[Сетка](https://material.io/archive/guidelines/components/subheaders.html#subheaders-list-subheaders)✓**
+  - [Меню](https://material.io/archive/guidelines/components/subheaders.html#subheaders-list-subheaders)
+- **[Степперы](https://material.io/archive/guidelines/components/steppers.html)✓** (*Legacy Material v1*) 
+  - **[Горизонтально](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steppers)✓**
+  - **[Вертикальный](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steppers)✓**
+  - **[Мобильные шаги](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steps)✓**
+- **[Вкладки](https://material.io/design/components/tabs.html)✓** 
+  - **[Фиксированные вкладки](https://material.io/design/components/tabs.html#fixed-tabs)✓**
+  - **[Прокручиваемые вкладки](https://material.io/design/components/tabs.html#scrollable-tabs)✓**
+- **[Текстовые поля](https://material.io/design/components/text-fields.html)✓** 
+  - **[Стандарт](https://material.io/archive/guidelines/components/text-fields.html) ✓** (Legacy Material v1)
+  - **[Заполнено](https://material.io/design/components/text-fields.html#filled-text-field)✓**
+  - **[Схема](https://material.io/design/components/text-fields.html#outlined-text-field)✓**
+  - [Типы](https://material.io/design/components/text-fields.html#input-types): 
+    - **Однострочный ✓**
+    - **Многострочный ✓**
+    - Text-область
+    - **Полная ширина ✓**
+  - [Вспомогательные элементы:](https://material.io/design/components/text-fields.html#anatomy) 
+    - **Текст помощника ✓**
+    - **Сообщение об ошибке ✓**
+    - **Иконки ✓**
+    - Счетчик символов
+- **[Панели инструментов](https://material.io/archive/guidelines/components/toolbars.html) ✓** (Legacy Material v1)
+- **[Подсказки](https://material.io/design/components/tooltips.html)✓** 
+  - **Рабочий стол ✓**
+  - **Мобильный ✓**
